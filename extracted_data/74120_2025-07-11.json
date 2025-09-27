@@ -1,0 +1,495 @@
+{
+  "dataCenterName": "NTT Global Data Centers Americas, Inc.",
+  "permitIssuanceDate": "2025-07-11",
+  "registrationNumber": "74120",
+  "location": "Loudoun County, Ashburn, VA (Multiple Gigabit Plaza addresses: 44245, 44760, 44761, 44495, 44395)",
+  "equipmentSummary": [
+    {
+      "type": "Constructed",
+      "referenceNos": "Gen7101-01,02,03,04; Gen7102-01,02,03,04; Gen7201-01,02,03,04; Gen7202-01,02,03,04; Gen7301-01,02,03,04; Gen7302-01,02,03,04",
+      "description": "Twenty-four (24) Cummins Engine Model QSK95-G12 emergency diesel engine gen-sets",
+      "ratedCapacity": "4,701 bhp and 3,250 ekW (each unit)",
+      "controls": "Engine design",
+      "originalPermitDate": "2025-07-11"
+    },
+    {
+      "type": "Constructed",
+      "referenceNos": "Gen7H",
+      "description": "One (1) Cummins Engine Model QSK50-G5 emergency diesel engine gen-set",
+      "ratedCapacity": "2,220 bhp and 1,500 ekW",
+      "controls": "Engine design",
+      "originalPermitDate": "2025-07-11"
+    },
+    {
+      "type": "Previously Permitted",
+      "referenceNos": "301A, 301B, 302A, 302B, 303A, 303B, 304A, 304B, 305A, 305B, 306A, 306B, 307A, 307B, 308A, 308B, 309A, 309B, 310A, 301B, 311A, 3HA, 3HB, 3ZA, 3ZB",
+      "description": "Twenty-five (25) Kohler Engine Model KD45V20 emergency diesel engine gen-sets",
+      "ratedCapacity": "2,353 bhp and 1,600 ekW de-rated to 2,218 bhp and 1,500 ekW (each unit)",
+      "controls": "Electronic fuel injection, turbocharged engine, and aftercoolers",
+      "originalPermitDate": "2017-06-01"
+    },
+    {
+      "type": "Previously Permitted",
+      "referenceNos": "Gen4101-01,-02,-03,-04,-Z; Gen4102-01,-02,-03,-04,-Z; Gen4201-01,-02,-03,-04,-Z; Gen4202-01,-02,-03,-04,-Z",
+      "description": "Twenty (20) Kohler Engine Model KD83V16 emergency diesel engine gen-sets",
+      "ratedCapacity": "4,680 bhp 3,250 ekW (each unit)",
+      "controls": "Electronic fuel injection, turbocharged engine, and aftercoolers",
+      "originalPermitDate": "2019-02-12"
+    },
+    {
+      "type": "Previously Permitted",
+      "referenceNos": "Gen4H",
+      "description": "One (1) Kohler Engine Model KD45V20 emergency diesel engine gen-set",
+      "ratedCapacity": "2,353 bhp and 1,600 ekW de-rated to 2,218 bhp and 1,500 ekW (each unit)",
+      "controls": "Electronic fuel injection, turbocharged engine, and aftercoolers",
+      "originalPermitDate": "2019-02-12"
+    },
+    {
+      "type": "Previously Permitted",
+      "referenceNos": "Gen5101-01,-02,-03,-04,-Z; Gen5102-01,-02,-03,-04,-Z; Gen5201-01,-02,-03,-04,-Z; Gen5202-01,-02,-03,-04,-Z",
+      "description": "Twenty (20) Kohler Engine Model KD83V16 emergency diesel engine gen-sets",
+      "ratedCapacity": "4,680 bhp 3,250 ekW (each unit)",
+      "controls": "Electronic fuel injection, turbocharged engine, and aftercoolers",
+      "originalPermitDate": "2019-02-12"
+    },
+    {
+      "type": "Previously Permitted",
+      "referenceNos": "Gen5H",
+      "description": "One (1) Kohler Engine Model KD45V20 emergency diesel engine gen-set",
+      "ratedCapacity": "2,353 bhp and 1,600 ekW de-rated to 2,218 bhp and 1,500 ekW (each unit)",
+      "controls": "Electronic fuel injection, turbocharged engine, and aftercoolers",
+      "originalPermitDate": "2019-02-12"
+    },
+    {
+      "type": "Previously Permitted",
+      "referenceNos": "Gen6101-01, -02, -03, -04; Gen6102-01, -02, -03, -04; Gen6201-01, -02, -03, -04; Gen6202-01, -02, -03, -04",
+      "description": "Sixteen (16) Cummins Engine Model QSK95-G12 emergency diesel engine gen-sets",
+      "ratedCapacity": "4,701 bhp and 3,250 ekW (each unit)",
+      "controls": "Engine design",
+      "originalPermitDate": "2022-11-17"
+    },
+    {
+      "type": "Previously Permitted",
+      "referenceNos": "Gen6H",
+      "description": "One (1) Cummins Engine Model QSK50-G5 emergency diesel engine gen-set",
+      "ratedCapacity": "2,220 bhp and 1,500 ekW (each unit)",
+      "controls": "Engine design",
+      "originalPermitDate": "2022-11-17"
+    }
+  ],
+  "operationalLimits": [
+    {
+      "category": "Electrical Power Output Limit",
+      "appliesTo": "Each emergency diesel engine gen-set (Engine Groups VA3, Gen4H, and Gen5H)",
+      "limitDetails": "Each emergency diesel engine gen-set (Engine Groups VA3, Gen4H, and Gen5H) shall be equipped with a Kohler APM802 controller to limit the electrical power output of each diesel engine gen-set to not more than 1,500 ekW. Each APM802 controller shall be programmed to initiate a shutdown timer of no more than 60 seconds, if the generator exceeds its capacity limit."
+    },
+    {
+      "category": "Operating Hours Monitoring",
+      "appliesTo": "Each emergency diesel engine gen-set (Engine Groups VA3, VA4, Gen4H, VA5, Gen5, VA6, Gen6H, VA7, and Gen7H)",
+      "limitDetails": "A non-resettable hour metering device to monitor the operating hours. The non-resettable hour meter used to continuously measure the hours of operation for each emergency diesel engine gen-set shall be observed by the owner with a frequency of not less than once each day the emergency diesel engine gen-set is operated. The owner shall keep a log of these observations."
+    },
+    {
+      "category": "Fuel Consumption Monitoring",
+      "appliesTo": "Each emergency diesel engine gen-set (Engine Groups VA3, VA4, Gen4H, VA5, Gen5, VA6, Gen6H, VA7, and Gen7H)",
+      "limitDetails": "A device to continuously measure and record fuel consumption (in gallons) for each emergency diesel engine gen-set. The device used to continuously measure fuel consumption for each emergency diesel engine gen-set shall be observed by the owner with a frequency of not less than once each day the emergency diesel engine gen-set is operated. The permittee shall keep a log of these observations."
+    },
+    {
+      "category": "Ozone Season Operating Restrictions (Maintenance/Testing)",
+      "appliesTo": "No emergency diesel engine gen-set (Engine Groups VA4, Gen4H, VA5, Gen5H, VA6, Gen6H, VA7, and Gen7H)",
+      "limitDetails": "No emergency diesel engine gen-set (Engine Groups VA4, Gen4H, VA5, Gen5H, VA6, Gen6H, VA7, and Gen7H) shall be operated for scheduled maintenance and readiness testing (Scheduled MCRT), stack testing, or operational training (that involves fuel combustion) between the hours of 7 a.m. to 5 p.m. any day during the ozone season of May 1 through September 30. The permittee may petition the DEQ - (Northern Regional Office) Air Compliance Manager for exceptions to this requirement, with approvals made on a case-by-case basis."
+    },
+    {
+      "category": "Ozone Season Operating Restrictions (Integration Period)",
+      "appliesTo": "Each emergency diesel engine gen-set (Engine Groups VA6, Gen6H, VA7, and Gen7H)",
+      "limitDetails": "During the integration operational period of each emergency diesel engine gen-set (Engine Groups VA6, Gen6H, VA7, and Gen7H), any operation of the unit (that involves fuel combustion) between the hours of 7 a.m. to 5 p.m. any day during the ozone season of May 1 through September 30 shall only occur if the forecast Air Quality Index (AQI) for ozone as published on the AirNow website (https://airnow.gov) for Northern Virginia for that day is less than or equal to 100. In the event that AirNow-EnviroFlash (www.enviroflash.info) issues an Air Alert for Metropolitan Washington, D.C. for a day which the forecasted AQI for ozone was less than or equal to 100, operation of each unit (which involves fuel combustion) shall be minimized to the maximum extent practical."
+    },
+    {
+      "category": "Blackout Testing Limit",
+      "appliesTo": "Emergency diesel engine gen-sets (Engine Groups VA4, Gen4H, VA5, Gen5H, VA6, and Gen6H) or (Engine Groups VA7 and Gen7H)",
+      "limitDetails": "For annual blackout tests, a maximum of 21 emergency diesel engine gen-sets (Engine Groups VA4, Gen4H, VA5, Gen5H, VA6, and Gen6H) or a maximum of 25 emergency diesel engine gen-sets (Engine Groups VA7 and Gen7H) can be tested on the same day."
+    },
+    {
+      "category": "Permitted Modes of Operation",
+      "appliesTo": "Emergency diesel engine gen-sets (Engine Groups VA3, VA4, Gen4H, VA5, Gen5H, VA6, Gen6H, VA7, and Gen7H)",
+      "limitDetails": "The emergency diesel engine gen-sets (Engine Groups VA3, VA4, Gen4H, VA5, Gen5H, VA6, Gen6H, VA7, and Gen7H) shall only be operated in the following modes: a. In situations that arise from sudden and reasonably unforeseeable events where the primary energy or power source is disrupted or disconnected due to conditions beyond the control of an owner or operator of a facility including: i. A failure of the electrical grid; ii. On-site disaster or equipment failure; or iii. Public service emergencies such as flood, fire, natural disaster, or severe weather conditions. b. For participation in an ISO-declared emergency, where an ISO emergency is: i. An abnormal system condition requiring manual or automatic action to maintain system frequency, to prevent loss of firm load, equipment damage, or tripping of system elements that could adversely affect the reliability of an electric system or the safety of persons or property; ii. Capacity deficiency or capacity excess conditions; iii. A fuel shortage requiring departure from normal operating procedures in order to minimize the use of such scarce fuel; iv. Abnormal natural events or man-made threats that would require conservative operations to posture the system in a more reliable state; or v. An abnormal event external to the ISO service territory that may require ISO action. c. For scheduled maintenance checks and readiness testing (Scheduled MCRT). d. For unscheduled maintenance, testing, and operational training. e. For the integration operational period which is the period of time beginning with the first time the affected unit is started on-site and ending when the affected unit is fully integrated with the source's electrical system."
+    },
+    {
+      "category": "Electrical Power Output Limit",
+      "appliesTo": "Each emergency diesel engine gen-set (Engine Groups VA3, Gen4H, and Gen5H)",
+      "limitDetails": "Each emergency diesel engine gen-set (Engine Groups VA3, Gen4H, and Gen5H) shall not operate more than 1,500 ekW electrical power. Compliance with this condition shall be demonstrated utilizing the electric output data from the required monitoring device in Condition 4."
+    },
+    {
+      "category": "Run Hours (All Purposes)",
+      "appliesTo": "No single unit (Engine Groups VA3, VA4, Gen4H, VA5, Gen5H, VA6, Gen 6H, VA7, and Gen 7H)",
+      "limitDetails": "No single unit shall operate more than 500 hours per year for all purposes (as provided in Condition 9), calculated monthly as the sum of each consecutive 12-month period."
+    },
+    {
+      "category": "Run Hours (Scheduled Maintenance/Testing)",
+      "appliesTo": "No single unit (Engine Groups VA3, VA4, Gen4H, VA5, Gen5H, VA6, Gen 6H, VA7, and Gen 7H)",
+      "limitDetails": "No single unit shall operate more than 24 hours per year for scheduled maintenance checks and readiness testing (Scheduled MCRT, as provided in Condition 9.c), calculated monthly as the sum of each consecutive 12-month period."
+    },
+    {
+      "category": "Fuel Specification",
+      "appliesTo": "Emergency diesel engine gen-sets (Engine Groups VA3, VA4, Gen4H, VA5, Gen5H, VA6, Gen6H, VA7, and Gen7H)",
+      "limitDetails": "The approved fuel for the emergency diesel engine gen-sets (Engine Groups VA3, VA4, Gen4H, VA5, Gen5H, VA6, Gen6H, VA7, and Gen7H) is diesel fuel. The diesel fuel shall meet the American Society for Testing and Materials (ASTM) D975 specification for Grade No. 1-D S15 or Grade No. 2-D S15 and have a maximum sulfur content of 15 ppm, per shipment. Exceedance of these specifications may be considered credible evidence of the exceedance of emission limits. A change in the fuel may require a permit to modify and operate."
+    },
+    {
+      "category": "Fuel Throughput Limit",
+      "appliesTo": "Emergency diesel engine gen-sets (Engine Group VA3) combined",
+      "limitDetails": "The emergency diesel engine gen-sets (Engine Group VA3) combined, shall consume no more than 75,000 gallons of diesel fuel per year, calculated monthly as the sum of each consecutive 12-month period."
+    },
+    {
+      "category": "Fuel Throughput Limit",
+      "appliesTo": "Emergency diesel engine gen-sets (Engine Groups VA4 and Gen4H) combined",
+      "limitDetails": "The emergency diesel engine gen-sets (Engine Groups VA4 and Gen4H) combined, shall consume no more than 150,000 gallons of diesel fuel per year total, calculated monthly as the sum of each consecutive 12-month period."
+    },
+    {
+      "category": "Fuel Throughput Limit",
+      "appliesTo": "Emergency diesel engine gen-sets (Engine Groups VA5 and Gen5H) combined",
+      "limitDetails": "The emergency diesel engine gen-sets (Engine Groups VA5 and Gen5H) combined, shall consume no more than 150,000 gallons of diesel fuel per year total, calculated monthly as the sum of each consecutive 12-month period."
+    },
+    {
+      "category": "Fuel Throughput Limit",
+      "appliesTo": "Emergency diesel engine gen-sets (Engine Groups VA6 and Gen6H) combined",
+      "limitDetails": "The emergency diesel engine gen-sets (Engine Groups VA6 and Gen6H) combined, shall consume no more than 130,000 gallons of diesel fuel per year total, calculated monthly as the sum of each consecutive 12-month period."
+    },
+    {
+      "category": "Fuel Throughput Limit",
+      "appliesTo": "Emergency diesel engine gen-sets (Engine Groups VA7 and Gen7H) combined",
+      "limitDetails": "The emergency diesel engine gen-sets (Engine Groups VA7 and Gen7H) combined, shall consume no more than 180,000 gallons of diesel fuel per year total, calculated monthly as the sum of each consecutive 12-month period."
+    }
+  ],
+  "emissionLimits": [
+    {
+      "type": "Hourly",
+      "appliesTo": "Engine Groups VA3, Gen4H, and Gen5H",
+      "pollutant": "Nitrogen Oxides (as NO2)",
+      "limitValue": "28.77 lb/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Engine Groups VA3, Gen4H, and Gen5H",
+      "pollutant": "Carbon Monoxide (CO)",
+      "limitValue": "5.45 lb/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Engine Groups VA3, Gen4H, and Gen5H",
+      "pollutant": "Volatile Organic Compounds (VOC)",
+      "limitValue": "0.35 lb/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Engine Groups VA3, Gen4H, and Gen5H",
+      "pollutant": "Particulate Matter (PM10)",
+      "limitValue": "0.48 lb/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Engine Groups VA3, Gen4H, and Gen5H",
+      "pollutant": "Particulate Matter (PM2.5)",
+      "limitValue": "0.48 lb/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Engine Groups VA4 and VA5",
+      "pollutant": "Nitrogen Oxides (as NO2)",
+      "limitValue": "61.48 lb/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Engine Groups VA4 and VA5",
+      "pollutant": "Carbon Monoxide (CO)",
+      "limitValue": "13.86 lb/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Engine Groups VA4 and VA5",
+      "pollutant": "Volatile Organic Compounds (VOC)",
+      "limitValue": "2.81 lb/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Engine Groups VA4 and VA5",
+      "pollutant": "Particulate Matter (PM10)",
+      "limitValue": "1.06 lb/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Engine Groups VA4 and VA5",
+      "pollutant": "Particulate Matter (PM2.5)",
+      "limitValue": "1.06 lb/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Engine Groups VA6 and VA7",
+      "pollutant": "Nitrogen Oxides (as NO2)",
+      "limitValue": "60.01 lb/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Engine Groups VA6 and VA7",
+      "pollutant": "Carbon Monoxide (CO)",
+      "limitValue": "8.29 lb/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Engine Groups VA6 and VA7",
+      "pollutant": "Volatile Organic Compounds (VOC)",
+      "limitValue": "2.64 lb/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Engine Groups VA6 and VA7",
+      "pollutant": "Particulate Matter (PM10)",
+      "limitValue": "0.98 lb/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Engine Groups VA6 and VA7",
+      "pollutant": "Particulate Matter (PM2.5)",
+      "limitValue": "0.98 lb/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Engine Groups Gen6H and Gen7H",
+      "pollutant": "Nitrogen Oxides (as NO2)",
+      "limitValue": "29.37 lb/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Engine Groups Gen6H and Gen7H",
+      "pollutant": "Carbon Monoxide (CO)",
+      "limitValue": "7.83 lb/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Engine Groups Gen6H and Gen7H",
+      "pollutant": "Volatile Organic Compounds (VOC)",
+      "limitValue": "1.05 lb/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Engine Groups Gen6H and Gen7H",
+      "pollutant": "Particulate Matter (PM10)",
+      "limitValue": "0.46 lb/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Engine Groups Gen6H and Gen7H",
+      "pollutant": "Particulate Matter (PM2.5)",
+      "limitValue": "0.46 lb/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Engine Group VA3",
+      "pollutant": "Nitrogen Oxides (as NO2)",
+      "limitValue": "11.25 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Engine Group VA3",
+      "pollutant": "Carbon Monoxide (CO)",
+      "limitValue": "6.90 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Engine Group VA3",
+      "pollutant": "Volatile Organic Compounds (VOC)",
+      "limitValue": "0.40 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Engine Group VA3",
+      "pollutant": "Particulate Matter (PM10)",
+      "limitValue": "0.60 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Engine Group VA3",
+      "pollutant": "Particulate Matter (PM2.5)",
+      "limitValue": "0.60 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Engine Groups VA4 and Gen4H",
+      "pollutant": "Nitrogen Oxides (as NO2)",
+      "limitValue": "20.85 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Engine Groups VA4 and Gen4H",
+      "pollutant": "Carbon Monoxide (CO)",
+      "limitValue": "14.64 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Engine Groups VA4 and Gen4H",
+      "pollutant": "Volatile Organic Compounds (VOC)",
+      "limitValue": "2.87 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Engine Groups VA4 and Gen4H",
+      "pollutant": "Particulate Matter (PM10)",
+      "limitValue": "1.07 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Engine Groups VA4 and Gen4H",
+      "pollutant": "Particulate Matter (PM2.5)",
+      "limitValue": "1.07 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Engine Groups VA5 and Gen5H",
+      "pollutant": "Nitrogen Oxides (as NO2)",
+      "limitValue": "20.85 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Engine Groups VA5 and Gen5H",
+      "pollutant": "Carbon Monoxide (CO)",
+      "limitValue": "14.64 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Engine Groups VA5 and Gen5H",
+      "pollutant": "Volatile Organic Compounds (VOC)",
+      "limitValue": "2.87 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Engine Groups VA5 and Gen5H",
+      "pollutant": "Particulate Matter (PM10)",
+      "limitValue": "1.07 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Engine Groups VA5 and Gen5H",
+      "pollutant": "Particulate Matter (PM2.5)",
+      "limitValue": "1.07 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Engine Groups VA6 and Gen6H",
+      "pollutant": "Nitrogen Oxides (as NO2)",
+      "limitValue": "16.96 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Engine Groups VA6 and Gen6H",
+      "pollutant": "Carbon Monoxide (CO)",
+      "limitValue": "4.24 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Engine Groups VA6 and Gen6H",
+      "pollutant": "Volatile Organic Compounds (VOC)",
+      "limitValue": "1.53 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Engine Groups VA6 and Gen6H",
+      "pollutant": "Particulate Matter (PM10)",
+      "limitValue": "0.71 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Engine Groups VA6 and Gen6H",
+      "pollutant": "Particulate Matter (PM2.5)",
+      "limitValue": "0.71 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Engine Groups VA7 and Gen7H",
+      "pollutant": "Nitrogen Oxides (as NO2)",
+      "limitValue": "23.29 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Engine Groups VA7 and Gen7H",
+      "pollutant": "Carbon Monoxide (CO)",
+      "limitValue": "5.16 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Engine Groups VA7 and Gen7H",
+      "pollutant": "Volatile Organic Compounds (VOC)",
+      "limitValue": "2.09 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Engine Groups VA7 and Gen7H",
+      "pollutant": "Particulate Matter (PM10)",
+      "limitValue": "0.98 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Engine Groups VA7 and Gen7H",
+      "pollutant": "Particulate Matter (PM2.5)",
+      "limitValue": "0.98 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Visible Emissions",
+      "appliesTo": "Each emergency diesel engine gen-set (Engine Groups VA3, VA4, Gen4H, VA5, Gen5H, VA6, Gen6H, VA7, and Gen7H)",
+      "pollutant": "Opacity",
+      "limitValue": "5% opacity",
+      "conditions": "except during one 6-minute period in any one hour in which visible emissions shall not exceed 10% opacity as determined by EPA Method 9 (reference 40 CFR 60, Appendix A). This condition applies at all times except during startup, shutdown and malfunction."
+    },
+    {
+      "type": "Visible Emissions",
+      "appliesTo": "Each emergency diesel engine gen-set (Engine Groups VA3, VA4, Gen4H, VA5, Gen5H, VA6, Gen6H, VA7, and Gen7H)",
+      "pollutant": "Opacity",
+      "limitValue": "10% opacity",
+      "conditions": "except during one 6-minute period in any one hour in which visible emissions shall not exceed 20% opacity as determined by EPA Method 9 (reference 40 CFR 60, Appendix A). During startup and shutdown."
+    }
+  ],
+  "source_file": "74120_2025-07-11.pdf",
+  "processing_date": "2025-09-27T17:52:00.239477"
+}

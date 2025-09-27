@@ -1,0 +1,146 @@
+{
+  "dataCenterName": "MECP1 Ashburn 2, LLC",
+  "permitIssuanceDate": "2025-03-24",
+  "registrationNumber": "74306",
+  "location": "45831 Maries Road, Sterling, VA 20166 (Loudoun County)",
+  "equipmentSummary": [
+    {
+      "type": "Constructed",
+      "referenceNos": "GEN-1 through GEN-26",
+      "description": "(26) Caterpillar C175-16 emergency diesel-fired engine gen-sets",
+      "ratedCapacity": "3,000 ekW 4,423 bhp (each)",
+      "controls": "Nitrogen oxides (NOx) controlled by engine design; Carbon monoxide (CO), particulate matter (PM10/PM2.5), volatile organic compounds (VOC), nitrogen oxide (NOx) (as NO2), and visible emissions controlled by good operating practices and manufacturer recommendations.",
+      "originalPermitDate": "2025-03-24"
+    }
+  ],
+  "operationalLimits": [
+    {
+      "category": "Emergency Power Generation Modes",
+      "appliesTo": "The emergency diesel engine gen-sets (Ref. Nos. GEN-1 through GEN-26)",
+      "limitDetails": "Operation only in situations arising from sudden and unforeseeable events disrupting primary energy/power source (e.g., electrical grid failure, on-site disaster, public service emergencies), for participation in ISO-declared emergencies (abnormal system conditions, capacity deficiency/excess, fuel shortage, abnormal natural/man-made threats, external ISO events), for scheduled maintenance checks and readiness testing (Scheduled MCRT), for unscheduled maintenance, testing, and operational training, and for the integration operational period."
+    },
+    {
+      "category": "Maintenance and Operation",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. GEN-1 through GEN-26)",
+      "limitDetails": "Operate and maintain according to manufacturer's written instructions or approved procedures; settings may only be changed if permitted by manufacturer and do not increase air emissions."
+    },
+    {
+      "category": "Ozone Season Operating Restrictions (Scheduled MCRT, Testing, Training)",
+      "appliesTo": "No emergency diesel engine gen-set (Ref. Nos. GEN-1 through GEN-26)",
+      "limitDetails": "No operation for scheduled maintenance checks and readiness testing (Scheduled MCRT), stack testing, or operational training (involving fuel combustion) between 7 a.m. to 5 p.m. any day during May 1 through September 30."
+    },
+    {
+      "category": "Ozone Season Operating Restrictions (Integration Operational Period)",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. GEN-1 through GEN-26)",
+      "limitDetails": "During integration operational period, operation between 7 a.m. to 5 p.m. from May 1 through September 30 only if forecast Air Quality Index (AQI) for ozone for Northern Virginia is <= 100. Operation shall be minimized if Air Alert is issued."
+    },
+    {
+      "category": "Run Hours (Scheduled MCRT)",
+      "appliesTo": "Each individual emergency diesel engine gen-set (Ref. Nos. GEN-1 through GEN-26)",
+      "limitDetails": "Not more than 29 hours per year for scheduled maintenance checks and readiness testing (Scheduled MCRT). Annual limits calculated monthly as sum of each consecutive 12-month period."
+    },
+    {
+      "category": "Run Hours (All Purposes)",
+      "appliesTo": "Each individual emergency diesel engine gen-set (Ref. Nos. GEN-1 through GEN-26)",
+      "limitDetails": "Not more than 500 hours per year for all purposes combined. Annual limits calculated monthly as sum of each consecutive 12-month period."
+    },
+    {
+      "category": "Fuel Specification",
+      "appliesTo": "Emergency diesel engine gen-sets (Ref. Nos. GEN-1 through GEN-26)",
+      "limitDetails": "Ultra-low sulfur diesel fuel oil, meeting ASTM D975 for Grade No. 1-D S15 or Grade No. 2-D S15, OR maximum sulfur content not to exceed 0.0015% by weight (15 ppm), and either a minimum cetane number of 40 or maximum aromatic content of 35 volume percent."
+    },
+    {
+      "category": "Fuel Throughput",
+      "appliesTo": "Emergency diesel engine gen-sets (Ref. Nos. GEN-1 through GEN-26) combined",
+      "limitDetails": "No more than 694,540 gallons of diesel fuel per consecutive 365-day period (all uses). Calculated daily."
+    }
+  ],
+  "emissionLimits": [
+    {
+      "type": "Hourly",
+      "appliesTo": "Each Unit",
+      "pollutant": "Nitrogen Oxides (as NO2)",
+      "limitValue": "58.51 lbs/hr",
+      "conditions": "null"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Combined Units",
+      "pollutant": "Nitrogen Oxides (as NO2)",
+      "limitValue": "94.50 tpy",
+      "conditions": "Compliance determined as stated in Conditions 1 and 10."
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each Unit",
+      "pollutant": "Carbon Monoxide (CO)",
+      "limitValue": "6.05 lbs/hr",
+      "conditions": "null"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Combined Units",
+      "pollutant": "Carbon Monoxide (CO)",
+      "limitValue": "47.31 tpy",
+      "conditions": "Compliance determined as stated in Conditions 1 and 10."
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each Unit",
+      "pollutant": "Volatile Organic Compounds (VOC)",
+      "limitValue": "2.87 lbs/hr",
+      "conditions": "null"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Combined Units",
+      "pollutant": "Volatile Organic Compounds (VOC)",
+      "limitValue": "22.49 tpy",
+      "conditions": "Compliance determined as stated in Conditions 1 and 10."
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each Unit",
+      "pollutant": "Particulate Matter (PM10)",
+      "limitValue": "1.50 lbs/hr",
+      "conditions": "null"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Combined Units",
+      "pollutant": "Particulate Matter (PM10)",
+      "limitValue": "4.70 tpy",
+      "conditions": "Compliance determined as stated in Conditions 1 and 10."
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each Unit",
+      "pollutant": "Particulate Matter (PM2.5)",
+      "limitValue": "1.50 lbs/hr",
+      "conditions": "null"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Combined Units",
+      "pollutant": "Particulate Matter (PM2.5)",
+      "limitValue": "4.70 tpy",
+      "conditions": "Compliance determined as stated in Conditions 1 and 10."
+    },
+    {
+      "type": "Visible Emissions",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. GEN-1 through GEN-26)",
+      "pollutant": "Opacity",
+      "limitValue": "5% opacity",
+      "conditions": "Except during one six-minute period in any one-hour not exceeding 10% opacity. Applies at all times except during startup, shutdown and malfunction."
+    },
+    {
+      "type": "Visible Emissions",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. GEN-1 through GEN-26)",
+      "pollutant": "Opacity",
+      "limitValue": "10% opacity",
+      "conditions": "Except during one six-minute period in any one-hour not exceeding 20% opacity. Applies during startup and shutdown."
+    }
+  ],
+  "source_file": "74306_2025-03-24.pdf",
+  "processing_date": "2025-09-27T17:26:47.860711"
+}

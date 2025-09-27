@@ -1,0 +1,184 @@
+{
+  "dataCenterName": "Amazon Data Services, Inc.",
+  "permitIssuanceDate": "2025-03-27",
+  "registrationNumber": "74309",
+  "location": "IAD-350 and IAD-351 Data Centers, 123 Old Potomac Church Road, Stafford, VA 22554, Stafford County",
+  "equipmentSummary": [
+    {
+      "type": "Constructed",
+      "referenceNos": "EG-01 through EG-48",
+      "description": "(48) Cummins QSK78-G36 emergency diesel-fired engine gen-sets",
+      "ratedCapacity": "2,750 ekW 4,049 bhp (each)",
+      "controls": "Engine design, good operating practices, and manufacturer-recommended maintenance",
+      "originalPermitDate": "2025-03-27"
+    },
+    {
+      "type": "Constructed",
+      "referenceNos": "HS-01 and HS-02",
+      "description": "Two (2) Cummins QST30-G5 emergency diesel-fired engine gen-sets",
+      "ratedCapacity": "750 ekW 1,073 bhp (each)",
+      "controls": "Engine design, good operating practices, and manufacturer-recommended maintenance",
+      "originalPermitDate": "2025-03-27"
+    }
+  ],
+  "operationalLimits": [
+    {
+      "category": "Operating Mode",
+      "appliesTo": "Emergency diesel engine gen-sets (Ref. Nos. EG-01 through EG-48, HS-01, and HS-02)",
+      "limitDetails": "Shall only be operated in situations that arise from sudden and reasonably unforeseeable events where the primary energy or power source is disrupted or disconnected (e.g., electrical grid failure, on-site disaster, public service emergencies); for participation in an ISO-declared emergency (e.g., abnormal system conditions, capacity deficiency, fuel shortage, abnormal natural events, external ISO events); for scheduled maintenance checks and readiness testing (Scheduled MCRT); for unscheduled maintenance, testing, and operational training; and for the integration operational period."
+    },
+    {
+      "category": "Ozone Season Operating Restrictions",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. EG-01 through EG-48, HS-01, and HS-02)",
+      "limitDetails": "Except for during the integrational operational period, no emergency diesel engine gen-set shall be operated for scheduled maintenance checks and readiness testing (Scheduled MCRT), stack testing, or operational training (that involves fuel combustion) between the hours of 7 a.m. to 5 p.m. any day during May 1 through September 30."
+    },
+    {
+      "category": "Ozone Season Operating Restrictions (Integration Operational Period)",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. EG-01 through EG-48, HS-01, and HS-02)",
+      "limitDetails": "During the integration operational period, any operation of the unit (that involves fuel combustion) between the hours of 7 a.m. to 5 p.m. any day during the ozone season of May 1 through September 30 shall only occur if the forecast Air Quality Index (AQI) for ozone as published on the AirNow website for Northern Virginia for that day is less than or equal to 100. If an Air Alert is issued for Northern Virginia/DC area for a day with forecasted AQI less than or equal to 100, operation shall be minimized to the maximum extent practical."
+    },
+    {
+      "category": "Run Hours (Scheduled MCRT)",
+      "appliesTo": "Each individual emergency diesel engine gen-set (Ref. Nos. EG-01 through EG-48, HS-01, and HS-02)",
+      "limitDetails": "Shall not operate more than 35 hours per year for scheduled maintenance checks and readiness testing (Scheduled MCRT). Annual limits are calculated monthly as the sum of each consecutive 12-month period."
+    },
+    {
+      "category": "Run Hours (All Purposes)",
+      "appliesTo": "Each individual emergency diesel engine gen-set (Ref. Nos. EG-01 through EG-48, HS-01, and HS-02)",
+      "limitDetails": "Shall not operate more than 500 hours per year for all purposes combined. Annual limits are calculated monthly as the sum of each consecutive 12-month period."
+    },
+    {
+      "category": "Fuel Specification",
+      "appliesTo": "Emergency diesel engine gen-sets (Ref. Nos. EG-01 through EG-48, HS-01, and HS-02)",
+      "limitDetails": "The approved fuel is diesel fuel oil, defined as ultra-low sulfur diesel fuel oil (ULSD), renewable diesel, or a blend of these fuels. Shall meet ASTM D975 for grade ultra-low sulfur 1-D S15 or grade 2-D S15; or has a maximum sulfur content not to exceed 0.0015% by weight (15 ppm), and either a minimum cetane number of forty (40) or maximum aromatic content of thirty-five percent (35%) by volume."
+    },
+    {
+      "category": "Fuel Throughput",
+      "appliesTo": "Emergency diesel engine gen-sets (Ref. Nos. EG-01 through EG-48, HS-01, and HS-02) combined",
+      "limitDetails": "Shall consume no more than 716,654 gallons of diesel fuel, calculated daily as the sum of each consecutive 365-day period (all uses). Compliance is demonstrated daily by adding the total for the most recently completed calendar day to the individual daily totals for the preceding 364 days."
+    }
+  ],
+  "emissionLimits": [
+    {
+      "type": "Hourly",
+      "appliesTo": "Each Cummins QSK78-G36 gen-set (Ref. Nos. EG-01 through EG-48)",
+      "pollutant": "Nitrogen Oxides (NOx as NO2)",
+      "limitValue": "51.15 lbs/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each Cummins QSK78-G36 gen-set (Ref. Nos. EG-01 through EG-48)",
+      "pollutant": "Carbon Monoxide (CO)",
+      "limitValue": "3.65 lbs/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each Cummins QSK78-G36 gen-set (Ref. Nos. EG-01 through EG-48)",
+      "pollutant": "Volatile Organic Compounds (VOC)",
+      "limitValue": "1.14 lbs/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each Cummins QSK78-G36 gen-set (Ref. Nos. EG-01 through EG-48)",
+      "pollutant": "Particulate Matter (PM10)",
+      "limitValue": "0.43 lbs/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each Cummins QSK78-G36 gen-set (Ref. Nos. EG-01 through EG-48)",
+      "pollutant": "Particulate Matter (PM2.5)",
+      "limitValue": "0.43 lbs/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each Cummins QST30-G5 gen-set (Ref. Nos. HS-01 and HS-02)",
+      "pollutant": "Nitrogen Oxides (NOx as NO2)",
+      "limitValue": "11.88 lbs/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each Cummins QST30-G5 gen-set (Ref. Nos. HS-01 and HS-02)",
+      "pollutant": "Carbon Monoxide (CO)",
+      "limitValue": "2.37 lbs/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each Cummins QST30-G5 gen-set (Ref. Nos. HS-01 and HS-02)",
+      "pollutant": "Volatile Organic Compounds (VOC)",
+      "limitValue": "0.35 lbs/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each Cummins QST30-G5 gen-set (Ref. Nos. HS-01 and HS-02)",
+      "pollutant": "Particulate Matter (PM10)",
+      "limitValue": "0.53 lbs/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each Cummins QST30-G5 gen-set (Ref. Nos. HS-01 and HS-02)",
+      "pollutant": "Particulate Matter (PM2.5)",
+      "limitValue": "0.53 lbs/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "All Engine Gen-Sets (Ref. Nos. EG-01 through EG-48, HS-01, and HS-02)",
+      "pollutant": "Nitrogen Oxides (NOx as NO2)",
+      "limitValue": "94.68 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "All Engine Gen-Sets (Ref. Nos. EG-01 through EG-48, HS-01, and HS-02)",
+      "pollutant": "Carbon Monoxide (CO)",
+      "limitValue": "36.61 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "All Engine Gen-Sets (Ref. Nos. EG-01 through EG-48, HS-01, and HS-02)",
+      "pollutant": "Volatile Organic Compounds (VOC)",
+      "limitValue": "11.00 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "All Engine Gen-Sets (Ref. Nos. EG-01 through EG-48, HS-01, and HS-02)",
+      "pollutant": "Particulate Matter (PM10)",
+      "limitValue": "2.59 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "All Engine Gen-Sets (Ref. Nos. EG-01 through EG-48, HS-01, and HS-02)",
+      "pollutant": "Particulate Matter (PM2.5)",
+      "limitValue": "2.59 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Visible Emissions",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. EG-01 through EG-48, HS-01, and HS-02)",
+      "pollutant": "Opacity",
+      "limitValue": "5% opacity",
+      "conditions": "Except during one (1) six-minute period in any one-hour not exceeding 10% opacity. Applies at all times except during startup, shutdown and malfunction."
+    },
+    {
+      "type": "Visible Emissions",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. EG-01 through EG-48, HS-01, and HS-02)",
+      "pollutant": "Opacity",
+      "limitValue": "10% opacity",
+      "conditions": "During startup and shutdown, except during one (1) six-minute period in any one-hour not exceeding 20% opacity."
+    }
+  ],
+  "source_file": "74309_2025-03-27.pdf",
+  "processing_date": "2025-09-27T17:26:12.770945"
+}

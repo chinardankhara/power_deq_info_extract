@@ -1,0 +1,260 @@
+{
+  "dataCenterName": "Capital One Services, Inc. - Knolls Building 1 and Knolls 2 Data Center",
+  "permitIssuanceDate": "2025-07-09",
+  "registrationNumber": "52281",
+  "location": "Henrico County, 4871 and 4881 Cox Road, Glen Allen, VA 23060",
+  "equipmentSummary": [
+    {
+      "type": "Constructed",
+      "referenceNos": "G-1",
+      "description": "Caterpillar Model 3512 Diesel Generator",
+      "ratedCapacity": "1,135 kW",
+      "controls": "None",
+      "originalPermitDate": "2024-04-16"
+    },
+    {
+      "type": "Constructed",
+      "referenceNos": "G-2",
+      "description": "Caterpillar Model 3512 Diesel Generator",
+      "ratedCapacity": "1,135 kW",
+      "controls": "None",
+      "originalPermitDate": "2024-04-16"
+    },
+    {
+      "type": "Constructed",
+      "referenceNos": "G-8/DG#3",
+      "description": "Caterpillar Model 3516 Diesel Generator",
+      "ratedCapacity": "1,750 kW",
+      "controls": "None",
+      "originalPermitDate": "2024-04-16"
+    },
+    {
+      "type": "Constructed",
+      "referenceNos": "G-9/DG#4",
+      "description": "Caterpillar Model 3516 Diesel Generator",
+      "ratedCapacity": "1,750 kW",
+      "controls": "None",
+      "originalPermitDate": "2024-04-16"
+    },
+    {
+      "type": "Constructed",
+      "referenceNos": "G-11",
+      "description": "Caterpillar Model 3516C Diesel Generator",
+      "ratedCapacity": "1,825 kW",
+      "controls": "None",
+      "originalPermitDate": "2024-04-16"
+    },
+    {
+      "type": "Constructed",
+      "referenceNos": "G-12",
+      "description": "Caterpillar Model 3516C Diesel Generator",
+      "ratedCapacity": "1,825 kW",
+      "controls": "None",
+      "originalPermitDate": "2024-04-16"
+    },
+    {
+      "type": "Constructed",
+      "referenceNos": "G-13",
+      "description": "Caterpillar Model 3516C Diesel Generator",
+      "ratedCapacity": "1,825 kW",
+      "controls": "None",
+      "originalPermitDate": "2024-04-16"
+    }
+  ],
+  "operationalLimits": [
+    {
+      "category": "Run Hours",
+      "appliesTo": "Each generator",
+      "limitDetails": "Shall not operate more than 240 hours per year, calculated monthly as the sum of each consecutive 12-month period."
+    },
+    {
+      "category": "Fuel Specification",
+      "appliesTo": "All emergency generators",
+      "limitDetails": "Approved fuel is distillate oil meeting ASTM D975 specification for numbers 1 or 2 fuel oil."
+    },
+    {
+      "category": "Fuel Sulfur Content",
+      "appliesTo": "All emergency generators (each shipment)",
+      "limitDetails": "Maximum sulfur content of 15 parts per million (ppm) or 0.0015% by weight."
+    }
+  ],
+  "emissionLimits": [
+    {
+      "type": "Hourly",
+      "appliesTo": "Each Caterpillar Model 3512 generator (G-1 and G-2)",
+      "pollutant": "PM-10",
+      "limitValue": "1.2 lbs/hr",
+      "conditions": "Per generator"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Caterpillar Model 3512 generators (G-1 and G-2) Combined",
+      "pollutant": "PM-10",
+      "limitValue": "0.3 tons/yr",
+      "conditions": "Combined"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each Caterpillar Model 3512 generator (G-1 and G-2)",
+      "pollutant": "Nitrogen Oxides (as NO2)",
+      "limitValue": "39.9 lbs/hr",
+      "conditions": "Per generator"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Caterpillar Model 3512 generators (G-1 and G-2) Combined",
+      "pollutant": "Nitrogen Oxides (as NO2)",
+      "limitValue": "9.6 tons/yr",
+      "conditions": "Combined"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each Caterpillar Model 3512 generator (G-1 and G-2)",
+      "pollutant": "Carbon Monoxide",
+      "limitValue": "9.1 lbs/hr",
+      "conditions": "Per generator"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Caterpillar Model 3512 generators (G-1 and G-2) Combined",
+      "pollutant": "Carbon Monoxide",
+      "limitValue": "2.2 tons/yr",
+      "conditions": "Combined"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each Caterpillar Model 3512 generator (G-1 and G-2)",
+      "pollutant": "Volatile Organic Compounds",
+      "limitValue": "1.2 lbs/hr",
+      "conditions": "Per generator"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Caterpillar Model 3512 generators (G-1 and G-2) Combined",
+      "pollutant": "Volatile Organic Compounds",
+      "limitValue": "0.3 tons/yr",
+      "conditions": "Combined"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each Caterpillar Model 3516 generator (G-8/DG#3 and G-9/DG#4)",
+      "pollutant": "PM-10",
+      "limitValue": "1.6 lbs/hr",
+      "conditions": "Per generator"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Caterpillar Model 3516 generators (G-8/DG#3 and G-9/DG#4) Combined",
+      "pollutant": "PM-10",
+      "limitValue": "1.2 tons/yr",
+      "conditions": "Combined"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each Caterpillar Model 3516 generator (G-8/DG#3 and G-9/DG#4)",
+      "pollutant": "Nitrogen Oxides (as NO2)",
+      "limitValue": "55.3 lbs/hr",
+      "conditions": "Per generator"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Caterpillar Model 3516 generators (G-8/DG#3 and G-9/DG#4) Combined",
+      "pollutant": "Nitrogen Oxides (as NO2)",
+      "limitValue": "39.8 tons/yr",
+      "conditions": "Combined"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each Caterpillar Model 3516 generator (G-8/DG#3 and G-9/DG#4)",
+      "pollutant": "Carbon Monoxide",
+      "limitValue": "12.7 lbs/hr",
+      "conditions": "Per generator"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Caterpillar Model 3516 generators (G-8/DG#3 and G-9/DG#4) Combined",
+      "pollutant": "Carbon Monoxide",
+      "limitValue": "9.1 tons/yr",
+      "conditions": "Combined"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each Caterpillar Model 3516 generator (G-8/DG#3 and G-9/DG#4)",
+      "pollutant": "Volatile Organic Compounds",
+      "limitValue": "1.6 lbs/hr",
+      "conditions": "Per generator"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Caterpillar Model 3516 generators (G-8/DG#3 and G-9/DG#4) Combined",
+      "pollutant": "Volatile Organic Compounds",
+      "limitValue": "1.2 tons/yr",
+      "conditions": "Combined"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each Caterpillar Model 3516C generator (G-11 – G-13)",
+      "pollutant": "PM-10",
+      "limitValue": "4.1 lbs/hr",
+      "conditions": "Per generator"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Caterpillar Model 3516C generators (G-11 – G-13) Combined",
+      "pollutant": "PM-10",
+      "limitValue": "1.5 tons/yr",
+      "conditions": "Combined"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each Caterpillar Model 3516C generator (G-11 – G-13)",
+      "pollutant": "Nitrogen Oxides (as NO2)",
+      "limitValue": "32.9 lbs/hr",
+      "conditions": "Per generator"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Caterpillar Model 3516C generators (G-11 – G-13) Combined",
+      "pollutant": "Nitrogen Oxides (as NO2)",
+      "limitValue": "11.9 tons/yr",
+      "conditions": "Combined"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each Caterpillar Model 3516C generator (G-11 – G-13)",
+      "pollutant": "Carbon Monoxide",
+      "limitValue": "21.8 lbs/hr",
+      "conditions": "Per generator"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Caterpillar Model 3516C generators (G-11 – G-13) Combined",
+      "pollutant": "Carbon Monoxide",
+      "limitValue": "7.9 tons/yr",
+      "conditions": "Combined"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each Caterpillar Model 3516C generator (G-11 – G-13)",
+      "pollutant": "Volatile Organic Compounds",
+      "limitValue": "3.6 lbs/hr",
+      "conditions": "Per generator"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Caterpillar Model 3516C generators (G-11 – G-13) Combined",
+      "pollutant": "Volatile Organic Compounds",
+      "limitValue": "1.3 tons/yr",
+      "conditions": "Combined"
+    },
+    {
+      "type": "Visible Emissions",
+      "appliesTo": "Each generator stack",
+      "pollutant": "Opacity",
+      "limitValue": "10 percent opacity",
+      "conditions": "Except during one six-minute period not exceeding 20% opacity in any one hour. Applies at all times except during start-up, shutdown, or malfunction."
+    }
+  ],
+  "source_file": "52281_2025-07-10.pdf",
+  "processing_date": "2025-09-27T17:30:01.936707"
+}

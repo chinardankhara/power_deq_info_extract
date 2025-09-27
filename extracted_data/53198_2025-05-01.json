@@ -1,0 +1,181 @@
+{
+  "dataCenterName": "Microsoft Corporation - LYH03 Datacenter",
+  "permitIssuanceDate": "2025-05-01",
+  "registrationNumber": "53198",
+  "location": "Mecklenburg County, northwest of the intersection of Highway 92 and Butler Farm Road Chase City, VA 23927",
+  "equipmentSummary": [
+    {
+      "type": "Constructed",
+      "referenceNos": "ENG1-ENG20, ENG22-ENG51, ENG53-ENG82, ENG84-ENG113",
+      "description": "One hundred ten (110) Cummins Model C3000 D6e QSK95 series backup engine-generator sets",
+      "ratedCapacity": "4,308 bhp 3,000 kWe, each",
+      "controls": "turbocharged engine and aftercooler"
+    },
+    {
+      "type": "Constructed",
+      "referenceNos": "ENG21, ENG52, ENG83, ENG114",
+      "description": "Four (4) Cummins Model DFEK QSX15 series backup engine-generator sets",
+      "ratedCapacity": "730 bhp 500 kWe, each",
+      "controls": "turbocharged engine and charge air cooler"
+    }
+  ],
+  "operationalLimits": [
+    {
+      "category": "Operation of Engine-Generator Set",
+      "appliesTo": "Each engine-generator set (Ref. Nos. ENG1-ENG114)",
+      "limitDetails": "The permittee shall operate and maintain each engine-generator set (Ref. Nos. ENG1-ENG114) and control device according to the manufacturer's written instructions or procedures developed by the permittee that are approved by the engine manufacturer. In addition, the permittee may only change those settings that are permitted by the manufacturer and does not increase air emissions."
+    },
+    {
+      "category": "Fuel Specification",
+      "appliesTo": "Engine-generator sets (Ref. Nos. ENG1-ENG114)",
+      "limitDetails": "The approved fuels for the engine-generator sets (Ref. Nos. ENG1-ENG114) are diesel, renewable diesel, or a blend of these fuels. The diesel and renewable diesel fuels shall meet the ASTM D975 specification for S15 diesel fuel oil with a maximum sulfur content per shipment of 0.0015%."
+    },
+    {
+      "category": "Fuel Throughput",
+      "appliesTo": "ENG1-ENG20, ENG22-ENG51, ENG53-ENG82, ENG84-ENG113 (combined)",
+      "limitDetails": "800,800 gallons diesel/renewable diesel per year. Each throughput shall be calculated monthly as the sum of each consecutive 12-month period. Compliance for the consecutive 12-month period shall be demonstrated monthly by adding the total for the most recently completed calendar month to the individual monthly totals for the preceding 11 months."
+    },
+    {
+      "category": "Fuel Throughput",
+      "appliesTo": "ENG21, ENG52, ENG83, ENG114 (combined)",
+      "limitDetails": "4,858 gallons diesel/renewable diesel per year. Each throughput shall be calculated monthly as the sum of each consecutive 12-month period. Compliance for the consecutive 12-month period shall be demonstrated monthly by adding the total for the most recently completed calendar month to the individual monthly totals for the preceding 11 months."
+    }
+  ],
+  "emissionLimits": [
+    {
+      "type": "Hourly",
+      "appliesTo": "ENG1-ENG20, ENG22-ENG51, ENG53-ENG82, ENG84-ENG113 Cummins C3000 D6e (each unit)",
+      "pollutant": "PM",
+      "limitValue": "0.6 lb/hr"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "ENG1-ENG20, ENG22-ENG51, ENG53-ENG82, ENG84-ENG113 Cummins C3000 D6e (each unit)",
+      "pollutant": "PM10",
+      "limitValue": "0.7 lb/hr"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "ENG1-ENG20, ENG22-ENG51, ENG53-ENG82, ENG84-ENG113 Cummins C3000 D6e (each unit)",
+      "pollutant": "PM2.5",
+      "limitValue": "0.7 lb/hr"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "ENG1-ENG20, ENG22-ENG51, ENG53-ENG82, ENG84-ENG113 Cummins C3000 D6e (each unit)",
+      "pollutant": "Nitrogen Oxides (as NO2)",
+      "limitValue": "50.6 lb/hr"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "ENG1-ENG20, ENG22-ENG51, ENG53-ENG82, ENG84-ENG113 Cummins C3000 D6e (each unit)",
+      "pollutant": "Carbon Monoxide",
+      "limitValue": "1.6 lb/hr"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "ENG1-ENG20, ENG22-ENG51, ENG53-ENG82, ENG84-ENG113 Cummins C3000 D6e (each unit)",
+      "pollutant": "Volatile Organic Compounds",
+      "limitValue": "0.3 lb/hr"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "ENG1-ENG20, ENG22-ENG51, ENG53-ENG82, ENG84-ENG113 Cummins C3000 D6e (each unit)",
+      "pollutant": "SO2",
+      "limitValue": "0.2 lb/hr"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "ENG21, ENG52, ENG83, ENG114 Cummins DFEK (each unit)",
+      "pollutant": "PM",
+      "limitValue": "0.1 lb/hr"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "ENG21, ENG52, ENG83, ENG114 Cummins DFEK (each unit)",
+      "pollutant": "PM10",
+      "limitValue": "0.1 lb/hr"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "ENG21, ENG52, ENG83, ENG114 Cummins DFEK (each unit)",
+      "pollutant": "PM2.5",
+      "limitValue": "0.1 lb/hr"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "ENG21, ENG52, ENG83, ENG114 Cummins DFEK (each unit)",
+      "pollutant": "Nitrogen Oxides (as NO2)",
+      "limitValue": "9.9 lb/hr"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "ENG21, ENG52, ENG83, ENG114 Cummins DFEK (each unit)",
+      "pollutant": "Carbon Monoxide",
+      "limitValue": "2.4 lb/hr"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "ENG21, ENG52, ENG83, ENG114 Cummins DFEK (each unit)",
+      "pollutant": "Volatile Organic Compounds",
+      "limitValue": "0.2 lb/hr"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "ENG21, ENG52, ENG83, ENG114 Cummins DFEK (each unit)",
+      "pollutant": "SO2",
+      "limitValue": "0.01 lb/hr"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "All units combined",
+      "pollutant": "PM",
+      "limitValue": "3.4 tons/yr"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "All units combined",
+      "pollutant": "PM10",
+      "limitValue": "3.9 tons/yr"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "All units combined",
+      "pollutant": "PM2.5",
+      "limitValue": "3.9 tons/yr"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "All units combined",
+      "pollutant": "Nitrogen Oxides (as NO2)",
+      "limitValue": "98.3 tons/yr"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "All units combined",
+      "pollutant": "Carbon Monoxide",
+      "limitValue": "8.7 tons/yr"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "All units combined",
+      "pollutant": "Volatile Organic Compounds",
+      "limitValue": "2.2 tons/yr"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "All units combined",
+      "pollutant": "SO2",
+      "limitValue": "1.1 tons/yr"
+    },
+    {
+      "type": "Visible Emissions",
+      "appliesTo": "Each engine-generator set exhausts (Ref. Nos. ENG1-ENG114)",
+      "pollutant": "Opacity",
+      "limitValue": "10% opacity",
+      "conditions": "except during one 6-minute period in any one hour in which visible emissions shall not exceed 20% opacity"
+    }
+  ],
+  "source_file": "53198_2025-05-01.pdf",
+  "processing_date": "2025-09-27T17:50:36.838296"
+}

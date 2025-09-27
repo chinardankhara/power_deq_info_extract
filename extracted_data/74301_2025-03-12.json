@@ -1,0 +1,322 @@
+{
+  "dataCenterName": "Amazon Data Services, Inc. IAD-667, IAD-668, IAD-669, IAD-670, and IAD-671 data center campus",
+  "permitIssuanceDate": "2025-03-12",
+  "registrationNumber": "74301",
+  "location": "Loudoun County, 20575 and 20335 Celtic Park Drive and 42367, 42590, and 42630 Patriot Park Drive, Leesburg, Virginia",
+  "equipmentSummary": [
+    {
+      "type": "Constructed",
+      "referenceNos": "1 through 166",
+      "description": "(166) Caterpillar 3516E non-emergency diesel-fired engine gen-sets",
+      "ratedCapacity": "2,750 ekW 4,036 bhp (each)",
+      "controls": "Selective Catalytic Reduction and Catalyzed Diesel Particulate Filter (Caterpillar (5X4X3 SCR + DPF System, #547-2580); Safety Power (9550-H3C29), or Miratech (#SP-KIT-M3-SW550-TLI-23120476))",
+      "originalPermitDate": "2025-03-12"
+    },
+    {
+      "type": "Constructed",
+      "referenceNos": "167 through 171",
+      "description": "Five (5) Caterpillar C32 emergency diesel-fired engine gen-sets",
+      "ratedCapacity": "1,000 ekW 1,483 bhp",
+      "controls": "None",
+      "originalPermitDate": "2025-03-12"
+    },
+    {
+      "type": "Constructed",
+      "referenceNos": "T1 and T2",
+      "description": "Two (2) Caterpillar 3516C emergency diesel-fired engine gen-sets",
+      "ratedCapacity": "2,000 ekW 2,937 bhp",
+      "controls": "None",
+      "originalPermitDate": "2025-03-12"
+    }
+  ],
+  "operationalLimits": [
+    {
+      "category": "Emission Controls",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. 167 through 171, T1, and T2)",
+      "limitDetails": "Nitrogen oxides (NOx) emissions shall be controlled by engine design."
+    },
+    {
+      "category": "Emission Controls",
+      "appliesTo": "Emergency diesel engine gen-sets (Ref. Nos. 167 through 171, T1, and T2)",
+      "limitDetails": "Carbon monoxide (CO), particulate matter (PM10/PM2.5), volatile organic compounds (VOCs), and visible emissions shall be controlled by the use of good operating practices and performing maintenance in accordance with the manufacturer recommendations. Permittee may only change those settings that are permitted by the manufacturer and do not degrade the air emissions from the engines."
+    },
+    {
+      "category": "Emission Controls (NOx)",
+      "appliesTo": "Non-emergency diesel engine gen-sets (Ref. Nos. 1 through 166)",
+      "limitDetails": "Nitrogen oxide (NOx) emissions shall be controlled by closed loop Selective Catalytic Reduction (SCR). Each SCR system shall be equipped with a temperature probe to continuously monitor the exhaust temperature at the outlet of the entire SCR+cDPF emissions control system while the engine gen-set is operational. Engine exhaust gas shall be treated with urea when the catalyst bed exhaust temperature of 572°F is achieved, except for periods of start-up, shutdown, or malfunction. The exhaust temperature at the outlet of the entire SCR+cDPF emissions control system shall not exceed 1,022°F. The SCR shall be provided with adequate access for inspection and shall be in operation when the engine gen-sets are operating."
+    },
+    {
+      "category": "Emission Controls (PM, CO, VOC)",
+      "appliesTo": "Non-emergency diesel engine gen-sets (Ref. Nos. 1 through 166)",
+      "limitDetails": "Particulate matter (PM10 and PM2.5), carbon monoxide (CO), and volatile organic compounds (VOC) emissions shall be controlled by catalyzed Diesel Particulate Filter (cDPF). The cDPF shall be provided with adequate access for inspection and shall be in operation when the non-emergency diesel engine gen-sets are operating."
+    },
+    {
+      "category": "Operating Mode",
+      "appliesTo": "Emergency diesel engine gen-sets (Ref. Nos. 167 through 171, T1, and T2)",
+      "limitDetails": "Operation limited to: a. Situations arising from sudden and reasonably unforeseeable events where primary energy/power source is disrupted/disconnected (electrical grid failure, on-site disaster/equipment failure, public service emergencies). b. Participation in an independent system operator (ISO)-declared emergency. c. Scheduled maintenance checks and readiness testing (Scheduled MCRT). d. Unscheduled maintenance, testing, and operational training. e. Integration operational period."
+    },
+    {
+      "category": "Maintenance and Operation",
+      "appliesTo": "All diesel engine gen-sets (Ref. Nos. 1 through 171, T1, and T2) and control devices",
+      "limitDetails": "Operate and maintain according to manufacturer's written instructions or approved procedures. Only change settings permitted by the manufacturer and that do not increase air emissions."
+    },
+    {
+      "category": "Ozone Season Operating Restrictions",
+      "appliesTo": "All diesel engine gen-sets (Ref. Nos. 1 through 171, T1, and T2)",
+      "limitDetails": "Except during the integration operational period, no operation for scheduled maintenance checks and readiness testing (Scheduled MCRT), stack testing, or operational training (involving fuel combustion) between 7 a.m. and 5 p.m. any day during May 1 through September 30. Exceptions may be petitioned to DEQ."
+    },
+    {
+      "category": "Ozone Season Operating Restrictions (Integration Operational Period)",
+      "appliesTo": "All diesel engine gen-sets (Ref. Nos. 1 through 171, T1, and T2)",
+      "limitDetails": "During the integration operational period, operation between 7 a.m. and 5 p.m. any day during the ozone season (May 1 through September 30) shall only occur if the forecast Air Quality Index (AQI) for ozone is less than or equal to 100. If an Air Alert is issued when AQI is <= 100, operation shall be minimized to the maximum extent practical."
+    },
+    {
+      "category": "Run Hours",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. 167 through 171, T1, and T2)",
+      "limitDetails": "Shall not operate more than 500 hours per year for all purposes combined. Annual limits calculated monthly as the sum of each consecutive 12-month period."
+    },
+    {
+      "category": "Run Hours (Scheduled MCRT)",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. 167 through 171, T1, and T2)",
+      "limitDetails": "Shall not operate more than 35 hours per year for Scheduled MCRT. Annual limits calculated monthly as the sum of each consecutive 12-month period."
+    },
+    {
+      "category": "Fuel Specification",
+      "appliesTo": "All diesel engine gen-sets (Ref. Nos. 1 through 171, T1, and T2)",
+      "limitDetails": "Approved fuel is ultra-low sulfur diesel fuel oil (ULSD), renewable diesel, or a blend of these fuels. Must meet ASTM D975 for grade ultra-low sulfur 1-D S15 or 2-D S15, OR have a maximum sulfur content not to exceed 0.0015% by weight (15 ppm), and either a minimum cetane number of forty or maximum aromatic content of thirty-five volume percent."
+    },
+    {
+      "category": "Fuel Throughput",
+      "appliesTo": "All diesel engine gen-sets (Ref. Nos. 1 through 171, T1, and T2) combined",
+      "limitDetails": "Combined diesel fuel consumption shall not exceed the sum of: Group 1 (Caterpillar 3516E, SCR & cDPF operating) 8,316,156 gallons + Group 2 (Caterpillar 3516E, SCR not operating & cDPF operating) 673,143 gallons + Group 3 (Caterpillar C32) 703,547 gallons + Group 4 (Caterpillar 3516C) 682,223 gallons, each consecutive 365-day period. Compliance demonstrated daily by adding total for most recent calendar day to preceding 364 days."
+    }
+  ],
+  "emissionLimits": [
+    {
+      "type": "Hourly",
+      "appliesTo": "Each non-emergency diesel engine gen-set (Ref. Nos. 1 through 166)",
+      "pollutant": "Nitrogen Oxides (NOx as NO2)",
+      "limitValue": "53.48 lb/hr",
+      "conditions": "Uncontrolled"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each non-emergency diesel engine gen-set (Ref. Nos. 1 through 166)",
+      "pollutant": "Nitrogen Oxides (NOx as NO2)",
+      "limitValue": "4.44 lb/hr",
+      "conditions": "Controlled by SCR"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each non-emergency diesel engine gen-set (Ref. Nos. 1 through 166)",
+      "pollutant": "Particulate Matter (PM)",
+      "limitValue": "0.20 lb/hr",
+      "conditions": "Controlled by cDPF"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each non-emergency diesel engine gen-set (Ref. Nos. 1 through 166)",
+      "pollutant": "Particulate Matter (PM10)",
+      "limitValue": "0.20 lb/hr",
+      "conditions": "Controlled by cDPF"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each non-emergency diesel engine gen-set (Ref. Nos. 1 through 166)",
+      "pollutant": "Particulate Matter (PM2.5)",
+      "limitValue": "0.20 lb/hr",
+      "conditions": "Controlled by cDPF"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each non-emergency diesel engine gen-set (Ref. Nos. 1 through 166)",
+      "pollutant": "Carbon Monoxide (CO)",
+      "limitValue": "3.10 lb/hr",
+      "conditions": "Controlled by cDPF"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each non-emergency diesel engine gen-set (Ref. Nos. 1 through 166)",
+      "pollutant": "Volatile Organic Compounds (VOC)",
+      "limitValue": "0.49 lb/hr",
+      "conditions": "Controlled by cDPF"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each non-emergency diesel engine gen-set (Ref. Nos. 1 through 166)",
+      "pollutant": "Sulfur Dioxide (SO2)",
+      "limitValue": "0.04 lb/hr",
+      "conditions": "Based on fuel specification"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. 167 through 171)",
+      "pollutant": "Nitrogen Oxides (NOx as NO2)",
+      "limitValue": "19.52 lb/hr",
+      "conditions": "CAT C32"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. 167 through 171)",
+      "pollutant": "Particulate Matter (PM)",
+      "limitValue": "0.23 lb/hr",
+      "conditions": "CAT C32"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. 167 through 171)",
+      "pollutant": "Particulate Matter (PM10)",
+      "limitValue": "0.23 lb/hr",
+      "conditions": "CAT C32"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. 167 through 171)",
+      "pollutant": "Particulate Matter (PM2.5)",
+      "limitValue": "0.23 lb/hr",
+      "conditions": "CAT C32"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. 167 through 171)",
+      "pollutant": "Carbon Monoxide (CO)",
+      "limitValue": "2.78 lb/hr",
+      "conditions": "CAT C32"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. 167 through 171)",
+      "pollutant": "Volatile Organic Compounds (VOC)",
+      "limitValue": "0.34 lb/hr",
+      "conditions": "CAT C32"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. 167 through 171)",
+      "pollutant": "Sulfur Dioxide (SO2)",
+      "limitValue": "0.02 lb/hr",
+      "conditions": "CAT C32"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. T1 and T2)",
+      "pollutant": "Nitrogen Oxides (NOx as NO2)",
+      "limitValue": "38.85 lb/hr",
+      "conditions": "CAT 3516C"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. T1 and T2)",
+      "pollutant": "Particulate Matter (PM)",
+      "limitValue": "0.57 lb/hr",
+      "conditions": "CAT 3516C"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. T1 and T2)",
+      "pollutant": "Particulate Matter (PM10)",
+      "limitValue": "0.57 lb/hr",
+      "conditions": "CAT 3516C"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. T1 and T2)",
+      "pollutant": "Particulate Matter (PM2.5)",
+      "limitValue": "0.57 lb/hr",
+      "conditions": "CAT 3516C"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. T1 and T2)",
+      "pollutant": "Carbon Monoxide (CO)",
+      "limitValue": "3.95 lb/hr",
+      "conditions": "CAT 3516C"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. T1 and T2)",
+      "pollutant": "Volatile Organic Compounds (VOC)",
+      "limitValue": "1.14 lb/hr",
+      "conditions": "CAT 3516C"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. T1 and T2)",
+      "pollutant": "Sulfur Dioxide (SO2)",
+      "limitValue": "0.03 lb/hr",
+      "conditions": "CAT 3516C"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "All Units (Ref. Nos. 1 through 171, T1, and T2) combined",
+      "pollutant": "Nitrogen Oxides (NOx as NO2)",
+      "limitValue": "96.03 tpy",
+      "conditions": "Derived from estimated overall emission contribution from operating limits"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "All Units (Ref. Nos. 1 through 171, T1, and T2) combined",
+      "pollutant": "Particulate Matter (PM)",
+      "limitValue": "4.78 tpy",
+      "conditions": "Derived from estimated overall emission contribution from operating limits"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "All Units (Ref. Nos. 1 through 171, T1, and T2) combined",
+      "pollutant": "Particulate Matter (PM10)",
+      "limitValue": "4.78 tpy",
+      "conditions": "Derived from estimated overall emission contribution from operating limits"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "All Units (Ref. Nos. 1 through 171, T1, and T2) combined",
+      "pollutant": "Particulate Matter (PM2.5)",
+      "limitValue": "4.78 tpy",
+      "conditions": "Derived from estimated overall emission contribution from operating limits"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "All Units (Ref. Nos. 1 through 171, T1, and T2) combined",
+      "pollutant": "Carbon Monoxide (CO)",
+      "limitValue": "69.92 tpy",
+      "conditions": "Derived from estimated overall emission contribution from operating limits"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "All Units (Ref. Nos. 1 through 171, T1, and T2) combined",
+      "pollutant": "Volatile Organic Compounds (VOC)",
+      "limitValue": "11.02 tpy",
+      "conditions": "Derived from estimated overall emission contribution from operating limits"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "All Units (Ref. Nos. 1 through 171, T1, and T2) combined",
+      "pollutant": "Sulfur Dioxide (SO2)",
+      "limitValue": "0.87 tpy",
+      "conditions": "Derived from estimated overall emission contribution from operating limits"
+    },
+    {
+      "type": "Visible Emissions",
+      "appliesTo": "Each non-emergency engine gen-set (Ref. Nos. 1 through 166)",
+      "pollutant": "Opacity",
+      "limitValue": "5% opacity",
+      "conditions": "Except during startup, shutdown and malfunction; determined by EPA Method 9."
+    },
+    {
+      "type": "Visible Emissions",
+      "appliesTo": "Each emergency engine gen-set (Ref. Nos. 167 through 171, T1, and T2)",
+      "pollutant": "Opacity",
+      "limitValue": "5% opacity except during one six-minute period not exceeding 10% opacity in any one hour",
+      "conditions": "Except during startup, shutdown and malfunction; determined by EPA Method 9."
+    },
+    {
+      "type": "Visible Emissions",
+      "appliesTo": "Each engine gen-set (during startup and shutdown)",
+      "pollutant": "Opacity",
+      "limitValue": "10% opacity except during one six-minute period not exceeding 20% opacity in any one-hour",
+      "conditions": "During startup and shutdown; determined by EPA Method 9."
+    }
+  ],
+  "source_file": "74301_2025-03-12.pdf",
+  "processing_date": "2025-09-27T17:54:08.341944"
+}

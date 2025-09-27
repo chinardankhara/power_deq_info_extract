@@ -1,0 +1,376 @@
+{
+  "dataCenterName": "Hayden Technologies LLC",
+  "permitIssuanceDate": "2025-04-30",
+  "registrationNumber": "74163",
+  "location": "20491 Goose Landing Lane, Leesburg, VA 20175 (Loudoun County)",
+  "equipmentSummary": [
+    {
+      "type": "Constructed",
+      "referenceNos": "FWP2",
+      "description": "One (1) Peerless Fire Pump Model 6AEF17 equipped with Clarke Diesel Engine Model JU6H-UFADMG",
+      "ratedCapacity": "175 bhp 131 kW",
+      "controls": "Engine design, good operating practices and appropriate maintenance",
+      "originalPermitDate": "2025-04-30"
+    },
+    {
+      "type": "Previously Permitted",
+      "referenceNos": "FWP1",
+      "description": "One (1) Clarke Fire Pump Model JU4H-UFAEF2 equipped with John Deere Diesel Engine Model 4045TF290C",
+      "ratedCapacity": "74 bhp 55 ekW",
+      "controls": "Engine design, good operating practices and appropriate maintenance",
+      "originalPermitDate": "2021-12-03"
+    },
+    {
+      "type": "Previously Permitted",
+      "referenceNos": "EG1 through EG26",
+      "description": "Caterpillar 3516E Emergency Diesel Engine Generator Sets",
+      "ratedCapacity": "4,043 bhp 2,750 ekW (each)",
+      "controls": "Electronic fuel injection, turbocharged engine, charge-air coolers, good operating practices and appropriate maintenance",
+      "originalPermitDate": "2018-11-13"
+    },
+    {
+      "type": "Previously Permitted",
+      "referenceNos": "EG193 through EG260",
+      "description": "Caterpillar 3516E Emergency Diesel Engine Generator Sets",
+      "ratedCapacity": "4,043 bhp 2,750 ekW (each)",
+      "controls": "Electronic fuel injection, turbocharged engine, charge-air coolers, good operating practices and appropriate maintenance",
+      "originalPermitDate": "2020-11-13"
+    },
+    {
+      "type": "Previously Permitted",
+      "referenceNos": "EG53 through EG62",
+      "description": "Caterpillar 3512C Emergency Diesel Engine Generator Sets",
+      "ratedCapacity": "2,584 bhp 1,750 ekW (each)",
+      "controls": "Electronic fuel injection, turbocharged engine, charge-air coolers, good operating practices and appropriate maintenance",
+      "originalPermitDate": "2018-11-13"
+    },
+    {
+      "type": "Previously Permitted",
+      "referenceNos": "EG261 through EG279",
+      "description": "Caterpillar 3512C Emergency Diesel Engine Generator Sets",
+      "ratedCapacity": "2,584 bhp 1,750 ekW (each)",
+      "controls": "Electronic fuel injection, turbocharged engine, charge-air coolers, good operating practices and appropriate maintenance",
+      "originalPermitDate": "2020-11-13"
+    },
+    {
+      "type": "Previously Permitted",
+      "referenceNos": "EG63 through EG192",
+      "description": "One hundred thirty (130) Volvo Penta TWD1673GE Non-Emergency Diesel Engine Generator Sets",
+      "ratedCapacity": "937 bhp 699 mkW (625 ekW) (each)",
+      "controls": "Selective Catalytic Reduction (SCR), electronic fuel injection, turbocharged engine, charge-air coolers, good operating practices and appropriate maintenance",
+      "originalPermitDate": "2024-01-03"
+    },
+    {
+      "type": "Previously Permitted",
+      "referenceNos": "CT1 through CT20",
+      "description": "Twenty (20) Cooling Towers",
+      "ratedCapacity": "309,600 gph (each)",
+      "controls": "Drift eliminator (0.0005% loss)",
+      "originalPermitDate": "2020-11-13"
+    },
+    {
+      "type": "Previously Permitted",
+      "referenceNos": "CT21 and CT22",
+      "description": "Two (2) Cooling Towers",
+      "ratedCapacity": "309,600 gph (each)",
+      "controls": "Drift eliminator (0.0005% loss)",
+      "originalPermitDate": "2024-01-03"
+    }
+  ],
+  "operationalLimits": [
+    {
+      "category": "Ozone Season Operating Restrictions",
+      "appliesTo": "Emergency diesel engine gen-sets (Ref. Nos. EG1 through EG26, EG53 through 62, and EG193 through EG279), non-emergency diesel engine gen-sets (Ref. Nos. EG63 through EG192), and fire pump diesel engines (Ref. Nos. FWP1 and FWP2)",
+      "limitDetails": "Shall not be operated for scheduled maintenance, testing, or operation training (that involves fuel combustion) between the hours of 7 a.m. to 5 p.m. any day during May 1 through September 30. The permittee may petition of the Regional Air Compliance Manager of DEQ NRO for exception to this requirement, with approvals made on a case-by-case basis."
+    },
+    {
+      "category": "Ozone Season Operating Restrictions",
+      "appliesTo": "Each emergency diesel engine gen-sets (Ref. Nos. EG1 through EG26, EG53 through 62, and EG193 through EG279), and non-emergency diesel engine gen-sets (Ref. Nos. EG63 through EG192)",
+      "limitDetails": "Any operation of the unit (that involves fuel combustion) between the hours of 7 a.m. to 5 p.m. any day during the ozone season of May 1 through September 30 shall only occur if the forecast Air Quality Index (AQI) for ozone as published on the AirNow website (https://airnow.gov) for Northern Virginia for that day is less than or equal to 100. In the event that AirNow-EnviroFlash (www.enviroflash.info) issues an Air Alert for Metropolitan Washington, D.C. for a day which the forecasted AQI for ozone was less than or equal to 100, operation of each unit (which involves fuel combustion) shall be minimized to the maximum extent practical."
+    },
+    {
+      "category": "Operational Mode",
+      "appliesTo": "Emergency diesel engine gen-sets (Ref. Nos. EG1 through EG26, EG53 through EG62, and EG193 through EG279)",
+      "limitDetails": "Shall only be operated in the following modes: a. In situations that arise from sudden and reasonably unforeseeable events where the primary energy or power source is disrupted or disconnected due to conditions beyond the control of an owner or operator of a facility including: i. A failure of the electrical grid; ii. On-site disaster or equipment failure; or iii. Public service emergencies such as flood, fire, natural disaster, or severe weather conditions. b. For participation in an ISO-declared emergency, where an ISO emergency is: i. An abnormal system condition requiring manual or automatic action to maintain system frequency, to prevent loss of firm load, equipment damage, or tripping of system elements that could adversely affect the reliability of an electric system or the safety of persons or property; ii. Capacity deficiency or capacity excess conditions; iii. A fuel shortage requiring departure from normal operating procedures in order to minimize the use of such scarce fuel; iv. Abnormal natural events or man-made threats that would require conservative operations to posture the system in a more reliable state; or v. An abnormal event external to the ISO service territory that may require ISO action. c. For scheduled maintenance checks and readiness testing (Scheduled MCRT). d. For unscheduled maintenance, testing, and operational training. e. For the integration operational period, which is the period of time beginning with the first time the affected unit is started on-site and ending when the affected unit is fully integrated with the sources electrical system."
+    },
+    {
+      "category": "Operational Mode",
+      "appliesTo": "Fire pump diesel engines (Ref. Nos. FWP1 and FWP2)",
+      "limitDetails": "Shall only be operated to provide power to pump water for fire suppression or protection and for periodic maintenance, testing, and operational training."
+    },
+    {
+      "category": "Run Hours",
+      "appliesTo": "Each individual emergency diesel engine gen-set (Ref. Nos. EG1 through EG26, EG53 through EG62, and EG193 through EG279)",
+      "limitDetails": "Shall not operate more than 20 hours per year for scheduled maintenance checks and readiness testing (Scheduled MCRT). The annual limits for hours of operation shall be calculated monthly as the sum of each consecutive 12-month period. Compliance for the consecutive 12-month period shall be demonstrated daily by adding the total for the most recently completed calendar month to the individual monthly totals for the preceding 11 months."
+    },
+    {
+      "category": "Run Hours",
+      "appliesTo": "Each individual emergency diesel engine gen-set (Ref. Nos. EG1 through EG26, EG53 through EG62, and EG193 through EG279)",
+      "limitDetails": "Shall not operate more than 500 hours per year for all purposes (as provided in Condition 12) combined. The annual limits for hours of operation shall be calculated monthly as the sum of each consecutive 12-month period. Compliance for the consecutive 12-month period shall be demonstrated daily by adding the total for the most recently completed calendar month to the individual monthly totals for the preceding 11 months."
+    },
+    {
+      "category": "Run Hours",
+      "appliesTo": "Each fire pump diesel engine (Ref. Nos. FWP1 and FWP2)",
+      "limitDetails": "Shall not operate more than 100 hours per year for all purposes (as provided in Condition 13) combined. The annual limits for hours of operation shall be calculated monthly as the sum of each consecutive 12-month period. Compliance for the consecutive 12-month period shall be demonstrated daily by adding the total for the most recently completed calendar month to the individual monthly totals for the preceding 11 months."
+    },
+    {
+      "category": "Fuel Throughput",
+      "appliesTo": "Emergency diesel engine gen-sets (Ref. Nos. EG1 through EG26, EG53 through EG62, and EG193 through EG279), and non-emergency diesel engine gen-sets (Ref. Nos. EG63 through EG192)",
+      "limitDetails": "Shall only consume a combined quantity of diesel fuel oil (in gallons) each consecutive 365-day period (all uses), as demonstrated by using the following equation: Group 1 Fuel Consumption (690,909 gallons) + Group 2 Fuel Consumption (685,921 gallons) + Group 3 (with SCR) Fuel Consumption (1,250,000 gallons) + Group 3 (without SCR) Fuel Consumption (532,213 gallons) \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+    },
+    {
+      "category": "Cooling Tower Limit",
+      "appliesTo": "Each cooling tower (Ref. Nos. CT1 through CT22)",
+      "limitDetails": "The Total Dissolved Solid (TDS) concentration in the process water shall not exceed 2,500 ppm TDS."
+    }
+  ],
+  "emissionLimits": [
+    {
+      "type": "Hourly",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. EG1 through EG26 and EG193 through EG260) (Group 1)",
+      "pollutant": "Nitrogen Oxides (as NO2)",
+      "limitValue": "53.48 lb/hr",
+      "conditions": "None"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. EG1 through EG26 and EG193 through EG260) (Group 1)",
+      "pollutant": "Carbon Monoxide (CO)",
+      "limitValue": "10.34 lb/hr",
+      "conditions": "None"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. EG1 through EG26 and EG193 through EG260) (Group 1)",
+      "pollutant": "Volatile Organic Compounds (VOC)",
+      "limitValue": "1.25 lb/hr",
+      "conditions": "None"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. EG1 through EG26 and EG193 through EG260) (Group 1)",
+      "pollutant": "Particulate Matter (PM10)",
+      "limitValue": "1.01 lb/hr",
+      "conditions": "None"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. EG1 through EG26 and EG193 through EG260) (Group 1)",
+      "pollutant": "Particulate Matter (PM2.5)",
+      "limitValue": "1.01 lb/hr",
+      "conditions": "None"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. EG53 through EG62 and EG261 through EG279) (Group 2)",
+      "pollutant": "Nitrogen Oxides (as NO2)",
+      "limitValue": "34.18 lb/hr",
+      "conditions": "None"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. EG53 through EG62 and EG261 through EG279) (Group 2)",
+      "pollutant": "Carbon Monoxide (CO)",
+      "limitValue": "5.90 lb/hr",
+      "conditions": "None"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. EG53 through EG62 and EG261 through EG279) (Group 2)",
+      "pollutant": "Volatile Organic Compounds (VOC)",
+      "limitValue": "0.91 lb/hr",
+      "conditions": "None"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. EG53 through EG62 and EG261 through EG279) (Group 2)",
+      "pollutant": "Particulate Matter (PM10)",
+      "limitValue": "0.55 lb/hr",
+      "conditions": "None"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. EG53 through EG62 and EG261 through EG279) (Group 2)",
+      "pollutant": "Particulate Matter (PM2.5)",
+      "limitValue": "0.55 lb/hr",
+      "conditions": "None"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each non-emergency diesel engine gen-set (Ref. Nos. EG63 through EG192) (Group 3)",
+      "pollutant": "Nitrogen Oxides (NOx as NO2)",
+      "limitValue": "1.85 lb/hr",
+      "conditions": "With SCR"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each non-emergency diesel engine gen-set (Ref. Nos. EG63 through EG192) (Group 3)",
+      "pollutant": "Nitrogen Oxides (NOx as NO2)",
+      "limitValue": "4.24 lb/hr",
+      "conditions": "Without SCR"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each non-emergency diesel engine gen-set (Ref. Nos. EG63 through EG192) (Group 3)",
+      "pollutant": "Carbon Monoxide (CO)",
+      "limitValue": "7.24 lb/hr",
+      "conditions": "None"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each non-emergency diesel engine gen-set (Ref. Nos. EG63 through EG192) (Group 3)",
+      "pollutant": "Volatile Organic Compounds (VOC)",
+      "limitValue": "0.40 lb/hr",
+      "conditions": "None"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each non-emergency diesel engine gen-set (Ref. Nos. EG63 through EG192) (Group 3)",
+      "pollutant": "Particulate Matter (PM10)",
+      "limitValue": "0.13 lb/hr",
+      "conditions": "None"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Each non-emergency diesel engine gen-set (Ref. Nos. EG63 through EG192) (Group 3)",
+      "pollutant": "Particulate Matter (PM2.5)",
+      "limitValue": "0.13 lb/hr",
+      "conditions": "None"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Fire pump diesel engine (Ref. No. FWP1)",
+      "pollutant": "Nitrogen Oxides (as NO2)",
+      "limitValue": "0.47 lb/hr",
+      "conditions": "None"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Fire pump diesel engine (Ref. No. FWP1)",
+      "pollutant": "Carbon Monoxide (CO)",
+      "limitValue": "0.11 lb/hr",
+      "conditions": "None"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Fire pump diesel engine (Ref. No. FWP1)",
+      "pollutant": "Volatile Organic Compounds (VOC)",
+      "limitValue": "0.03 lb/hr",
+      "conditions": "None"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Fire pump diesel engine (Ref. No. FWP1)",
+      "pollutant": "Particulate Matter (PM10)",
+      "limitValue": "0.02 lb/hr",
+      "conditions": "None"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Fire pump diesel engine (Ref. No. FWP1)",
+      "pollutant": "Particulate Matter (PM2.5)",
+      "limitValue": "0.02 lb/hr",
+      "conditions": "None"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Fire pump diesel engine (Ref. No. FWP2)",
+      "pollutant": "Nitrogen Oxides (as NO2)",
+      "limitValue": "1.08 lb/hr",
+      "conditions": "None"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Fire pump diesel engine (Ref. No. FWP2)",
+      "pollutant": "Carbon Monoxide (CO)",
+      "limitValue": "0.43 lb/hr",
+      "conditions": "None"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Fire pump diesel engine (Ref. No. FWP2)",
+      "pollutant": "Volatile Organic Compounds (VOC)",
+      "limitValue": "0.09 lb/hr",
+      "conditions": "None"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Fire pump diesel engine (Ref. No. FWP2)",
+      "pollutant": "Particulate Matter (PM10)",
+      "limitValue": "0.04 lb/hr",
+      "conditions": "None"
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "Fire pump diesel engine (Ref. No. FWP2)",
+      "pollutant": "Particulate Matter (PM2.5)",
+      "limitValue": "0.04 lb/hr",
+      "conditions": "None"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Cooling towers (Ref. Nos. CT1 through CT22) (all units combined)",
+      "pollutant": "Particulate Matter (PM10)",
+      "limitValue": "3.11 tpy",
+      "conditions": "None"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Cooling towers (Ref. Nos. CT1 through CT22) (all units combined)",
+      "pollutant": "Particulate Matter (PM2.5)",
+      "limitValue": "1.87 tpy",
+      "conditions": "None"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Diesel engine gen-sets (Ref. Nos. EG1 through EG26 and EG53 through EG279) (Group 1 through Group 3) (all units combined)",
+      "pollutant": "Nitrogen Oxides (as NO2)",
+      "limitValue": "95.00 tpy",
+      "conditions": "None"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Diesel engine gen-sets (Ref. Nos. EG1 through EG26 and EG53 through EG279) (Group 1 through Group 3) (all units combined)",
+      "pollutant": "Carbon Monoxide (CO)",
+      "limitValue": "95.00 tpy",
+      "conditions": "None"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Diesel engine gen-sets (Ref. Nos. EG1 through EG26 and EG53 through EG279) (Group 1 through Group 3) (all units combined)",
+      "pollutant": "Volatile Organic Compounds (VOC)",
+      "limitValue": "5.73 tpy",
+      "conditions": "None"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Diesel engine gen-sets (Ref. Nos. EG1 through EG26 and EG53 through EG279) (Group 1 through Group 3) (all units combined)",
+      "pollutant": "Particulate Matter (PM10)",
+      "limitValue": "3.80 tpy",
+      "conditions": "None"
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "Diesel engine gen-sets (Ref. Nos. EG1 through EG26 and EG53 through EG279) (Group 1 through Group 3) (all units combined)",
+      "pollutant": "Particulate Matter (PM2.5)",
+      "limitValue": "3.80 tpy",
+      "conditions": "None"
+    },
+    {
+      "type": "Visible Emissions",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. EG1 through EG26, EG53 through EG62, and EG193 through EG279), non-emergency diesel engine gen-set (Ref. Nos. EG63 through EG192) and fire pump diesel engine (Ref. Nos. FWP1 and FWP2)",
+      "pollutant": "Opacity",
+      "limitValue": "5% opacity",
+      "conditions": "Except during one 6-minute period in any one hour not exceeding 10% opacity as determined by EPA Method 9. Applies at all times except during startup and shutdown."
+    },
+    {
+      "type": "Visible Emissions",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. EG1 through EG26, EG53 through EG62, and EG193 through EG279), non-emergency diesel engine gen-set (Ref. Nos. EG63 through EG192) and fire pump diesel engine (Ref. Nos. FWP1 and FWP2)",
+      "pollutant": "Opacity",
+      "limitValue": "10% opacity",
+      "conditions": "During startup and shutdown, except during one 6-minute period in any one hour not exceeding 20% opacity as determined by EPA Method 9."
+    }
+  ],
+  "source_file": "74163_2025-04-30.pdf",
+  "processing_date": "2025-09-27T17:39:08.140800"
+}

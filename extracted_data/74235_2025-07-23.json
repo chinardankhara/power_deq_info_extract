@@ -1,0 +1,149 @@
+{
+  "dataCenterName": "Cologix",
+  "permitIssuanceDate": "2025-07-23",
+  "registrationNumber": "74235",
+  "location": "21745 Beaumeade Cir, Ashburn, VA 20147, Loudoun County",
+  "equipmentSummary": [
+    {
+      "type": "Constructed",
+      "referenceNos": "69 through 75",
+      "description": "Seven (7) MTU Model 16V4000 DS2250 emergency diesel engine gen-sets",
+      "ratedCapacity": "2,250 ekW 3,353 bhp",
+      "controls": "Engine design, good operating practices, and manufacturer-recommended maintenance",
+      "originalPermitDate": "2025-07-23"
+    },
+    {
+      "type": "Previously Permitted",
+      "referenceNos": "1 through 68",
+      "description": "Sixty-eight (68) MTU Model 16V4000 DS2250 emergency diesel engine gen-sets",
+      "ratedCapacity": "2,250 ekW 3,353 bhp",
+      "controls": "Engine design, good operating practices, and manufacturer-recommended maintenance",
+      "originalPermitDate": "2022-11-21"
+    }
+  ],
+  "operationalLimits": [
+    {
+      "category": "Ozone Season Operating Restrictions",
+      "appliesTo": "No emergency diesel engine gen-set (Ref. Nos. 1 through 75)",
+      "limitDetails": "No emergency diesel engine gen-set (Ref. Nos. 1 through 75) shall be operated for scheduled maintenance checks and readiness testing (Scheduled MCRT), stack testing or operator training (that involves fuel combustion) between the hours of 7 a.m. to 5 p.m. any day during May 1 through September 30."
+    },
+    {
+      "category": "Ozone Season Operating Restrictions - Integration Operational Period",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. 1 through 75)",
+      "limitDetails": "During the integration operational period of each emergency diesel engine gen-set (Ref. Nos. 1 through 75), any operation of the unit (that involves fuel combustion) between the hours of 7 a.m. to 5 p.m. any day during the ozone season of May 1 through September 30 shall only occur if the forecast Air Quality Index (AQI) for ozone as published on the AirNow website (https://airnow.gov) for Northern Virginia for that day is less than or equal to 100. In the event that AirNow-EnviroFlash (www.enviroflash.info) issues an Air Alert for Metropolitan Washington, D.C. for a day which the forecasted AQI for ozone was less than or equal to 100, operation of each unit (which involves fuel combustion) shall be minimized to the maximum extent practical."
+    },
+    {
+      "category": "Operating Mode Restrictions",
+      "appliesTo": "The emergency diesel engine gen-sets (Ref. Nos. 1 through 75)",
+      "limitDetails": "The emergency diesel engine gen-sets (Ref. Nos. 1 through 75) shall only be operated in the following modes: In situations that arise from sudden and reasonably unforeseeable events where the primary energy or power source is disrupted or disconnected due to conditions beyond the control of an owner or operator of a facility including: A failure of the electrical grid; On-site disaster or equipment failure; or Public service emergencies such as flood, fire, natural disaster, or severe weather conditions. For participation in an ISO-declared emergency, where an ISO emergency is: An abnormal system condition requiring manual or automatic action to maintain system frequency, to prevent loss of firm load, equipment damage, or tripping of system elements that could adversely affect the reliability of an electric system or the safety of persons or property; Capacity deficiency or capacity excess conditions; A fuel shortage requiring departure from normal operating procedures in order to minimize the use of such scarce fuel; Abnormal natural events or man-made threats that would require conservative operations to posture the system in a more reliable state; or An abnormal event external to the ISO service territory that may require ISO action. For scheduled maintenance checks and readiness testing (Scheduled MCRT). For unscheduled maintenance, testing and operational training. For the integration operational period, which is the period of time beginning with the first time the affected units is started on-site and ending when the affected unit is fully integrated with the sources electrical system."
+    },
+    {
+      "category": "Run Hours - Scheduled MCRT",
+      "appliesTo": "Each individual emergency diesel engine gen-set (Ref. Nos. 1 through 75)",
+      "limitDetails": "Each individual emergency diesel engine gen-set (Ref. Nos. 1 through 75) shall not operate more than 13 hours per year for scheduled maintenance checks and readiness testing (Scheduled MCRT) (as provided in Condition 6.c). The annual limits for hours of operation shall be calculated monthly as the sum of each consecutive 12-month period."
+    },
+    {
+      "category": "Run Hours - All Purposes",
+      "appliesTo": "Each individual emergency diesel engine gen-set (Ref. Nos. 1 through 75)",
+      "limitDetails": "Each individual emergency diesel engine gen-set (Ref. Nos. 1 through 75) shall not operate more than 500 hours per year for all purposes (as provided in Condition 6) combined. The annual limits for hours of operation shall be calculated monthly as the sum of each consecutive 12-month period."
+    },
+    {
+      "category": "Fuel Specification",
+      "appliesTo": "Emergency diesel engine gen-sets (Ref. Nos. 1 through 75)",
+      "limitDetails": "The approved fuel for the emergency diesel engine gen-sets (Ref. Nos. 1 through 75) is ultra-low sulfur diesel fuel oil, and shall meet the specifications below: Does not exceed the American Society for Testing and Materials (ASTM) specification, D975, for grade ultra-low sulfur 2-D or grade 2-D S15, or, Has a maximum sulfur content not to exceed 0.0015% by weight (15 ppm), and either a minimum cetane number of 40 or maximum aromatic content of 35 volume percent."
+    },
+    {
+      "category": "Fuel Throughput",
+      "appliesTo": "The seventy-five (75) emergency diesel engine gen-sets (Ref. Nos. 1 through 75) combined",
+      "limitDetails": "Consume no more than 711,642 gallons of diesel fuel oil per year, calculated daily as the sum of each consecutive 365-day period (all uses)."
+    }
+  ],
+  "emissionLimits": [
+    {
+      "type": "Hourly",
+      "appliesTo": "MTU Model 16V4000 DS2250 (Ref. Nos. 1 through 75) (each unit)",
+      "pollutant": "Nitrogen Oxides (NOx as NO2)",
+      "limitValue": "44.35 lb/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "MTU Model 16V4000 DS2250 (Ref. Nos. 1 through 75) (each unit)",
+      "pollutant": "Carbon Monoxide (CO)",
+      "limitValue": "9.37 lb/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "MTU Model 16V4000 DS2250 (Ref. Nos. 1 through 75) (each unit)",
+      "pollutant": "Volatile Organic Compounds (VOC)",
+      "limitValue": "2.20 lb/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "MTU Model 16V4000 DS2250 (Ref. Nos. 1 through 75) (each unit)",
+      "pollutant": "Particulate Matter (PM10)",
+      "limitValue": "0.92 lb/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Hourly",
+      "appliesTo": "MTU Model 16V4000 DS2250 (Ref. Nos. 1 through 75) (each unit)",
+      "pollutant": "Particulate Matter (PM2.5)",
+      "limitValue": "0.92 lb/hr",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "MTU Model 16V4000 DS2250 (Ref. Nos. 1 through 75) All Operations (All Units Combined)",
+      "pollutant": "Nitrogen Oxides (NOx as NO2)",
+      "limitValue": "96.82 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "MTU Model 16V4000 DS2250 (Ref. Nos. 1 through 75) All Operations (All Units Combined)",
+      "pollutant": "Carbon Monoxide (CO)",
+      "limitValue": "30.32 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "MTU Model 16V4000 DS2250 (Ref. Nos. 1 through 75) All Operations (All Units Combined)",
+      "pollutant": "Volatile Organic Compounds (VOC)",
+      "limitValue": "18.65 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "MTU Model 16V4000 DS2250 (Ref. Nos. 1 through 75) All Operations (All Units Combined)",
+      "pollutant": "Particulate Matter (PM10)",
+      "limitValue": "6.01 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Annual",
+      "appliesTo": "MTU Model 16V4000 DS2250 (Ref. Nos. 1 through 75) All Operations (All Units Combined)",
+      "pollutant": "Particulate Matter (PM2.5)",
+      "limitValue": "6.01 tpy",
+      "conditions": ""
+    },
+    {
+      "type": "Visible Emissions",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. 1 through 75) exhausts",
+      "pollutant": "Opacity",
+      "limitValue": "5% opacity",
+      "conditions": "Except during one 6-minute period in any one hour in which visible emissions shall not exceed 10% opacity as determined by EPA Method 9 (reference 40 CFR 60, Appendix A). This condition applies at all times except during startup, shutdown and malfunction."
+    },
+    {
+      "type": "Visible Emissions",
+      "appliesTo": "Each emergency diesel engine gen-set (Ref. Nos. 1 through 75) during startup and shutdown",
+      "pollutant": "Opacity",
+      "limitValue": "10% opacity",
+      "conditions": "Except during one 6-minute period in any one hour in which visible emissions shall not exceed 20% opacity as determined by EPA Method 9 (reference 40 CFR 60, Appendix A)."
+    }
+  ],
+  "source_file": "74235_2025-07-23.pdf",
+  "processing_date": "2025-09-27T17:49:28.893391"
+}
