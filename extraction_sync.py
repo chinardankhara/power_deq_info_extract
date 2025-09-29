@@ -35,7 +35,7 @@ def extract_registration_from_filename(filename):
         return match.group(1)
     return None
 
-def process_pdf_with_gemini(pdf_path, client, model="gemini-2.5-flash"):
+def process_pdf_with_gemini(pdf_path, client, model="gemini-flash-latest"):
     """
     Process a single PDF with Gemini API and extract structured data
     """
@@ -56,17 +56,27 @@ def process_pdf_with_gemini(pdf_path, client, model="gemini-2.5-flash"):
                         mime_type='application/pdf',
                     ),
                     types.Part.from_text(
-                        text="""Please extract all the key information from this air permit document according to the provided schema. 
-                        Focus on identifying:
-                        - Data center/facility name
-                        - Permit issuance date
-                        - Registration number
-                        - Location details
-                        - All equipment (generators, cooling towers, etc.) with their specifications
-                        - Operational limits and restrictions
-                        - Emission limits for all pollutants
-                        
-                        Be thorough and accurate in extracting all numerical values, dates, and technical specifications."""
+                        text="""You are an expert regulatory data extraction engine specializing in Virginia DEQ Air Permits. Your task is to parse the provided permit document text and extract all required information into a structured JSON format.
+
+**CRITICAL INSTRUCTIONS:**
+
+1. **Adhere strictly to the provided JSON schema.** Do not add or omit any top-level keys (`dataCenterName`, `equipmentSummary`, `operationalLimits`, etc.).
+2. **Equipment Type Taxonomy:** For the `type` field within `equipmentSummary`, you **must** use one and only one of the following four categories. Do not invent or combine terms:
+   - `Constructed`: For new units authorized by the current permit action (e.g., "Equipment to be Constructed," "authorized to construct and operate").
+   - `Modified`: For existing units undergoing a major physical change detailed in the permit, such as the addition of a control device (e.g., SCR).
+   - `Previously Permitted`: For existing units covered by a previous permit and listed for continued operation (e.g., "Equipment to be Operated," "Equipment permitted prior to the date of this permit").
+   - `Exempt`: For auxiliary equipment (e.g., fuel tanks, boilers, water heaters) explicitly listed as exempt from air permitting requirements.
+3. **Capacity Extraction:** Extract both electrical and mechanical capacity separately.
+   - `electricalCapacity_kW`: Extract the kilowatt (kW or ekW) value and unit. **For multiple units, calculate and report the TOTAL combined capacity** (e.g., if "Two generators" each rated "1000 kW", report "2000 kW").
+   - `mechanicalCapacity_bhp`: Extract the horsepower (HP or bhp) value and unit. **For multiple units, calculate and report the TOTAL combined capacity** (e.g., if "Three engines" each rated "500 bhp", report "1500 bhp").
+   - If only one capacity type is listed, populate that field and leave the other null.
+4. **Control Technology Separation:** Distinguish between intrinsic engine design controls and external add-on devices.
+   - `controls`: Capture descriptions of inherent engine design features and good operating practices (e.g., "electronic fuel injection, turbocharged engine, and aftercooler," "good combustion practices").
+   - `addOnControlTechnology`: Capture external emission reduction equipment (e.g., "SCR - Steuler CERNOX," "Catalyzed Diesel Particulate Filter (cDPF)"). If no external device is mentioned, use "None".
+5. **Run Hours and Operational Limits:** Extract all specific run hour limits. The `limitDetails` must clearly state the numeric limit, the unit (e.g., hours/year), and the scope (e.g., "each unit," "combined," "for ELRP only"). If multiple limits apply to the same equipment (e.g., 500 hours/year total, 60 hours/year for ELRP), create separate entries in the `operationalLimits` array.
+6. **Dates:** Extract dates in `YYYY-MM-DD` format. If a date is only a year (e.g., "2000"), use `YYYY`.
+
+Be thorough and accurate in extracting all numerical values, dates, and technical specifications."""
                     ),
                 ],
             ),
@@ -106,8 +116,8 @@ def process_pdf_with_gemini(pdf_path, client, model="gemini-2.5-flash"):
                             properties={
                                 "type": genai.types.Schema(
                                     type=genai.types.Type.STRING,
-                                    description="Whether the equipment is 'Constructed' or 'Previously Permitted'.",
-                                    enum=["Constructed", "Previously Permitted"],
+                                    description="Equipment type taxonomy - must be one of the four specified categories.",
+                                    enum=["Constructed", "Modified", "Previously Permitted", "Exempt"],
                                 ),
                                 "referenceNos": genai.types.Schema(
                                     type=genai.types.Type.STRING,
@@ -121,9 +131,21 @@ def process_pdf_with_gemini(pdf_path, client, model="gemini-2.5-flash"):
                                     type=genai.types.Type.STRING,
                                     description="The rated capacity of the equipment, including units (e.g., '1,135 kW', '2,500 ekW 3,633 bhp (each)', '2,400 gpm (each)').",
                                 ),
+                                "electricalCapacity_kW": genai.types.Schema(
+                                    type=genai.types.Type.STRING,
+                                    description="TOTAL electrical capacity in kilowatts (kW or ekW) with units. For multiple units, calculate combined capacity (e.g., 'Two generators' at '1000 kW each' = '2000 kW'). Null if not specified.",
+                                ),
+                                "mechanicalCapacity_bhp": genai.types.Schema(
+                                    type=genai.types.Type.STRING,
+                                    description="TOTAL mechanical capacity in horsepower (HP or bhp) with units. For multiple units, calculate combined capacity (e.g., 'Three engines' at '500 bhp each' = '1500 bhp'). Null if not specified.",
+                                ),
                                 "controls": genai.types.Schema(
                                     type=genai.types.Type.STRING,
-                                    description="Any specified control devices or methods, if explicitly mentioned (e.g., 'SCR and Catalyzed Diesel Particulate Filter (CDPF)', 'Electronic fuel injection and aftercooler'). If no specific controls are mentioned, it can be 'None' or left null.",
+                                    description="Inherent engine design features and good operating practices (e.g., 'electronic fuel injection, turbocharged engine, and aftercooler', 'good combustion practices').",
+                                ),
+                                "addOnControlTechnology": genai.types.Schema(
+                                    type=genai.types.Type.STRING,
+                                    description="External emission reduction equipment (e.g., 'SCR - Steuler CERNOX', 'Catalyzed Diesel Particulate Filter (cDPF)'). Use 'None' if no external device is mentioned.",
                                 ),
                                 "originalPermitDate": genai.types.Schema(
                                     type=genai.types.Type.STRING,
@@ -217,20 +239,7 @@ def process_pdf_with_gemini(pdf_path, client, model="gemini-2.5-flash"):
                 # Fallback to original filename
                 json_filename = pdf_path.stem + '.json'
             
-            # Save immediately
-            output_dir = Path('extracted_data')
-            output_dir.mkdir(exist_ok=True)
-            json_path = output_dir / json_filename
-            
-            with open(json_path, 'w', encoding='utf-8') as f:
-                json.dump(extracted_data, f, indent=2, ensure_ascii=False)
-            
-            print(f"✓ SAVED: {json_filename}")
-            
-            # Show progress
-            completed_files = len(list(output_dir.glob("*.json")))
-            print(f"Progress: {completed_files} files completed")
-            
+            logging.info(f"Successfully processed {pdf_path.name} -> {json_filename}")
             return extracted_data, json_filename
             
         except json.JSONDecodeError as e:
@@ -241,9 +250,33 @@ def process_pdf_with_gemini(pdf_path, client, model="gemini-2.5-flash"):
         logging.error(f"Error processing {pdf_path.name}: {e}")
         return None, None
 
+def process_pdf_with_gemini_year(pdf_path, client, output_dir, model="gemini-flash-latest"):
+    """
+    Process a single PDF and save to year-specific directory
+    """
+    # Process the PDF
+    extracted_data, json_filename = process_pdf_with_gemini(pdf_path, client, model)
+    
+    if extracted_data and json_filename:
+        # Save to year-specific directory
+        json_path = output_dir / json_filename
+        
+        with open(json_path, 'w', encoding='utf-8') as f:
+            json.dump(extracted_data, f, indent=2, ensure_ascii=False)
+        
+        print(f"✓ SAVED: {json_filename}")
+        
+        # Show progress for this year
+        completed_files = len(list(output_dir.glob("*.json")))
+        print(f"Year progress: {completed_files} files completed")
+        
+        return extracted_data, json_filename
+    
+    return None, None
+
 def process_all_pdfs():
     """
-    Process all PDFs in the raw_pdfs directory synchronously
+    Process all PDFs in year-based subdirectories under raw_pdfs
     """
     # Initialize the Gemini client
     client = genai.Client(
@@ -256,104 +289,80 @@ def process_all_pdfs():
         print("Please set it with: export GEMINI_API_KEY='your-api-key'")
         return
     
-    # Directory containing raw PDFs
-    raw_pdfs_dir = Path('retries')
+    # Directory containing year-based PDF folders
+    raw_pdfs_base = Path('raw_pdfs')
     
-    if not raw_pdfs_dir.exists():
-        print(f"Error: {raw_pdfs_dir} directory not found!")
+    if not raw_pdfs_base.exists():
+        print(f"Error: {raw_pdfs_base} directory not found!")
         return
     
-    # Get all PDF files
-    pdf_files = list(raw_pdfs_dir.glob("*.pdf"))
+    # Get all year subdirectories
+    year_dirs = [d for d in raw_pdfs_base.iterdir() if d.is_dir() and d.name.isdigit()]
     
-    if not pdf_files:
-        print(f"No PDF files found in {raw_pdfs_dir}")
+    if not year_dirs:
+        print(f"No year subdirectories found in {raw_pdfs_base}")
         return
     
-    print(f"Found {len(pdf_files)} PDF files to process")
-    print(f"Processing synchronously (one at a time)")
+    year_dirs.sort()  # Process in chronological order
+    print(f"Found {len(year_dirs)} year directories: {[d.name for d in year_dirs]}")
     
-    # Create output directory for extracted data
-    output_dir = Path('extracted_data')
-    output_dir.mkdir(exist_ok=True)
+    # Create base output directory
+    json_data_base = Path('json_data')
+    json_data_base.mkdir(exist_ok=True)
     
-    # Process each PDF one by one
-    all_extracted_data = []
-    successful_extractions = 0
-    failed_extractions = 0
+    # Process each year directory
+    total_successful = 0
+    total_failed = 0
+    total_files = 0
     
-    for i, pdf_path in enumerate(pdf_files, 1):
-        print(f"\n[{i}/{len(pdf_files)}] Processing: {pdf_path.name}")
-        start_time = time.time()
+    for year_dir in year_dirs:
+        year = year_dir.name
+        print(f"\n{'='*60}")
+        print(f"Processing Year: {year}")
+        print(f"{'='*60}")
         
-        # Extract data from PDF
-        extracted_data, json_filename = process_pdf_with_gemini(pdf_path, client)
+        # Get all PDF files in this year directory
+        pdf_files = list(year_dir.glob("*.pdf"))
         
-        elapsed_time = time.time() - start_time
+        if not pdf_files:
+            print(f"No PDF files found in {year_dir}")
+            continue
         
-        if extracted_data and json_filename:
-            all_extracted_data.append(extracted_data)
-            successful_extractions += 1
-            print(f"✓ Completed in {elapsed_time:.1f}s")
-        else:
-            print(f"✗ Failed: {pdf_path.name}")
-            failed_extractions += 1
+        total_files += len(pdf_files)
+        print(f"Found {len(pdf_files)} PDF files for year {year}")
         
-        # Small delay between requests to be respectful to the API
-        if i < len(pdf_files):
-            time.sleep(1)
-    
-    # Save combined results
-    if all_extracted_data:
-        # Save as JSON
-        combined_json_path = output_dir / 'all_extracted_data.json'
-        with open(combined_json_path, 'w', encoding='utf-8') as f:
-            json.dump(all_extracted_data, f, indent=2, ensure_ascii=False)
+        # Create year-specific output directory
+        year_output_dir = json_data_base / year
+        year_output_dir.mkdir(exist_ok=True)
         
-        # Convert to DataFrame and save as CSV for easier analysis
-        try:
-            # Flatten the data for CSV export
-            flattened_data = []
-            for data in all_extracted_data:
-                base_info = {
-                    'source_file': data.get('source_file'),
-                    'dataCenterName': data.get('dataCenterName'),
-                    'permitIssuanceDate': data.get('permitIssuanceDate'),
-                    'registrationNumber': data.get('registrationNumber'),
-                    'location': data.get('location'),
-                    'equipment_count': len(data.get('equipmentSummary', [])),
-                    'operational_limits_count': len(data.get('operationalLimits', [])),
-                    'emission_limits_count': len(data.get('emissionLimits', []))
-                }
-                flattened_data.append(base_info)
+        # Process each PDF in this year
+        year_successful = 0
+        year_failed = 0
+        
+        for i, pdf_path in enumerate(pdf_files, 1):
+            print(f"\n[{year}] [{i}/{len(pdf_files)}] Processing: {pdf_path.name}")
+            start_time = time.time()
             
-            df = pd.DataFrame(flattened_data)
-            csv_path = output_dir / 'extracted_data_summary.csv'
-            df.to_csv(csv_path, index=False)
+            # Update the process function to use year-specific output directory
+            extracted_data, json_filename = process_pdf_with_gemini_year(pdf_path, client, year_output_dir)
             
-            print(f"\n✓ Combined data saved to {combined_json_path}")
-            print(f"✓ Summary CSV saved to {csv_path}")
+            elapsed_time = time.time() - start_time
             
-        except Exception as e:
-            logging.error(f"Error creating CSV summary: {e}")
+            if extracted_data and json_filename:
+                year_successful += 1
+                total_successful += 1
+                print(f"✓ Completed in {elapsed_time:.1f}s")
+            else:
+                print(f"✗ Failed: {pdf_path.name}")
+                year_failed += 1
+                total_failed += 1
+            
+            # Small delay between requests to be respectful to the API
+            if i < len(pdf_files):
+                time.sleep(1)
+        
+        
+        print(f"\nYear {year} Summary: {year_successful} successful, {year_failed} failed")
     
-    # Print final summary
-    print(f"\n=== Processing Summary ===")
-    print(f"Total PDFs: {len(pdf_files)}")
-    print(f"Successfully processed: {successful_extractions}")
-    print(f"Failed: {failed_extractions}")
-    print(f"Output directory: {output_dir.absolute()}")
-    
-    # Show some example files created
-    json_files = list(output_dir.glob("*.json"))
-    individual_files = [f for f in json_files if f.name != 'all_extracted_data.json']
-    
-    if individual_files:
-        print(f"\nIndividual JSON files created:")
-        for file in sorted(individual_files)[:10]:  # Show first 10
-            print(f"  - {file.name}")
-        if len(individual_files) > 10:
-            print(f"  ... and {len(individual_files) - 10} more files")
-
 if __name__ == "__main__":
     process_all_pdfs()

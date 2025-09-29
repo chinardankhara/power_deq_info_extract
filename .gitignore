@@ -1,2 +1,5 @@
 .env
-raw_pdfs_*/
+raw_pdfs/
+json_data/
+retries/
+*.zip
