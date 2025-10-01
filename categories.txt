@@ -1,0 +1,126 @@
+Unique Operational Limit Categories:
+========================================
+ 1. Annual Emission Limit
+ 2. Annual Operational Constraint
+ 3. Blackout Testing Limit
+ 4. Conditional SCR Operation/Installation
+ 5. Construction Timing/BACT Review
+ 6. Control Device Operating Limit
+ 7. Control Device Operating Requirement
+ 8. Control Device Operating Temperature
+ 9. Control Device Operation
+10. Control Device Operation (SCR Temperature)
+11. Control Device Specification
+12. Control Equipment Operation
+13. Cooling Tower Limit
+14. Electrical Capacity Limit
+15. Electrical Output
+16. Electrical Output Limit
+17. Electrical Power Output
+18. Emergency Power Generation
+19. Emission Cap
+20. Emissions Cap
+21. Engine Electrical Power Output Limit
+22. Engine Load
+23. Fuel Certification
+24. Fuel Certification/Monitoring
+25. Fuel Monitoring Recalibration
+26. Fuel Specification
+27. Fuel Specification (ASTM)
+28. Fuel Specification (Cetane/Aromatic)
+29. Fuel Specification (Sulfur Content)
+30. Fuel Specification (Sulfur)
+31. Fuel Throughput
+32. Fuel Throughput (Annual)
+33. Fuel Throughput (Combined)
+34. Fuel Throughput (Total Facility)
+35. Fuel Throughput (Transitory Units)
+36. Fuel Throughput (Uncontrolled)
+37. Fuel Throughput (Untreated Exhaust)
+38. Fuel Throughput Limit
+39. Fuel Type
+40. Integration Operational Period Duration
+41. Load Limit
+42. Maintenance and Operation
+43. Monitoring
+44. Monitoring/Recordkeeping
+45. Monitoring/Recordkeeping (Hours)
+46. Operating Capacity Limit
+47. Operating Limit
+48. Operating Load/Fuel Consumption
+49. Operating Mode
+50. Operating Mode Restriction
+51. Operating Practices
+52. Operating Procedures
+53. Operating Purpose Restriction
+54. Operating Restriction
+55. Operating Restrictions
+56. Operating Restrictions (ELRP)
+57. Operating Restrictions (Exemption Maintenance)
+58. Operating Restrictions (Ozone Season Integration)
+59. Operating Restrictions (Ozone Season MCRT)
+60. Operating Scenario
+61. Operating Scenario / Control Requirement
+62. Operating Scenarios
+63. Operation Mode
+64. Operation and Maintenance
+65. Operational Mode
+66. Operational Mode Restriction
+67. Operational Restriction
+68. Operational Restrictions
+69. Ozone Season Integration Restriction
+70. Ozone Season Operating Restrictions
+71. Ozone Season Operating Restrictions (Integration Operational Period)
+72. Ozone Season Operating Restrictions (Integration Period)
+73. Ozone Season Operating Restrictions (Integration)
+74. Ozone Season Operating Restrictions (MCRT)
+75. Ozone Season Operating Restrictions (MCRT/Testing)
+76. Ozone Season Operating Restrictions (MCRT/Testing/Training)
+77. Ozone Season Operating Restrictions (Scheduled MCRT/Testing)
+78. Ozone Season Operating Restrictions (Scheduled MCRT/Testing/Training)
+79. Ozone Season Operating Restrictions (Time of Day)
+80. Performance Testing Requirement
+81. Run Hours
+82. Run Hours (All Purposes)
+83. Run Hours (Combined Total)
+84. Run Hours (Combined)
+85. Run Hours (ELRP Participation)
+86. Run Hours (ELRP)
+87. Run Hours (Emergency/Load Testing Combined)
+88. Run Hours (Emergency/Load Testing)
+89. Run Hours (Exemption Maintenance)
+90. Run Hours (Facility Total)
+91. Run Hours (ISO Emergency Load Response Program)
+92. Run Hours (ISO Emergency)
+93. Run Hours (ISO-Declared Emergency)
+94. Run Hours (Individual Total)
+95. Run Hours (MCRT Combined)
+96. Run Hours (MCRT)
+97. Run Hours (MCRT/Maintenance)
+98. Run Hours (MCRT/Training Combined)
+99. Run Hours (MCRT/Training)
+100. Run Hours (Maintenance/Testing)
+101. Run Hours (SCR Bypass)
+102. Run Hours (SCR Urea Injection Exemption)
+103. Run Hours (Scheduled MC/RT)
+104. Run Hours (Scheduled MCRT)
+105. Run Hours (Scheduled Maintenance)
+106. Run Hours (Scheduled Maintenance/Testing)
+107. Run Hours (Specific Scenario)
+108. Run Hours (Total Annual)
+109. Run Hours (Total Annual, Each Unit)
+110. Run Hours (Total Combined)
+111. Run Hours (Total)
+112. Run Hours/Purpose Restriction
+113. SCR Operating Limit
+114. SCR Operation
+115. Temperature Limit
+116. Testing/Monitoring
+117. Total Annual Emissions Constraint
+118. Total Annual Operation
+119. Total Emissions Limit
+120. Transitory Engine Operation
+121. Transitory Equipment Operation
+122. Transitory Unit Operation
+
+Total: 122 unique categories
