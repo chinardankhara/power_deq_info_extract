@@ -3,3 +3,4 @@ raw_pdfs/
 json_data/
 retries/
 *.zip
+extracted_data/

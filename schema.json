@@ -1,0 +1,212 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/air-permit-extraction-schema.json",
+  "title": "Air Permit Data Extraction Schema",
+  "description": "Schema for extracting core data from air permit documents. All data fields are defined within the 'properties' object.",
+  "type": "object",
+  "required": [
+    "dataCenterName",
+    "permitIssuanceDate", 
+    "registrationNumber",
+    "location",
+    "equipmentSummary",
+    "operationalLimits",
+    "emissionLimits"
+  ],
+  "properties": {
+    "dataCenterName": {
+      "type": "string",
+      "description": "The full name of the data center or facility as listed in the permit."
+    },
+    "permitIssuanceDate": {
+      "type": "string",
+      "format": "date",
+      "description": "The official date when the permit was issued (YYYY-MM-DD)."
+    },
+    "registrationNumber": {
+      "type": "string",
+      "description": "The unique registration number for the permit."
+    },
+    "location": {
+      "type": "string",
+      "description": "A concise string describing the location, including county and full address if available."
+    },
+    "equipmentSummary": {
+      "type": "array",
+      "description": "A summary list of all equipment units, differentiating between constructed and previously permitted.",
+      "items": {
+        "type": "object",
+        "required": [
+          "type",
+          "referenceNos",
+          "description",
+          "ratedCapacity",
+          "numberOfUnits"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "Equipment type taxonomy - must be one of the four specified categories.",
+            "enum": [
+              "Constructed",
+              "Modified",
+              "Previously Permitted",
+              "Exempt"
+            ]
+          },
+          "referenceNos": {
+            "type": "string",
+            "description": "The reference number(s) for the equipment (e.g., 'G-1', '1 through 26', 'CT01 through CT11')."
+          },
+          "description": {
+            "type": "string",
+            "description": "A concise description of the equipment, including make, model, and primary function (e.g., 'Caterpillar Model 3512 Diesel Generator', 'MTU 20V4000G83L 6 ECT emergency diesel engine gen-sets', 'SPX Marley Cooling Towers')."
+          },
+          "ratedCapacity": {
+            "type": "string",
+            "description": "The rated capacity of a single equipment unit, including units (e.g., '1,135 kW', '2,500 ekW 3,633 bhp (each)', '2,400 gpm (each)')."
+          },
+          "numberOfUnits": {
+            "type": "number",
+            "description": "The integer count of individual equipment units in this group (e.g., for 'Forty (40) generators', this value would be 40)."
+          },
+          "fuelType": {
+            "type": "string",
+            "description": "The type of fuel used by the equipment. Must be one of the specified values.",
+            "enum": [
+              "Diesel",
+              "Gas",
+              "Dual Fuel"
+            ]
+          },
+          "isEmergency": {
+            "type": "boolean",
+            "description": "Set to true if the equipment is designated for emergency, standby, EP, or black start purposes."
+          },
+          "electricalCapacity_kW": {
+            "type": "number",
+            "description": "TOTAL combined electrical capacity in kilowatts (kW or ekW) as a number. For multiple units, this is the calculated combined capacity. Null if not specified."
+          },
+          "mechanicalCapacity_bhp": {
+            "type": "number",
+            "description": "TOTAL combined mechanical capacity in horsepower (HP or bhp) as a number. For multiple units, this is the calculated combined capacity. Null if not specified."
+          },
+          "gasUsage_MMBTUhr": {
+            "type": "number",
+            "description": "For gas-fired equipment, the heat input rate in MMBTU/hr as a number. Null if not applicable."
+          },
+          "controls": {
+            "type": "string",
+            "description": "Inherent engine design features and good operating practices (e.g., 'electronic fuel injection, turbocharged engine, and aftercooler', 'good combustion practices')."
+          },
+          "addOnControlTechnology": {
+            "type": "string",
+            "description": "External emission reduction equipment (e.g., 'SCR - Steuler CERNOX', 'Catalyzed Diesel Particulate Filter (cDPF)'). Use 'None' if no external device is mentioned."
+          },
+          "originalPermitDate": {
+            "type": "string",
+            "format": "date",
+            "description": "The original permit date for this specific equipment, if explicitly stated and different from the main permit issuance date (YYYY-MM-DD)."
+          }
+        }
+      }
+    },
+    "operationalLimits": {
+      "type": "array",
+      "description": "A list of all key operational limits mentioned in the permit, classified into 9 standardized categories.",
+      "items": {
+        "type": "object",
+        "required": [
+          "category",
+          "appliesTo",
+          "limitDetails"
+        ],
+        "properties": {
+          "category": {
+            "type": "string",
+            "description": "Standardized operational limit category - must be one of the 9 specified categories.",
+            "enum": [
+              "Hours of Operation Limits",
+              "Fuel Limits & Specifications",
+              "Emission Limits & Caps",
+              "Production & Capacity Limits",
+              "Control Device & Equipment Requirements",
+              "Non-Ozone Operating Restrictions",
+              "Ozone Season Operating Restrictions",
+              "Monitoring, Testing, & Recordkeeping",
+              "Other"
+            ]
+          },
+          "appliesTo": {
+            "type": "array",
+            "description": "A list of exact 'referenceNos' strings from the equipmentSummary this limit applies to, enabling direct programmatic matching.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "limitDetails": {
+            "type": "string",
+            "description": "The full, descriptive text of the operational limit, including values, units, conditions, calculation periods, and all granular details."
+          }
+        }
+      }
+    },
+    "emissionLimits": {
+      "type": "array",
+      "description": "A list of all key emission limits mentioned in the permit.",
+      "items": {
+        "type": "object",
+        "required": [
+          "type",
+          "appliesTo",
+          "pollutant",
+          "limitValue",
+          "limitUnit"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "Whether the limit is 'Hourly', 'Annual', or 'Visible Emissions'.",
+            "enum": [
+              "Hourly",
+              "Annual",
+              "Visible Emissions"
+            ]
+          },
+          "appliesTo": {
+            "type": "array",
+            "description": "A list of exact 'referenceNos' strings from the equipmentSummary this limit applies to, enabling direct programmatic matching.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "pollutant": {
+            "type": "string",
+            "description": "The pollutant(s) being limited (e.g., 'PM-10', 'Nitrogen Oxides (as NO2)', 'Opacity')."
+          },
+          "limitValue": {
+            "type": "number",
+            "description": "The numeric limit value as a number (e.g., 1.2, 96.03, 10). For Visible Emissions with conditions, use the primary limit value."
+          },
+          "limitUnit": {
+            "type": "string",
+            "description": "The unit of the limit value (e.g., 'lbs/hr', 'tpy', 'percent opacity', 'ppm', 'g/dscm'). For complex visible emission limits, include conditions here."
+          },
+          "conditions": {
+            "type": "string",
+            "description": "Any specific conditions or context for this limit (e.g., 'Uncontrolled by SCR', 'During startup and shutdown', 'Calculated monthly as consecutive 12-month period')."
+          }
+        }
+      }
+    },
+    "source_file": {
+      "type": "string",
+      "description": "The name of the source PDF file that was processed."
+    },
+    "processing_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The ISO timestamp when the document was processed."
+    }
+  }
+}
