@@ -1,12 +1,9 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.com/air-permit-extraction-schema.json",
-  "title": "Air Permit Data Extraction Schema",
-  "description": "Schema for extracting core data from air permit documents. All data fields are defined within the 'properties' object.",
   "type": "object",
+  "description": "Schema for extracting core data from air permit documents. All data fields are defined within the 'properties' object.",
   "required": [
     "dataCenterName",
-    "permitIssuanceDate", 
+    "permitIssuanceDate",
     "registrationNumber",
     "location",
     "equipmentSummary",
@@ -198,15 +195,6 @@
           }
         }
       }
-    },
-    "source_file": {
-      "type": "string",
-      "description": "The name of the source PDF file that was processed."
-    },
-    "processing_date": {
-      "type": "string",
-      "format": "date-time",
-      "description": "The ISO timestamp when the document was processed."
     }
   }
 }
