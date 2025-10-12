@@ -1,44 +1,45 @@
 """
 JSON Validator for Air Permit Data Extraction Schema
 
-Performs comprehensive validation of extracted permit data against the schema:
-- Checks required fields presence and nesting structure
-- Validates data types (strings, numbers, booleans, arrays, objects)
-- Enforces enum constraints
-- Validates date formats (YYYY-MM-DD)
-- Ensures non-negative numeric values
-- Validates cross-references between equipmentSummary and operational/emission limits
+Uses jsonschema library to validate against schema file, with custom business logic validators.
 """
 
 import json
-from datetime import datetime
 from typing import Any, Dict, List, Tuple
 from pathlib import Path
+
+try:
+    import jsonschema
+    from jsonschema import Draft7Validator, validators
+except ImportError:
+    raise ImportError(
+        "jsonschema library is required. Install with: pip install jsonschema"
+    )
 
 
 class PermitDataValidator:
     """Validator for air permit extraction data following the defined schema."""
     
-    # Schema enums
-    EQUIPMENT_TYPES = {"Constructed", "Modified", "Previously Permitted", "Exempt"}
-    FUEL_TYPES = {"Diesel", "Gas", "Dual Fuel"}
-    OPERATIONAL_CATEGORIES = {
-        "Hours of Operation Limits",
-        "Fuel Limits & Specifications",
-        "Emission Limits & Caps",
-        "Production & Capacity Limits",
-        "Control Device & Equipment Requirements",
-        "Non-Ozone Operating Restrictions",
-        "Ozone Season Operating Restrictions",
-        "Monitoring, Testing, & Recordkeeping",
-        "Other"
-    }
-    EMISSION_TYPES = {"Hourly", "Annual", "Visible Emissions"}
-    
-    def __init__(self):
+    def __init__(self, schema_path: str = None):
+        """
+        Initialize validator with JSON schema.
+        
+        Args:
+            schema_path: Path to JSON schema file. If None, looks for 'schema.json' in same directory.
+        """
         self.errors: List[str] = []
         self.warnings: List[str] = []
         self.equipment_reference_nos: set = set()
+        
+        # Load schema
+        if schema_path is None:
+            schema_path = Path(__file__).parent / "schema.json"
+        
+        with open(schema_path, 'r', encoding='utf-8') as f:
+            self.schema = json.load(f)
+        
+        # Create validator
+        self.validator = Draft7Validator(self.schema)
     
     def validate(self, data: Dict[str, Any]) -> Tuple[bool, List[str], List[str]]:
         """
@@ -51,330 +52,274 @@ class PermitDataValidator:
         self.warnings = []
         self.equipment_reference_nos = set()
         
-        # Check top-level structure
+        # 1. Validate against JSON Schema
+        schema_errors = list(self.validator.iter_errors(data))
+        for error in schema_errors:
+            # Create readable error message
+            path = ".".join(str(p) for p in error.absolute_path) if error.absolute_path else "root"
+            self.errors.append(f"{path}: {error.message}")
+        
+        # If schema validation failed completely, don't continue with business logic
         if not isinstance(data, dict):
-            self.errors.append("Root data must be a JSON object/dictionary")
             return False, self.errors, self.warnings
         
-        # Validate required top-level fields
-        self._validate_required_fields(
-            data, 
-            ["dataCenterName", "permitIssuanceDate", "registrationNumber", 
-             "location", "equipmentSummary", "operationalLimits", "emissionLimits"],
-            "root"
-        )
-        
-        # Validate each section
-        if "dataCenterName" in data:
-            self._validate_string(data["dataCenterName"], "dataCenterName", required=True)
-        
-        if "permitIssuanceDate" in data:
-            self._validate_date(data["permitIssuanceDate"], "permitIssuanceDate")
-        
-        if "registrationNumber" in data:
-            self._validate_string(data["registrationNumber"], "registrationNumber", required=True)
-        
-        if "location" in data:
-            self._validate_string(data["location"], "location", required=True)
-        
-        if "equipmentSummary" in data:
-            self._validate_equipment_summary(data["equipmentSummary"])
-        
-        if "operationalLimits" in data:
-            self._validate_operational_limits(data["operationalLimits"])
-        
-        if "emissionLimits" in data:
-            self._validate_emission_limits(data["emissionLimits"])
+        # 2. Custom business logic validation
+        self._collect_equipment_references(data.get("equipmentSummary", []))
+        self._validate_custom_business_logic(data)
         
         is_valid = len(self.errors) == 0
         return is_valid, self.errors, self.warnings
     
-    def _validate_required_fields(self, obj: Dict, required: List[str], path: str):
-        """Check that all required fields are present."""
-        for field in required:
-            if field not in obj:
-                self.errors.append(f"{path}: Missing required field '{field}'")
-    
-    def _validate_string(self, value: Any, field_name: str, required: bool = False):
-        """Validate string field."""
-        if value is None:
-            if required:
-                self.errors.append(f"{field_name}: Required string field is null")
+    def _collect_equipment_references(self, equipment_list: List[Dict]):
+        """Collect all equipment reference numbers for cross-referencing."""
+        if not isinstance(equipment_list, list):
             return
         
-        if not isinstance(value, str):
-            self.errors.append(f"{field_name}: Expected string, got {type(value).__name__}")
-        elif required and not value.strip():
-            self.errors.append(f"{field_name}: Required string field is empty")
+        for equipment in equipment_list:
+            if isinstance(equipment, dict):
+                ref_nos = equipment.get("referenceNos")
+                if isinstance(ref_nos, str):
+                    self.equipment_reference_nos.add(ref_nos)
     
-    def _validate_number(self, value: Any, field_name: str, allow_negative: bool = False, 
-                        allow_null: bool = True):
-        """Validate numeric field."""
-        if value is None:
-            if not allow_null:
-                self.errors.append(f"{field_name}: Number field cannot be null")
-            return
+    def _validate_custom_business_logic(self, data: Dict):
+        """Validate custom business rules not covered by JSON Schema."""
         
-        if not isinstance(value, (int, float)):
-            self.errors.append(f"{field_name}: Expected number, got {type(value).__name__}")
-        elif not allow_negative and value < 0:
-            self.errors.append(f"{field_name}: Number must be non-negative, got {value}")
-        elif isinstance(value, bool):
-            # In Python, bool is a subclass of int, so we need to explicitly reject booleans
-            self.errors.append(f"{field_name}: Expected number, got boolean")
+        # Validate equipment summary
+        if "equipmentSummary" in data:
+            self._validate_equipment_summary_logic(data["equipmentSummary"])
+        
+        # Validate operational limits
+        if "operationalLimits" in data:
+            self._validate_operational_limits_logic(data["operationalLimits"])
+        
+        # Validate emission limits
+        if "emissionLimits" in data:
+            self._validate_emission_limits_logic(data["emissionLimits"])
     
-    def _validate_boolean(self, value: Any, field_name: str, allow_null: bool = True):
-        """Validate boolean field."""
-        if value is None:
-            if not allow_null:
-                self.errors.append(f"{field_name}: Boolean field cannot be null")
-            return
-        
-        if not isinstance(value, bool):
-            self.errors.append(f"{field_name}: Expected boolean, got {type(value).__name__}")
-    
-    def _validate_date(self, value: Any, field_name: str, allow_null: bool = False):
-        """Validate date string in YYYY-MM-DD format."""
-        if value is None:
-            if not allow_null:
-                self.errors.append(f"{field_name}: Date field cannot be null")
-            return
-        
-        if not isinstance(value, str):
-            self.errors.append(f"{field_name}: Date must be a string, got {type(value).__name__}")
-            return
-        
-        try:
-            parsed = datetime.strptime(value, "%Y-%m-%d")
-            # Basic sanity check on year
-            if parsed.year < 1900 or parsed.year > 2100:
-                self.warnings.append(f"{field_name}: Date year {parsed.year} seems unusual")
-        except ValueError:
-            self.errors.append(f"{field_name}: Invalid date format '{value}', expected YYYY-MM-DD")
-    
-    def _validate_enum(self, value: Any, field_name: str, valid_values: set, 
-                      allow_null: bool = True):
-        """Validate enum field."""
-        if value is None:
-            if not allow_null:
-                self.errors.append(f"{field_name}: Enum field cannot be null")
-            return
-        
-        if not isinstance(value, str):
-            self.errors.append(f"{field_name}: Enum must be a string, got {type(value).__name__}")
-        elif value not in valid_values:
-            self.errors.append(
-                f"{field_name}: Invalid enum value '{value}'. "
-                f"Must be one of: {sorted(valid_values)}"
-            )
-    
-    def _validate_array(self, value: Any, field_name: str, allow_empty: bool = False):
-        """Validate array field."""
-        if not isinstance(value, list):
-            self.errors.append(f"{field_name}: Expected array, got {type(value).__name__}")
-            return False
-        
-        if not allow_empty and len(value) == 0:
-            self.warnings.append(f"{field_name}: Array is empty")
-        
-        return True
-    
-    def _validate_equipment_summary(self, equipment_list: List[Dict]):
-        """Validate equipmentSummary array."""
-        if not self._validate_array(equipment_list, "equipmentSummary"):
+    def _validate_equipment_summary_logic(self, equipment_list: List[Dict]):
+        """Custom validation for equipment summary."""
+        if not isinstance(equipment_list, list):
             return
         
         for idx, equipment in enumerate(equipment_list):
+            if not isinstance(equipment, dict):
+                continue
+            
             path = f"equipmentSummary[{idx}]"
             
-            if not isinstance(equipment, dict):
-                self.errors.append(f"{path}: Expected object, got {type(equipment).__name__}")
-                continue
-            
-            # Check required fields
-            self._validate_required_fields(
-                equipment,
-                ["type", "referenceNos", "description", "ratedCapacity", "numberOfUnits"],
-                path
-            )
-            
-            # Validate each field
-            if "type" in equipment:
-                self._validate_enum(equipment["type"], f"{path}.type", 
-                                   self.EQUIPMENT_TYPES, allow_null=False)
-            
-            if "referenceNos" in equipment:
-                ref_nos = equipment["referenceNos"]
-                self._validate_string(ref_nos, f"{path}.referenceNos", required=True)
-                if isinstance(ref_nos, str):
-                    self.equipment_reference_nos.add(ref_nos)
-            
-            if "description" in equipment:
-                self._validate_string(equipment["description"], f"{path}.description", 
-                                     required=True)
-            
-            if "ratedCapacity" in equipment:
-                self._validate_string(equipment["ratedCapacity"], f"{path}.ratedCapacity", 
-                                     required=True)
-            
-            if "numberOfUnits" in equipment:
-                num_units = equipment["numberOfUnits"]
-                self._validate_number(num_units, f"{path}.numberOfUnits", 
-                                     allow_null=False)
-                # Check if it's a positive integer (even if stored as float)
-                if isinstance(num_units, (int, float)) and not isinstance(num_units, bool):
-                    if num_units <= 0:
-                        self.errors.append(
-                            f"{path}.numberOfUnits: Must be positive, got {num_units}"
-                        )
-                    elif num_units != int(num_units):
-                        self.warnings.append(
-                            f"{path}.numberOfUnits: Expected integer count, got {num_units}"
-                        )
-            
-            # Optional fields
-            if "fuelType" in equipment:
-                self._validate_enum(equipment["fuelType"], f"{path}.fuelType", 
-                                   self.FUEL_TYPES)
-            
-            if "isEmergency" in equipment:
-                self._validate_boolean(equipment["isEmergency"], f"{path}.isEmergency")
-            
+            # Check for deprecated fields
             if "electricalCapacity_kW" in equipment:
-                self._validate_number(equipment["electricalCapacity_kW"], 
-                                     f"{path}.electricalCapacity_kW")
+                self.errors.append(
+                    f"{path}.electricalCapacity_kW: Deprecated field. "
+                    f"Use electricalCapacity_kW_perUnit and electricalCapacity_kW_total"
+                )
             
             if "mechanicalCapacity_bhp" in equipment:
-                self._validate_number(equipment["mechanicalCapacity_bhp"], 
-                                     f"{path}.mechanicalCapacity_bhp")
+                self.errors.append(
+                    f"{path}.mechanicalCapacity_bhp: Deprecated field. "
+                    f"Use mechanicalCapacity_bhp_perUnit and mechanicalCapacity_bhp_total"
+                )
             
             if "gasUsage_MMBTUhr" in equipment:
-                self._validate_number(equipment["gasUsage_MMBTUhr"], 
-                                     f"{path}.gasUsage_MMBTUhr")
+                self.errors.append(
+                    f"{path}.gasUsage_MMBTUhr: Deprecated field. "
+                    f"Use gasUsage_MMBTUhr_perUnit"
+                )
             
-            if "controls" in equipment:
-                self._validate_string(equipment["controls"], f"{path}.controls")
+            # Validate capacity fields shouldn't be 0 (should be null)
+            self._check_zero_vs_null(equipment, "electricalCapacity_kW_perUnit", path)
+            self._check_zero_vs_null(equipment, "electricalCapacity_kW_total", path)
+            self._check_zero_vs_null(equipment, "mechanicalCapacity_bhp_perUnit", path)
+            self._check_zero_vs_null(equipment, "mechanicalCapacity_bhp_total", path)
+            self._check_zero_vs_null(equipment, "gasUsage_MMBTUhr_perUnit", path)
             
-            if "addOnControlTechnology" in equipment:
-                self._validate_string(equipment["addOnControlTechnology"], 
-                                     f"{path}.addOnControlTechnology")
+            # Validate capacity consistency
+            self._validate_capacity_consistency(equipment, path)
             
-            if "originalPermitDate" in equipment:
-                self._validate_date(equipment["originalPermitDate"], 
-                                   f"{path}.originalPermitDate", allow_null=True)
+            # Validate numberOfUnits is positive integer
+            num_units = equipment.get("numberOfUnits")
+            if isinstance(num_units, (int, float)) and not isinstance(num_units, bool):
+                if num_units <= 0:
+                    self.errors.append(f"{path}.numberOfUnits: Must be positive, got {num_units}")
+                elif num_units != int(num_units):
+                    self.warnings.append(f"{path}.numberOfUnits: Expected integer count, got {num_units}")
     
-    def _validate_operational_limits(self, limits_list: List[Dict]):
-        """Validate operationalLimits array."""
-        if not self._validate_array(limits_list, "operationalLimits"):
+    def _check_zero_vs_null(self, obj: Dict, field: str, path: str):
+        """Warn if a capacity field is 0 (should be null if not specified)."""
+        value = obj.get(field)
+        if value == 0 or value == 0.0:
+            self.warnings.append(
+                f"{path}.{field}: Value is 0 - ensure this is explicitly stated in the "
+                f"source document (should be null if not mentioned)"
+            )
+    
+    def _validate_capacity_consistency(self, equipment: Dict, path: str):
+        """Validate that total capacity = per-unit capacity × numberOfUnits."""
+        num_units = equipment.get("numberOfUnits")
+        
+        if not isinstance(num_units, (int, float)) or isinstance(num_units, bool):
+            return
+        
+        # Check electrical capacity
+        per_unit_kw = equipment.get("electricalCapacity_kW_perUnit")
+        total_kw = equipment.get("electricalCapacity_kW_total")
+        
+        if (per_unit_kw is not None and total_kw is not None and 
+            isinstance(per_unit_kw, (int, float)) and isinstance(total_kw, (int, float))):
+            expected_total = per_unit_kw * num_units
+            if abs(total_kw - expected_total) > 0.01:
+                self.warnings.append(
+                    f"{path}: Electrical capacity mismatch. "
+                    f"Per-unit ({per_unit_kw} kW) × units ({num_units}) = {expected_total} kW, "
+                    f"but total is {total_kw} kW"
+                )
+        
+        # Check mechanical capacity
+        per_unit_bhp = equipment.get("mechanicalCapacity_bhp_perUnit")
+        total_bhp = equipment.get("mechanicalCapacity_bhp_total")
+        
+        if (per_unit_bhp is not None and total_bhp is not None and 
+            isinstance(per_unit_bhp, (int, float)) and isinstance(total_bhp, (int, float))):
+            expected_total = per_unit_bhp * num_units
+            if abs(total_bhp - expected_total) > 0.01:
+                self.warnings.append(
+                    f"{path}: Mechanical capacity mismatch. "
+                    f"Per-unit ({per_unit_bhp} bhp) × units ({num_units}) = {expected_total} bhp, "
+                    f"but total is {total_bhp} bhp"
+                )
+    
+    def _validate_operational_limits_logic(self, limits_list: List[Dict]):
+        """Custom validation for operational limits."""
+        if not isinstance(limits_list, list):
             return
         
         for idx, limit in enumerate(limits_list):
-            path = f"operationalLimits[{idx}]"
-            
             if not isinstance(limit, dict):
-                self.errors.append(f"{path}: Expected object, got {type(limit).__name__}")
                 continue
             
-            # Check required fields
-            self._validate_required_fields(
-                limit,
-                ["category", "appliesTo", "limitDetails"],
-                path
-            )
+            path = f"operationalLimits[{idx}]"
+            category = limit.get("category")
             
-            # Validate fields
-            if "category" in limit:
-                self._validate_enum(limit["category"], f"{path}.category", 
-                                   self.OPERATIONAL_CATEGORIES, allow_null=False)
-            
-            if "appliesTo" in limit:
-                applies_to = limit["appliesTo"]
-                if not self._validate_array(applies_to, f"{path}.appliesTo", 
-                                           allow_empty=True):
-                    continue
-                
-                # Validate each reference number
+            # Validate cross-references
+            applies_to = limit.get("appliesTo", [])
+            if isinstance(applies_to, list):
                 for ref_idx, ref_no in enumerate(applies_to):
-                    ref_path = f"{path}.appliesTo[{ref_idx}]"
-                    self._validate_string(ref_no, ref_path, required=True)
-                    
-                    # Cross-reference check
                     if isinstance(ref_no, str) and ref_no:
                         if ref_no not in self.equipment_reference_nos:
                             self.warnings.append(
-                                f"{ref_path}: Reference '{ref_no}' not found in "
-                                f"equipmentSummary reference numbers"
+                                f"{path}.appliesTo[{ref_idx}]: Reference '{ref_no}' not found in "
+                                f"equipmentSummary reference numbers. Check for exact match "
+                                f"(spaces, dashes, capitalization)."
                             )
             
-            if "limitDetails" in limit:
-                self._validate_string(limit["limitDetails"], f"{path}.limitDetails", 
-                                     required=True)
+            # Validate structuredData
+            structured_data = limit.get("structuredData")
+            if structured_data is not None and isinstance(structured_data, dict):
+                if category == "Hours of Operation Limits":
+                    self._validate_hours_structured_data(structured_data, path)
+                elif category == "Fuel Limits & Specifications":
+                    self._validate_fuel_structured_data(structured_data, path)
+                elif structured_data:
+                    # Warn if structuredData exists for other categories
+                    self.warnings.append(
+                        f"{path}.structuredData: Populated for category '{category}', "
+                        f"but structured fields are only defined for 'Hours of Operation Limits' "
+                        f"and 'Fuel Limits & Specifications'"
+                    )
     
-    def _validate_emission_limits(self, limits_list: List[Dict]):
-        """Validate emissionLimits array."""
-        if not self._validate_array(limits_list, "emissionLimits"):
+    def _validate_hours_structured_data(self, data: Dict, path: str):
+        """Validate structuredData for Hours of Operation Limits."""
+        hour_limit = data.get("hourLimitPerUnit")
+        if isinstance(hour_limit, (int, float)) and not isinstance(hour_limit, bool):
+            if hour_limit < 0:
+                self.errors.append(f"{path}.structuredData.hourLimitPerUnit: Cannot be negative")
+            elif hour_limit > 8760:
+                self.warnings.append(
+                    f"{path}.structuredData.hourLimitPerUnit: "
+                    f"Value {hour_limit} exceeds hours in a year (8760)"
+                )
+        
+        combined_limit = data.get("hourLimitCombined")
+        if isinstance(combined_limit, (int, float)) and not isinstance(combined_limit, bool):
+            if combined_limit < 0:
+                self.errors.append(f"{path}.structuredData.hourLimitCombined: Cannot be negative")
+        
+        # Check for unexpected fields
+        valid_fields = {"calculationMethod", "hourLimitPerUnit", "hourLimitCombined"}
+        for field in data.keys():
+            if field not in valid_fields:
+                self.warnings.append(
+                    f"{path}.structuredData.{field}: Unexpected field for 'Hours of Operation Limits'. "
+                    f"Valid fields are: {sorted(valid_fields)}"
+                )
+    
+    def _validate_fuel_structured_data(self, data: Dict, path: str):
+        """Validate structuredData for Fuel Limits & Specifications."""
+        sulfur = data.get("maxSulfurContent_percent")
+        if isinstance(sulfur, (int, float)) and not isinstance(sulfur, bool):
+            if sulfur < 0:
+                self.errors.append(f"{path}.structuredData.maxSulfurContent_percent: Cannot be negative")
+            elif sulfur > 100:
+                self.errors.append(
+                    f"{path}.structuredData.maxSulfurContent_percent: "
+                    f"Cannot exceed 100% (got {sulfur})"
+                )
+            elif sulfur > 5:
+                self.warnings.append(
+                    f"{path}.structuredData.maxSulfurContent_percent: "
+                    f"Value {sulfur}% seems unusually high. Typical values are < 0.5%"
+                )
+        
+        throughput = data.get("fuelThroughputLimit_gallons")
+        if isinstance(throughput, (int, float)) and not isinstance(throughput, bool):
+            if throughput < 0:
+                self.errors.append(f"{path}.structuredData.fuelThroughputLimit_gallons: Cannot be negative")
+        
+        # Check for unexpected fields
+        valid_fields = {
+            "astmSpecification", 
+            "maxSulfurContent_percent", 
+            "fuelThroughputLimit_gallons", 
+            "certificationRequired"
+        }
+        for field in data.keys():
+            if field not in valid_fields:
+                self.warnings.append(
+                    f"{path}.structuredData.{field}: Unexpected field for 'Fuel Limits & Specifications'. "
+                    f"Valid fields are: {sorted(valid_fields)}"
+                )
+    
+    def _validate_emission_limits_logic(self, limits_list: List[Dict]):
+        """Custom validation for emission limits."""
+        if not isinstance(limits_list, list):
             return
         
         for idx, limit in enumerate(limits_list):
+            if not isinstance(limit, dict):
+                continue
+            
             path = f"emissionLimits[{idx}]"
             
-            if not isinstance(limit, dict):
-                self.errors.append(f"{path}: Expected object, got {type(limit).__name__}")
-                continue
-            
-            # Check required fields
-            self._validate_required_fields(
-                limit,
-                ["type", "appliesTo", "pollutant", "limitValue", "limitUnit"],
-                path
-            )
-            
-            # Validate fields
-            if "type" in limit:
-                self._validate_enum(limit["type"], f"{path}.type", 
-                                   self.EMISSION_TYPES, allow_null=False)
-            
-            if "appliesTo" in limit:
-                applies_to = limit["appliesTo"]
-                if not self._validate_array(applies_to, f"{path}.appliesTo", 
-                                           allow_empty=True):
-                    continue
-                
-                # Validate each reference number
+            # Validate cross-references
+            applies_to = limit.get("appliesTo", [])
+            if isinstance(applies_to, list):
                 for ref_idx, ref_no in enumerate(applies_to):
-                    ref_path = f"{path}.appliesTo[{ref_idx}]"
-                    self._validate_string(ref_no, ref_path, required=True)
-                    
-                    # Cross-reference check
                     if isinstance(ref_no, str) and ref_no:
                         if ref_no not in self.equipment_reference_nos:
                             self.warnings.append(
-                                f"{ref_path}: Reference '{ref_no}' not found in "
-                                f"equipmentSummary reference numbers"
+                                f"{path}.appliesTo[{ref_idx}]: Reference '{ref_no}' not found in "
+                                f"equipmentSummary reference numbers. Check for exact match "
+                                f"(spaces, dashes, capitalization)."
                             )
-            
-            if "pollutant" in limit:
-                self._validate_string(limit["pollutant"], f"{path}.pollutant", 
-                                     required=True)
-            
-            if "limitValue" in limit:
-                self._validate_number(limit["limitValue"], f"{path}.limitValue", 
-                                     allow_null=False)
-            
-            if "limitUnit" in limit:
-                self._validate_string(limit["limitUnit"], f"{path}.limitUnit", 
-                                     required=True)
-            
-            if "conditions" in limit:
-                self._validate_string(limit["conditions"], f"{path}.conditions")
 
 
-def validate_file(file_path: str) -> Tuple[bool, List[str], List[str]]:
+def validate_file(file_path: str, schema_path: str = None) -> Tuple[bool, List[str], List[str]]:
     """
     Validate a JSON file against the permit data schema.
     
     Args:
         file_path: Path to the JSON file to validate
+        schema_path: Path to JSON schema file (optional)
     
     Returns:
         Tuple of (is_valid, errors, warnings)
@@ -389,16 +334,25 @@ def validate_file(file_path: str) -> Tuple[bool, List[str], List[str]]:
     except Exception as e:
         return False, [f"Error reading file: {e}"], []
     
-    validator = PermitDataValidator()
-    return validator.validate(data)
+    try:
+        validator = PermitDataValidator(schema_path)
+        return validator.validate(data)
+    except FileNotFoundError:
+        return False, [f"Schema file not found: {schema_path or 'schema.json'}"], []
+    except json.JSONDecodeError as e:
+        return False, [f"Invalid schema JSON: {e}"], []
+    except Exception as e:
+        return False, [f"Validation error: {e}"], []
 
 
-def validate_directory(directory_path: str, recursive: bool = True) -> Dict[str, Any]:
+def validate_directory(directory_path: str, schema_path: str = None, 
+                      recursive: bool = True) -> Dict[str, Any]:
     """
     Validate all JSON files in a directory.
     
     Args:
         directory_path: Path to directory containing JSON files
+        schema_path: Path to JSON schema file (optional)
         recursive: If True, search subdirectories
     
     Returns:
@@ -412,6 +366,11 @@ def validate_directory(directory_path: str, recursive: bool = True) -> Dict[str,
     pattern = "**/*.json" if recursive else "*.json"
     json_files = list(dir_path.glob(pattern))
     
+    # Exclude schema file from validation
+    if schema_path:
+        schema_file = Path(schema_path).resolve()
+        json_files = [f for f in json_files if f.resolve() != schema_file]
+    
     results = {
         "total_files": len(json_files),
         "valid_files": 0,
@@ -420,7 +379,7 @@ def validate_directory(directory_path: str, recursive: bool = True) -> Dict[str,
     }
     
     for json_file in json_files:
-        is_valid, errors, warnings = validate_file(str(json_file))
+        is_valid, errors, warnings = validate_file(str(json_file), schema_path)
         
         relative_path = json_file.relative_to(dir_path)
         results["files"][str(relative_path)] = {
@@ -449,6 +408,11 @@ def main():
         help="Path to JSON file or directory to validate"
     )
     parser.add_argument(
+        "--schema",
+        "-s",
+        help="Path to JSON schema file (default: schema.json in same directory as validator)"
+    )
+    parser.add_argument(
         "--no-recursive",
         action="store_true",
         help="Don't search subdirectories (only for directory validation)"
@@ -466,7 +430,7 @@ def main():
     
     if path.is_file():
         # Validate single file
-        is_valid, errors, warnings = validate_file(str(path))
+        is_valid, errors, warnings = validate_file(str(path), args.schema)
         
         print(f"\n{'='*70}")
         print(f"File: {path.name}")
@@ -492,7 +456,7 @@ def main():
     
     elif path.is_dir():
         # Validate directory
-        results = validate_directory(str(path), recursive=not args.no_recursive)
+        results = validate_directory(str(path), args.schema, recursive=not args.no_recursive)
         
         if "error" in results:
             print(f"Error: {results['error']}")
