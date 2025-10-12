@@ -3,7 +3,6 @@
 
 import os
 from pathlib import Path
-import pandas as pd
 from google import genai
 from google.genai import types
 import json
@@ -102,24 +101,28 @@ def process_pdf_with_gemini(pdf_path, client, model="gemini-flash-latest"):
                     "location": genai.types.Schema(type=genai.types.Type.STRING, description="A concise string describing the location, including county and full address if available."),
                     "equipmentSummary": genai.types.Schema(
                         type=genai.types.Type.ARRAY,
-                        description="A summary list of all equipment units, differentiating between constructed and previously permitted.",
+                        description="A summary list of all equipment units. Create ONE array item per equipment group/row as it appears in the source permit. Do NOT merge similar equipment.",
                         items=genai.types.Schema(
                             type=genai.types.Type.OBJECT,
                             required=["type", "referenceNos", "description", "ratedCapacity", "numberOfUnits"],
                             properties={
                                 "type": genai.types.Schema(type=genai.types.Type.STRING, description="Equipment type taxonomy - must be one of the four specified categories.", enum=["Constructed", "Modified", "Previously Permitted", "Exempt"]),
-                                "referenceNos": genai.types.Schema(type=genai.types.Type.STRING, description="The reference number(s) for the equipment (e.g., 'G-1', '1 through 26', 'CT01 through CT11')."),
+                                "referenceNos": genai.types.Schema(type=genai.types.Type.STRING, description="The reference number(s) for the equipment EXACTLY as written in the source document (e.g., 'G-1 to G-8', 'ENG161 – ENG175', 'CT01 through CT11'). Do NOT modify or simplify."),
                                 "description": genai.types.Schema(type=genai.types.Type.STRING, description="A concise description of the equipment, including make, model, and primary function (e.g., 'Caterpillar Model 3512 Diesel Generator', 'MTU 20V4000G83L 6 ECT emergency diesel engine gen-sets', 'SPX Marley Cooling Towers')."),
-                                "ratedCapacity": genai.types.Schema(type=genai.types.Type.STRING, description="The rated capacity of a single equipment unit, including units (e.g., '1,135 kW', '2,500 ekW 3,633 bhp (each)', '2,400 gpm (each)')."),
+                                "manufacturer": genai.types.Schema(type=genai.types.Type.STRING, description="The manufacturer name (e.g., 'Caterpillar', 'Cummins', 'MTU', 'Clarke', 'Kohler'). Null if not explicitly stated.", nullable=True),
+                                "ratedCapacity": genai.types.Schema(type=genai.types.Type.STRING, description="The rated capacity of a single equipment unit as written in the document, including units (e.g., '1,135 kW', '2,500 ekW 3,633 bhp (each)', '2,400 gpm (each)')."),
                                 "numberOfUnits": genai.types.Schema(type=genai.types.Type.NUMBER, description="The integer count of individual equipment units in this group (e.g., for 'Forty (40) generators', this value would be 40)."),
-                                "fuelType": genai.types.Schema(type=genai.types.Type.STRING, description="The type of fuel used by the equipment. Must be one of the specified values.", enum=["Diesel", "Gas", "Dual Fuel"]),
+                                "fuelType": genai.types.Schema(type=genai.types.Type.STRING, description="The type of fuel used by the equipment. Must be one of the specified values or null.", enum=["Diesel", "Gas", "Dual Fuel"], nullable=True),
                                 "isEmergency": genai.types.Schema(type=genai.types.Type.BOOLEAN, description="Set to true if the equipment is designated for emergency, standby, EP, or black start purposes."),
-                                "electricalCapacity_kW": genai.types.Schema(type=genai.types.Type.NUMBER, description="TOTAL combined electrical capacity in kilowatts (kW or ekW) as a number. For multiple units, this is the calculated combined capacity. Null if not specified."),
-                                "mechanicalCapacity_bhp": genai.types.Schema(type=genai.types.Type.NUMBER, description="TOTAL combined mechanical capacity in horsepower (HP or bhp) as a number. For multiple units, this is the calculated combined capacity. Null if not specified."),
-                                "gasUsage_MMBTUhr": genai.types.Schema(type=genai.types.Type.NUMBER, description="For gas-fired equipment, the heat input rate in MMBTU/hr as a number. Null if not applicable."),
+                                "isPeakLoad": genai.types.Schema(type=genai.types.Type.BOOLEAN, description="Set to true if the equipment is designated for peak load, peak shaving, demand response, ELRP, capacity bidding, or similar peak-demand programs. Can be true even if isEmergency is also true."),
+                                "electricalCapacity_kW_perUnit": genai.types.Schema(type=genai.types.Type.NUMBER, description="Electrical capacity in kilowatts (kW or ekW) for a SINGLE unit as a number. Null if not specified or not applicable. Use 0 only if explicitly stated as zero.", nullable=True),
+                                "electricalCapacity_kW_total": genai.types.Schema(type=genai.types.Type.NUMBER, description="TOTAL combined electrical capacity in kilowatts (kW or ekW) for all units in this group as a number. For multiple units, this is numberOfUnits × per-unit capacity. Null if not specified or not applicable. Use 0 only if explicitly stated as zero.", nullable=True),
+                                "mechanicalCapacity_bhp_perUnit": genai.types.Schema(type=genai.types.Type.NUMBER, description="Mechanical capacity in horsepower (HP or bhp) for a SINGLE unit as a number. Null if not specified or not applicable. Use 0 only if explicitly stated as zero.", nullable=True),
+                                "mechanicalCapacity_bhp_total": genai.types.Schema(type=genai.types.Type.NUMBER, description="TOTAL combined mechanical capacity in horsepower (HP or bhp) for all units in this group as a number. For multiple units, this is numberOfUnits × per-unit capacity. Null if not specified or not applicable. Use 0 only if explicitly stated as zero.", nullable=True),
+                                "gasUsage_MMBTUhr_perUnit": genai.types.Schema(type=genai.types.Type.NUMBER, description="For gas-fired equipment, the heat input rate in MMBTU/hr for a SINGLE unit as a number. Null if not applicable or not specified. Use 0 only if explicitly stated as zero.", nullable=True),
                                 "controls": genai.types.Schema(type=genai.types.Type.STRING, description="Inherent engine design features and good operating practices (e.g., 'electronic fuel injection, turbocharged engine, and aftercooler', 'good combustion practices')."),
                                 "addOnControlTechnology": genai.types.Schema(type=genai.types.Type.STRING, description="External emission reduction equipment (e.g., 'SCR - Steuler CERNOX', 'Catalyzed Diesel Particulate Filter (cDPF)'). Use 'None' if no external device is mentioned."),
-                                "originalPermitDate": genai.types.Schema(type=genai.types.Type.STRING, description="The original permit date for this specific equipment, if explicitly stated and different from the main permit issuance date (YYYY-MM-DD).", format="date"),
+                                "originalPermitDate": genai.types.Schema(type=genai.types.Type.STRING, description="The original permit date for this specific equipment, if explicitly stated and different from the main permit issuance date (YYYY-MM-DD).", format="date", nullable=True),
                             },
                         ),
                     ),
@@ -147,10 +150,53 @@ def process_pdf_with_gemini(pdf_path, client, model="gemini-flash-latest"):
                                 ),
                                 "appliesTo": genai.types.Schema(
                                     type=genai.types.Type.ARRAY,
-                                    description="A list of exact 'referenceNos' strings from the equipmentSummary this limit applies to, enabling direct programmatic matching.",
+                                    description="A list of exact 'referenceNos' strings from the equipmentSummary this limit applies to, enabling direct programmatic matching. Must match verbatim.",
                                     items=genai.types.Schema(type=genai.types.Type.STRING)
                                 ),
-                                "limitDetails": genai.types.Schema(type=genai.types.Type.STRING, description="The full, descriptive text of the operational limit, including values, units, conditions, calculation periods, and all granular details."),
+                                "limitDetails": genai.types.Schema(type=genai.types.Type.STRING, description="The full, descriptive text of the operational limit, including values, units, conditions, calculation periods, and all granular details. This is the source of truth."),
+                                "structuredData": genai.types.Schema(
+                                    type=genai.types.Type.OBJECT,
+                                    description="Structured extraction of key numeric and categorical data from the limit. Contents vary by category. Null if not applicable.",
+                                    nullable=True,
+                                    properties={
+                                        "calculationMethod": genai.types.Schema(
+                                            type=genai.types.Type.STRING,
+                                            description="For 'Hours of Operation Limits' only: How the hour limit is calculated.",
+                                            enum=["Calendar Year", "Rolling 12-Month", "Per Event", "Daily", "Monthly", "Other"],
+                                            nullable=True
+                                        ),
+                                        "hourLimitPerUnit": genai.types.Schema(
+                                            type=genai.types.Type.NUMBER,
+                                            description="For 'Hours of Operation Limits' only: Numeric hour limit per individual unit (e.g., 240 for '240 hours per year').",
+                                            nullable=True
+                                        ),
+                                        "hourLimitCombined": genai.types.Schema(
+                                            type=genai.types.Type.NUMBER,
+                                            description="For 'Hours of Operation Limits' only: Numeric hour limit for all units combined or facility-wide.",
+                                            nullable=True
+                                        ),
+                                        "astmSpecification": genai.types.Schema(
+                                            type=genai.types.Type.STRING,
+                                            description="For 'Fuel Limits & Specifications' only: ASTM fuel specification (e.g., 'ASTM D975 S15', 'ASTM D975 Grades 1-D or 2-D').",
+                                            nullable=True
+                                        ),
+                                        "maxSulfurContent_percent": genai.types.Schema(
+                                            type=genai.types.Type.NUMBER,
+                                            description="For 'Fuel Limits & Specifications' only: Maximum sulfur content as percentage (e.g., 0.0015 for 15 ppm ULSD).",
+                                            nullable=True
+                                        ),
+                                        "fuelThroughputLimit_gallons": genai.types.Schema(
+                                            type=genai.types.Type.NUMBER,
+                                            description="For 'Fuel Limits & Specifications' only: Annual fuel throughput limit in gallons per year.",
+                                            nullable=True
+                                        ),
+                                        "certificationRequired": genai.types.Schema(
+                                            type=genai.types.Type.BOOLEAN,
+                                            description="For 'Fuel Limits & Specifications' only: True if fuel supplier certification is required for each shipment.",
+                                            nullable=True
+                                        ),
+                                    }
+                                ),
                             },
                         ),
                     ),
@@ -164,13 +210,13 @@ def process_pdf_with_gemini(pdf_path, client, model="gemini-flash-latest"):
                                 "type": genai.types.Schema(type=genai.types.Type.STRING, description="Whether the limit is 'Hourly', 'Annual', or 'Visible Emissions'.", enum=["Hourly", "Annual", "Visible Emissions"]),
                                 "appliesTo": genai.types.Schema(
                                     type=genai.types.Type.ARRAY,
-                                    description="A list of exact 'referenceNos' strings from the equipmentSummary this limit applies to, enabling direct programmatic matching.",
+                                    description="A list of exact 'referenceNos' strings from the equipmentSummary this limit applies to, enabling direct programmatic matching. Must match verbatim.",
                                     items=genai.types.Schema(type=genai.types.Type.STRING)
                                 ),
-                                "pollutant": genai.types.Schema(type=genai.types.Type.STRING, description="The pollutant(s) being limited (e.g., 'PM-10', 'Nitrogen Oxides (as NO2)', 'Opacity')."),
+                                "pollutant": genai.types.Schema(type=genai.types.Type.STRING, description="The pollutant(s) being limited (e.g., 'PM-10', 'PM10', 'PM2.5', 'Nitrogen Oxides (as NO2)', 'NOx', 'Carbon Monoxide', 'CO', 'Volatile Organic Compounds', 'VOC', 'Sulfur Dioxide', 'SO2', 'Opacity')."),
                                 "limitValue": genai.types.Schema(type=genai.types.Type.NUMBER, description="The numeric limit value as a number (e.g., 1.2, 96.03, 10). For Visible Emissions with conditions, use the primary limit value."),
-                                "limitUnit": genai.types.Schema(type=genai.types.Type.STRING, description="The unit of the limit value (e.g., 'lbs/hr', 'tpy', 'percent opacity', 'ppm', 'g/dscm'). For complex visible emission limits, include conditions here."),
-                                "conditions": genai.types.Schema(type=genai.types.Type.STRING, description="Any specific conditions or context for this limit (e.g., 'Uncontrolled by SCR', 'During startup and shutdown', 'Calculated monthly as consecutive 12-month period')."),
+                                "limitUnit": genai.types.Schema(type=genai.types.Type.STRING, description="The standardized unit of the limit value. Must use ONLY: 'lb/hr', 'tons/yr', 'g/kW-hr', 'lb/kW-hr', 'lb/gal', 'percent opacity', 'ppm', or 'g/dscm'.", enum=["lb/hr", "tons/yr", "g/kW-hr", "lb/kW-hr", "lb/gal", "percent opacity", "ppm", "g/dscm"]),
+                                "conditions": genai.types.Schema(type=genai.types.Type.STRING, description="Any specific conditions or context for this limit (e.g., 'Uncontrolled by SCR', 'During startup and shutdown', 'Calculated monthly as consecutive 12-month period', 'except during one 6-minute period not exceeding 20%').", nullable=True),
                             },
                         ),
                     ),
@@ -220,9 +266,14 @@ def process_pdf_with_gemini(pdf_path, client, model="gemini-flash-latest"):
 def process_pdf_with_gemini_year(pdf_path, client, output_dir, model="gemini-flash-latest"):
     """
     Process a single PDF and save to year-specific directory
+    Retries with gemini-2.5-pro if initial extraction fails
     """
-    # Process the PDF
+    # First attempt with the specified model
     extracted_data, json_filename = process_pdf_with_gemini(pdf_path, client, model)
+    
+    # If failed and we're using flash, retry with pro model
+    if not extracted_data and model == "gemini-flash-latest":
+        extracted_data, json_filename = process_pdf_with_gemini(pdf_path, client, "gemini-2.5-pro")
     
     if extracted_data and json_filename:
         # Save to year-specific directory
@@ -267,7 +318,7 @@ def process_all_pdfs():
     print(f"Found {len(year_dirs)} year directories: {[d.name for d in year_dirs]}")
     
     # Create base output directory
-    json_data_base = Path('extracted_data')
+    json_data_base = Path('extracted_data_v2')
     json_data_base.mkdir(exist_ok=True)
     
     # Process each year directory
