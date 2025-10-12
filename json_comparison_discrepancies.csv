@@ -1,0 +1,432 @@
+extracted_file,vix_file,section,item_index,field,extracted_value,vix_value,mismatch_type
+61610_2013-01-31.json,61610_20130131.json,equipmentSummary,0.0,numberOfUnits,4.0,1.0,value_difference
+61610_2013-01-31.json,61610_20130131.json,equipmentSummary,0.0,electricalCapacity_kW,4000.0,1000.0,value_difference
+61610_2013-01-31.json,61610_20130131.json,equipmentSummary,0.0,mechanicalCapacity_bhp,5896.0,1474.0,value_difference
+61610_2013-01-31.json,61610_20130131.json,equipmentSummary,1.0,type,Exempt,Constructed,value_difference
+61610_2013-01-31.json,61610_20130131.json,equipmentSummary,1.0,isEmergency,False,True,value_difference
+61610_2013-01-31.json,61610_20130131.json,equipmentSummary,1.0,electricalCapacity_kW,0.0,1000.0,value_difference
+61610_2013-01-31.json,61610_20130131.json,equipmentSummary,1.0,mechanicalCapacity_bhp,0.0,1474.0,value_difference
+61610_2013-01-31.json,61610_20130131.json,equipmentSummary,2.0,type,Exempt,Constructed,value_difference
+61610_2013-01-31.json,61610_20130131.json,equipmentSummary,2.0,fuelType,Gas,Diesel,value_difference
+61610_2013-01-31.json,61610_20130131.json,equipmentSummary,2.0,isEmergency,False,True,value_difference
+61610_2013-01-31.json,61610_20130131.json,equipmentSummary,2.0,electricalCapacity_kW,0.0,1000.0,value_difference
+61610_2013-01-31.json,61610_20130131.json,equipmentSummary,2.0,mechanicalCapacity_bhp,0.0,1474.0,value_difference
+61610_2013-01-31.json,61610_20130131.json,equipmentSummary,2.0,gasUsage_MMBTUhr,2.3,0.0,value_difference
+61610_2013-01-31.json,61610_20130131.json,equipmentSummary,3.0,type,Exempt,Constructed,value_difference
+61610_2013-01-31.json,61610_20130131.json,equipmentSummary,3.0,numberOfUnits,2.0,1.0,value_difference
+61610_2013-01-31.json,61610_20130131.json,equipmentSummary,3.0,isEmergency,False,True,value_difference
+61610_2013-01-31.json,61610_20130131.json,equipmentSummary,3.0,electricalCapacity_kW,0.0,1000.0,value_difference
+61610_2013-01-31.json,61610_20130131.json,equipmentSummary,3.0,mechanicalCapacity_bhp,0.0,1474.0,value_difference
+72296_2013-01-31.json,72296_20130131.json,equipmentSummary,4.0,isEmergency,False,,value_difference
+72296_2013-01-31.json,72296_20130131.json,equipmentSummary,5.0,isEmergency,False,,value_difference
+74020_2013-01-10.json,74020_20130110.json,equipmentSummary,0.0,type,Constructed,Previously Permitted,value_difference
+74020_2013-01-10.json,74020_20130110.json,equipmentSummary,1.0,type,Constructed,Previously Permitted,value_difference
+74020_2013-01-10.json,74020_20130110.json,equipmentSummary,2.0,type,Constructed,Previously Permitted,value_difference
+74020_2013-01-10.json,74020_20130110.json,equipmentSummary,3.0,type,Constructed,Previously Permitted,value_difference
+74020_2013-01-10.json,74020_20130110.json,equipmentSummary,4.0,type,Constructed,Previously Permitted,value_difference
+74020_2013-01-10.json,74020_20130110.json,equipmentSummary,5.0,type,Constructed,Previously Permitted,value_difference
+74020_2013-01-10.json,74020_20130110.json,equipmentSummary,6.0,type,Constructed,Previously Permitted,value_difference
+74020_2013-01-10.json,74020_20130110.json,equipmentSummary,7.0,type,Constructed,Previously Permitted,value_difference
+73363_2014-07-16.json,73363_20140716.json,equipmentSummary,2.0,isEmergency,False,,value_difference
+73995_2014-05-08.json,73995_20140508.json,equipmentSummary,5.0,numberOfUnits,4.0,1.0,value_difference
+73995_2014-05-08.json,73995_20140508.json,equipmentSummary,5.0,electricalCapacity_kW,8000.0,2000.0,value_difference
+73995_2014-05-08.json,73995_20140508.json,equipmentSummary,5.0,mechanicalCapacity_bhp,11748.0,2937.0,value_difference
+73995_2014-05-08.json,73995_20140508.json,equipmentSummary,6.0,numberOfUnits,2.0,1.0,value_difference
+73995_2014-05-08.json,73995_20140508.json,equipmentSummary,6.0,electricalCapacity_kW,4000.0,2000.0,value_difference
+73995_2014-05-08.json,73995_20140508.json,equipmentSummary,6.0,mechanicalCapacity_bhp,5874.0,2937.0,value_difference
+74074_2022-05-18.json,74074_20220518.json,equipmentSummary,0.0,type,Previously Permitted,Constructed,value_difference
+74074_2022-05-18.json,74074_20220518.json,equipmentSummary,0.0,numberOfUnits,2.0,4.0,value_difference
+74074_2022-05-18.json,74074_20220518.json,equipmentSummary,0.0,electricalCapacity_kW,3000.0,10000.0,value_difference
+74074_2022-05-18.json,74074_20220518.json,equipmentSummary,0.0,mechanicalCapacity_bhp,4412.0,14536.0,value_difference
+74074_2022-05-18.json,74074_20220518.json,equipmentSummary,1.0,type,Constructed,Previously Permitted,value_difference
+74074_2022-05-18.json,74074_20220518.json,equipmentSummary,1.0,numberOfUnits,4.0,2.0,value_difference
+74074_2022-05-18.json,74074_20220518.json,equipmentSummary,1.0,electricalCapacity_kW,10000.0,3000.0,value_difference
+74074_2022-05-18.json,74074_20220518.json,equipmentSummary,1.0,mechanicalCapacity_bhp,14536.0,4412.0,value_difference
+74130_2022-03-03.json,74130_20220303.json,top_level,,permitIssuanceDate,2022-03-03,2018-03-02,value_difference
+74169_2022-07-18.json,74169_20220718.json,equipmentSummary,0.0,type,Constructed,Previously Permitted,value_difference
+74169_2022-07-18.json,74169_20220718.json,equipmentSummary,0.0,numberOfUnits,4.0,64.0,value_difference
+74169_2022-07-18.json,74169_20220718.json,equipmentSummary,0.0,electricalCapacity_kW,10000.0,144000.0,value_difference
+74169_2022-07-18.json,74169_20220718.json,equipmentSummary,0.0,mechanicalCapacity_bhp,14536.0,209472.0,value_difference
+74169_2022-07-18.json,74169_20220718.json,equipmentSummary,1.0,type,Constructed,Previously Permitted,value_difference
+74169_2022-07-18.json,74169_20220718.json,equipmentSummary,1.0,numberOfUnits,40.0,1.0,value_difference
+74169_2022-07-18.json,74169_20220718.json,equipmentSummary,1.0,electricalCapacity_kW,120000.0,1000.0,value_difference
+74169_2022-07-18.json,74169_20220718.json,equipmentSummary,1.0,mechanicalCapacity_bhp,176920.0,1483.0,value_difference
+74169_2022-07-18.json,74169_20220718.json,equipmentSummary,2.0,numberOfUnits,64.0,1.0,value_difference
+74169_2022-07-18.json,74169_20220718.json,equipmentSummary,2.0,electricalCapacity_kW,144000.0,1000.0,value_difference
+74169_2022-07-18.json,74169_20220718.json,equipmentSummary,2.0,mechanicalCapacity_bhp,209472.0,1483.0,value_difference
+74169_2022-07-18.json,74169_20220718.json,equipmentSummary,3.0,type,Previously Permitted,Constructed,value_difference
+74169_2022-07-18.json,74169_20220718.json,equipmentSummary,3.0,numberOfUnits,2.0,4.0,value_difference
+74169_2022-07-18.json,74169_20220718.json,equipmentSummary,3.0,electricalCapacity_kW,2000.0,10000.0,value_difference
+74169_2022-07-18.json,74169_20220718.json,equipmentSummary,3.0,mechanicalCapacity_bhp,2966.0,14536.0,value_difference
+74246_2022-12-06.json,74246_20221206.json,equipmentSummary,0.0,mechanicalCapacity_bhp,92883.0,90972.0,value_difference
+3014202_2025-02-12.json,30142_20250212.json,equipmentSummary,1.0,numberOfUnits,4.0,3.0,value_difference
+3014202_2025-02-12.json,30142_20250212.json,equipmentSummary,1.0,electricalCapacity_kW,12000.0,9000.0,value_difference
+3014202_2025-02-12.json,30142_20250212.json,equipmentSummary,1.0,mechanicalCapacity_bhp,17236.0,12927.0,value_difference
+53197_2025-02-14.json,53197_20250214.json,equipmentSummary,0.0,numberOfUnits,6.0,1.0,value_difference
+53197_2025-02-14.json,53197_20250214.json,equipmentSummary,0.0,electricalCapacity_kW,18000.0,3000.0,value_difference
+53197_2025-02-14.json,53197_20250214.json,equipmentSummary,1.0,electricalCapacity_kW,500.0,3000.0,value_difference
+73355_2025-05-19.json,73355_20250519.json,equipmentSummary,2.0,type,Previously Permitted,Constructed,value_difference
+73355_2025-05-19.json,73355_20250519.json,equipmentSummary,9.0,numberOfUnits,2.0,17.0,value_difference
+73355_2025-05-19.json,73355_20250519.json,equipmentSummary,9.0,electricalCapacity_kW,3650.0,42500.0,value_difference
+73355_2025-05-19.json,73355_20250519.json,equipmentSummary,9.0,mechanicalCapacity_bhp,5186.0,61778.0,value_difference
+73355_2025-05-19.json,73355_20250519.json,equipmentSummary,10.0,numberOfUnits,17.0,2.0,value_difference
+73355_2025-05-19.json,73355_20250519.json,equipmentSummary,10.0,electricalCapacity_kW,42500.0,5000.0,value_difference
+73355_2025-05-19.json,73355_20250519.json,equipmentSummary,10.0,mechanicalCapacity_bhp,61778.0,7346.0,value_difference
+73355_2025-05-19.json,73355_20250519.json,equipmentSummary,11.0,type,Previously Permitted,Exempt,value_difference
+73355_2025-05-19.json,73355_20250519.json,equipmentSummary,11.0,numberOfUnits,2.0,3.0,value_difference
+73355_2025-05-19.json,73355_20250519.json,equipmentSummary,11.0,fuelType,Diesel,,value_difference
+73355_2025-05-19.json,73355_20250519.json,equipmentSummary,11.0,isEmergency,True,,value_difference
+73355_2025-05-19.json,73355_20250519.json,equipmentSummary,11.0,electricalCapacity_kW,5000.0,0.0,value_difference
+73355_2025-05-19.json,73355_20250519.json,equipmentSummary,11.0,mechanicalCapacity_bhp,7346.0,0.0,value_difference
+73355_2025-05-19.json,73355_20250519.json,equipmentSummary,12.0,numberOfUnits,3.0,10.0,value_difference
+73355_2025-05-19.json,73355_20250519.json,equipmentSummary,12.0,fuelType,Diesel,,value_difference
+73355_2025-05-19.json,73355_20250519.json,equipmentSummary,12.0,isEmergency,False,,value_difference
+73355_2025-05-19.json,73355_20250519.json,equipmentSummary,13.0,numberOfUnits,10.0,2.0,value_difference
+73355_2025-05-19.json,73355_20250519.json,equipmentSummary,13.0,fuelType,Diesel,,value_difference
+73355_2025-05-19.json,73355_20250519.json,equipmentSummary,13.0,isEmergency,False,,value_difference
+73355_2025-05-19.json,73355_20250519.json,equipmentSummary,14.0,numberOfUnits,2.0,1.0,value_difference
+73355_2025-05-19.json,73355_20250519.json,equipmentSummary,14.0,fuelType,Diesel,,value_difference
+73355_2025-05-19.json,73355_20250519.json,equipmentSummary,14.0,isEmergency,False,,value_difference
+73355_2025-05-19.json,73355_20250519.json,equipmentSummary,15.0,numberOfUnits,1.0,24.0,value_difference
+73355_2025-05-19.json,73355_20250519.json,equipmentSummary,15.0,fuelType,Diesel,,value_difference
+73355_2025-05-19.json,73355_20250519.json,equipmentSummary,15.0,isEmergency,False,,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,0.0,numberOfUnits,43.0,12.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,0.0,electricalCapacity_kW,86000.0,24000.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,0.0,mechanicalCapacity_bhp,125517.0,35028.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,1.0,numberOfUnits,14.0,1.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,1.0,electricalCapacity_kW,28000.0,275.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,1.0,mechanicalCapacity_bhp,41118.0,470.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,2.0,numberOfUnits,53.0,12.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,2.0,electricalCapacity_kW,106000.0,24000.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,2.0,mechanicalCapacity_bhp,155661.0,35028.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,3.0,numberOfUnits,21.0,1.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,3.0,electricalCapacity_kW,52500.0,500.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,3.0,mechanicalCapacity_bhp,76293.0,732.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,4.0,numberOfUnits,1.0,9.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,4.0,electricalCapacity_kW,275.0,18000.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,4.0,mechanicalCapacity_bhp,470.0,26271.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,5.0,electricalCapacity_kW,500.0,350.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,5.0,mechanicalCapacity_bhp,732.0,520.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,6.0,numberOfUnits,1.0,9.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,6.0,electricalCapacity_kW,350.0,18000.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,6.0,mechanicalCapacity_bhp,520.0,26271.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,8.0,numberOfUnits,1.0,14.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,8.0,electricalCapacity_kW,600.0,28000.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,8.0,mechanicalCapacity_bhp,900.0,41118.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,9.0,electricalCapacity_kW,300.0,600.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,9.0,mechanicalCapacity_bhp,480.0,900.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,10.0,numberOfUnits,1.0,15.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,10.0,electricalCapacity_kW,600.0,30000.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,10.0,mechanicalCapacity_bhp,900.0,44055.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,11.0,electricalCapacity_kW,600.0,300.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,11.0,mechanicalCapacity_bhp,900.0,480.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,12.0,numberOfUnits,1.0,18.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,12.0,electricalCapacity_kW,600.0,36000.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,12.0,mechanicalCapacity_bhp,900.0,52866.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,13.0,type,Exempt,Previously Permitted,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,13.0,numberOfUnits,112.0,1.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,13.0,electricalCapacity_kW,0.0,600.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,13.0,mechanicalCapacity_bhp,0.0,900.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,14.0,type,Exempt,Previously Permitted,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,14.0,numberOfUnits,21.0,3.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,14.0,electricalCapacity_kW,0.0,6000.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,14.0,mechanicalCapacity_bhp,0.0,8811.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,15.0,type,Exempt,Previously Permitted,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,15.0,electricalCapacity_kW,0.0,18000.0,value_difference
+7367014_2025-03-14.json,73670_20250314.json,equipmentSummary,15.0,mechanicalCapacity_bhp,0.0,26298.0,value_difference
+73860_2025-01-30.json,73860_20250130.json,equipmentSummary,18.0,type,Previously Permitted,Exempt,value_difference
+73860_2025-01-30.json,73860_20250130.json,equipmentSummary,19.0,type,Previously Permitted,Exempt,value_difference
+74141_2025-06-10.json,74141_20250610.json,equipmentSummary,4.0,fuelType,Gas,,value_difference
+74141_2025-06-10.json,74141_20250610.json,equipmentSummary,4.0,isEmergency,False,,value_difference
+74163_2025-04-30.json,74163_20250430.json,equipmentSummary,2.0,mechanicalCapacity_bhp,379042.0,380042.0,value_difference
+74163_2025-04-30.json,74163_20250430.json,equipmentSummary,4.0,type,Modified,Previously Permitted,value_difference
+74163_2025-04-30.json,74163_20250430.json,equipmentSummary,5.0,fuelType,Diesel,,value_difference
+74163_2025-04-30.json,74163_20250430.json,equipmentSummary,5.0,isEmergency,False,,value_difference
+74163_2025-04-30.json,74163_20250430.json,equipmentSummary,6.0,fuelType,Diesel,,value_difference
+74163_2025-04-30.json,74163_20250430.json,equipmentSummary,6.0,isEmergency,False,,value_difference
+74262_2025-08-29.json,74262_20250829.json,equipmentSummary,4.0,mechanicalCapacity_bhp,527160.0,523320.0,value_difference
+51232_2024-06-24.json,51232_20240624.json,equipmentSummary,11.0,mechanicalCapacity_bhp,1071785.0,1071735.0,value_difference
+51232_2024-06-24.json,51232_20240624.json,equipmentSummary,12.0,fuelType,Diesel,,value_difference
+51232_2024-06-24.json,51232_20240624.json,equipmentSummary,12.0,isEmergency,False,,value_difference
+51232_2024-06-24.json,51232_20240624.json,equipmentSummary,13.0,fuelType,Diesel,,value_difference
+51232_2024-06-24.json,51232_20240624.json,equipmentSummary,13.0,isEmergency,False,,value_difference
+51232_2024-06-24.json,51232_20240624.json,equipmentSummary,14.0,fuelType,Diesel,,value_difference
+51232_2024-06-24.json,51232_20240624.json,equipmentSummary,14.0,isEmergency,False,,value_difference
+73233_2024-03-19.json,73233_20240319.json,equipmentSummary,5.0,type,Modified,Previously Permitted,value_difference
+73233_2024-03-19.json,73233_20240319.json,equipmentSummary,6.0,type,Modified,Previously Permitted,value_difference
+73757_2024-07-30.json,73757_20240730.json,equipmentSummary,1.0,numberOfUnits,3.0,1.0,value_difference
+73757_2024-07-30.json,73757_20240730.json,equipmentSummary,1.0,electricalCapacity_kW,9000.0,3000.0,value_difference
+73757_2024-07-30.json,73757_20240730.json,equipmentSummary,1.0,mechanicalCapacity_bhp,13269.0,4423.0,value_difference
+74063_2024-05-28.json,74063_20240528.json,equipmentSummary,8.0,type,Previously Permitted,Exempt,value_difference
+74063_2024-05-28.json,74063_20240528.json,equipmentSummary,9.0,type,Previously Permitted,Exempt,value_difference
+74081_2024-07-08.json,74081_20240708.json,equipmentSummary,3.0,type,Constructed,Exempt,value_difference
+74112_2024-10-16.json,74112_20241016.json,equipmentSummary,2.0,electricalCapacity_kW,93177.0,87000.0,value_difference
+74152_2024-01-30.json,74152_20240130.json,equipmentSummary,0.0,fuelType,Gas,,value_difference
+74152_2024-01-30.json,74152_20240130.json,equipmentSummary,0.0,isEmergency,False,,value_difference
+74152_2024-01-30.json,74152_20240130.json,equipmentSummary,6.0,fuelType,Gas,,value_difference
+74152_2024-01-30.json,74152_20240130.json,equipmentSummary,6.0,isEmergency,False,,value_difference
+74152_2024-01-30.json,74152_20240130.json,equipmentSummary,7.0,fuelType,Gas,,value_difference
+74152_2024-01-30.json,74152_20240130.json,equipmentSummary,7.0,isEmergency,False,,value_difference
+74161_2024-10-01.json,74161_20241001.json,equipmentSummary,3.0,type,Previously Permitted,Modified,value_difference
+74161_2024-10-01.json,74161_20241001.json,equipmentSummary,4.0,electricalCapacity_kW,262500.0,252000.0,value_difference
+74161_2024-10-01.json,74161_20241001.json,equipmentSummary,4.0,mechanicalCapacity_bhp,352065.0,314130.0,value_difference
+74173_2024-11-19.json,74173_20241119.json,equipmentSummary,0.0,electricalCapacity_kW,2500.0,2250.0,value_difference
+74173_2024-11-19.json,74173_20241119.json,equipmentSummary,0.0,mechanicalCapacity_bhp,3353.0,3202.0,value_difference
+74173_2024-11-19.json,74173_20241119.json,equipmentSummary,5.0,electricalCapacity_kW,82500.0,74250.0,value_difference
+74173_2024-11-19.json,74173_20241119.json,equipmentSummary,5.0,mechanicalCapacity_bhp,110649.0,105666.0,value_difference
+74198_2024-07-16.json,74198_20240716.json,equipmentSummary,5.0,type,Modified,Previously Permitted,value_difference
+74198_2024-07-16.json,74198_20240716.json,equipmentSummary,6.0,type,Modified,Previously Permitted,value_difference
+74198_2024-07-16.json,74198_20240716.json,equipmentSummary,6.0,numberOfUnits,2.0,1.0,value_difference
+74198_2024-07-16.json,74198_20240716.json,equipmentSummary,6.0,electricalCapacity_kW,6000.0,3000.0,value_difference
+74198_2024-07-16.json,74198_20240716.json,equipmentSummary,6.0,mechanicalCapacity_bhp,8846.0,4423.0,value_difference
+74198_2024-07-16.json,74198_20240716.json,equipmentSummary,7.0,type,Modified,Previously Permitted,value_difference
+74198_2024-07-16.json,74198_20240716.json,equipmentSummary,8.0,type,Modified,Previously Permitted,value_difference
+74198_2024-07-16.json,74198_20240716.json,equipmentSummary,9.0,numberOfUnits,6.0,1.0,value_difference
+74198_2024-07-16.json,74198_20240716.json,equipmentSummary,9.0,electricalCapacity_kW,18000.0,3000.0,value_difference
+74198_2024-07-16.json,74198_20240716.json,equipmentSummary,9.0,mechanicalCapacity_bhp,26538.0,4423.0,value_difference
+74198_2024-07-16.json,74198_20240716.json,equipmentSummary,10.0,electricalCapacity_kW,1000.0,3000.0,value_difference
+74198_2024-07-16.json,74198_20240716.json,equipmentSummary,10.0,mechanicalCapacity_bhp,1474.0,4423.0,value_difference
+74216_2024-02-27.json,74216_20240227.json,equipmentSummary,2.0,fuelType,Diesel,,value_difference
+74216_2024-02-27.json,74216_20240227.json,equipmentSummary,2.0,isEmergency,False,,value_difference
+74216_2024-02-27.json,74216_20240227.json,equipmentSummary,6.0,numberOfUnits,2.0,1.0,value_difference
+74216_2024-02-27.json,74216_20240227.json,equipmentSummary,6.0,isEmergency,False,True,value_difference
+74216_2024-02-27.json,74216_20240227.json,equipmentSummary,6.0,electricalCapacity_kW,548.0,274.0,value_difference
+74216_2024-02-27.json,74216_20240227.json,equipmentSummary,6.0,mechanicalCapacity_bhp,732.0,366.0,value_difference
+74216_2024-02-27.json,74216_20240227.json,equipmentSummary,7.0,numberOfUnits,21.0,1.0,value_difference
+74216_2024-02-27.json,74216_20240227.json,equipmentSummary,7.0,isEmergency,False,True,value_difference
+74216_2024-02-27.json,74216_20240227.json,equipmentSummary,7.0,electricalCapacity_kW,0.0,274.0,value_difference
+74216_2024-02-27.json,74216_20240227.json,equipmentSummary,7.0,mechanicalCapacity_bhp,0.0,366.0,value_difference
+74232_2024-08-05.json,74232_20240805.json,equipmentSummary,0.0,type,Previously Permitted,Constructed,value_difference
+74232_2024-08-05.json,74232_20240805.json,equipmentSummary,0.0,numberOfUnits,60.0,1.0,value_difference
+74232_2024-08-05.json,74232_20240805.json,equipmentSummary,0.0,electricalCapacity_kW,135000.0,1588.0,value_difference
+74232_2024-08-05.json,74232_20240805.json,equipmentSummary,0.0,mechanicalCapacity_bhp,201180.0,2328.0,value_difference
+74232_2024-08-05.json,74232_20240805.json,equipmentSummary,1.0,electricalCapacity_kW,1588.0,1500.0,value_difference
+74232_2024-08-05.json,74232_20240805.json,equipmentSummary,2.0,type,Constructed,Previously Permitted,value_difference
+74232_2024-08-05.json,74232_20240805.json,equipmentSummary,2.0,numberOfUnits,1.0,62.0,value_difference
+74232_2024-08-05.json,74232_20240805.json,equipmentSummary,2.0,electricalCapacity_kW,1500.0,139500.0,value_difference
+74232_2024-08-05.json,74232_20240805.json,equipmentSummary,2.0,mechanicalCapacity_bhp,2328.0,207886.0,value_difference
+74237_2024-01-17.json,74237_20240117.json,equipmentSummary,2.0,numberOfUnits,2.0,1.0,value_difference
+74237_2024-01-17.json,74237_20240117.json,equipmentSummary,2.0,mechanicalCapacity_bhp,220.0,110.0,value_difference
+74241_2024-10-07.json,74241_20241007.json,equipmentSummary,0.0,type,Previously Permitted,Constructed,value_difference
+74241_2024-10-07.json,74241_20241007.json,equipmentSummary,0.0,numberOfUnits,65.0,1.0,value_difference
+74241_2024-10-07.json,74241_20241007.json,equipmentSummary,0.0,electricalCapacity_kW,146250.0,150.0,value_difference
+74241_2024-10-07.json,74241_20241007.json,equipmentSummary,0.0,mechanicalCapacity_bhp,217945.0,237.0,value_difference
+74241_2024-10-07.json,74241_20241007.json,equipmentSummary,1.0,numberOfUnits,1.0,65.0,value_difference
+74241_2024-10-07.json,74241_20241007.json,equipmentSummary,1.0,electricalCapacity_kW,150.0,146250.0,value_difference
+74241_2024-10-07.json,74241_20241007.json,equipmentSummary,1.0,mechanicalCapacity_bhp,237.0,217945.0,value_difference
+74241_2024-10-07.json,74241_20241007.json,equipmentSummary,3.0,numberOfUnits,65.0,49.0,value_difference
+74241_2024-10-07.json,74241_20241007.json,equipmentSummary,3.0,electricalCapacity_kW,146250.0,137200.0,value_difference
+74241_2024-10-07.json,74241_20241007.json,equipmentSummary,3.0,mechanicalCapacity_bhp,217945.0,197764.0,value_difference
+74241_2024-10-07.json,74241_20241007.json,equipmentSummary,5.0,type,Constructed,Previously Permitted,value_difference
+74241_2024-10-07.json,74241_20241007.json,equipmentSummary,5.0,numberOfUnits,49.0,65.0,value_difference
+74241_2024-10-07.json,74241_20241007.json,equipmentSummary,5.0,electricalCapacity_kW,137200.0,146250.0,value_difference
+74241_2024-10-07.json,74241_20241007.json,equipmentSummary,5.0,mechanicalCapacity_bhp,197764.0,217945.0,value_difference
+74264_2024-09-20.json,74264_20240920.json,equipmentSummary,0.0,type,Constructed,Previously Permitted,value_difference
+74264_2024-09-20.json,74264_20240920.json,equipmentSummary,1.0,type,Constructed,Previously Permitted,value_difference
+74269_2024-06-18.json,74269_20240618.json,equipmentSummary,0.0,mechanicalCapacity_bhp,185766.0,181860.0,value_difference
+74160_2023-01-20.json,74160_20230120.json,equipmentSummary,1.0,numberOfUnits,75.0,6.0,value_difference
+74160_2023-01-20.json,74160_20230120.json,equipmentSummary,1.0,electricalCapacity_kW,150000.0,12000.0,value_difference
+74160_2023-01-20.json,74160_20230120.json,equipmentSummary,1.0,mechanicalCapacity_bhp,219150.0,17532.0,value_difference
+74224_2023-10-16.json,74224_20231016.json,equipmentSummary,3.0,mechanicalCapacity_bhp,92883.0,0.0,value_difference
+7397701_2012-04-09.json,73977_20120409.json,equipmentSummary,1.0,electricalCapacity_kW,3000.0,9000.0,value_difference
+7397701_2012-04-09.json,73977_20120409.json,equipmentSummary,1.0,mechanicalCapacity_bhp,4423.0,13269.0,value_difference
+73180_2008-08-07.json,73180_20080807.json,equipmentSummary,0.0,numberOfUnits,4.0,1.0,value_difference
+73180_2008-08-07.json,73180_20080807.json,equipmentSummary,0.0,electricalCapacity_kW,8000.0,2000.0,value_difference
+73180_2008-08-07.json,73180_20080807.json,equipmentSummary,0.0,mechanicalCapacity_bhp,11388.0,2847.0,value_difference
+73180_2008-08-07.json,73180_20080807.json,equipmentSummary,1.0,type,Previously Permitted,Modified,value_difference
+73180_2008-08-07.json,73180_20080807.json,equipmentSummary,1.0,numberOfUnits,6.0,1.0,value_difference
+73180_2008-08-07.json,73180_20080807.json,equipmentSummary,1.0,electricalCapacity_kW,12000.0,2000.0,value_difference
+73180_2008-08-07.json,73180_20080807.json,equipmentSummary,1.0,mechanicalCapacity_bhp,17082.0,2847.0,value_difference
+73180_2008-08-07.json,73180_20080807.json,equipmentSummary,2.0,type,Previously Permitted,Modified,value_difference
+73180_2008-08-07.json,73180_20080807.json,equipmentSummary,2.0,numberOfUnits,3.0,1.0,value_difference
+73180_2008-08-07.json,73180_20080807.json,equipmentSummary,2.0,electricalCapacity_kW,3999.0,2000.0,value_difference
+73180_2008-08-07.json,73180_20080807.json,equipmentSummary,2.0,mechanicalCapacity_bhp,5820.0,2847.0,value_difference
+73180_2008-08-07.json,73180_20080807.json,equipmentSummary,3.0,type,Exempt,Modified,value_difference
+73180_2008-08-07.json,73180_20080807.json,equipmentSummary,3.0,numberOfUnits,2.0,1.0,value_difference
+73180_2008-08-07.json,73180_20080807.json,equipmentSummary,3.0,fuelType,Gas,Diesel,value_difference
+73180_2008-08-07.json,73180_20080807.json,equipmentSummary,3.0,electricalCapacity_kW,0.0,2000.0,value_difference
+73180_2008-08-07.json,73180_20080807.json,equipmentSummary,3.0,mechanicalCapacity_bhp,0.0,2847.0,value_difference
+73180_2008-08-07.json,73180_20080807.json,equipmentSummary,3.0,gasUsage_MMBTUhr,3.75,0.0,value_difference
+73180_2008-08-07.json,73180_20080807.json,equipmentSummary,4.0,type,Exempt,Previously Permitted,value_difference
+73180_2008-08-07.json,73180_20080807.json,equipmentSummary,4.0,numberOfUnits,4.0,1.0,value_difference
+73180_2008-08-07.json,73180_20080807.json,equipmentSummary,4.0,electricalCapacity_kW,0.0,2000.0,value_difference
+73180_2008-08-07.json,73180_20080807.json,equipmentSummary,4.0,mechanicalCapacity_bhp,0.0,2847.0,value_difference
+73341_2008-07-25.json,73341_20080725.json,equipmentSummary,4.0,fuelType,Diesel,,value_difference
+73341_2008-07-25.json,73341_20080725.json,equipmentSummary,4.0,isEmergency,False,,value_difference
+73341_2008-07-25.json,73341_20080725.json,equipmentSummary,5.0,fuelType,Diesel,,value_difference
+73341_2008-07-25.json,73341_20080725.json,equipmentSummary,5.0,isEmergency,False,,value_difference
+73341_2008-07-25.json,73341_20080725.json,equipmentSummary,6.0,fuelType,Diesel,,value_difference
+73341_2008-07-25.json,73341_20080725.json,equipmentSummary,6.0,isEmergency,False,,value_difference
+73341_2008-07-25.json,73341_20080725.json,equipmentSummary,7.0,fuelType,Diesel,,value_difference
+73341_2008-07-25.json,73341_20080725.json,equipmentSummary,7.0,isEmergency,False,,value_difference
+7320002_2006-10-19.json,73200_20061019.json,equipmentSummary,1.0,type,Previously Permitted,Constructed,value_difference
+7320002_2006-10-19.json,73200_20061019.json,equipmentSummary,1.0,numberOfUnits,3.0,4.0,value_difference
+7320002_2006-10-19.json,73200_20061019.json,equipmentSummary,1.0,isEmergency,False,True,value_difference
+7320002_2006-10-19.json,73200_20061019.json,equipmentSummary,1.0,electricalCapacity_kW,0.0,8000.0,value_difference
+7320002_2006-10-19.json,73200_20061019.json,equipmentSummary,1.0,mechanicalCapacity_bhp,0.0,11392.0,value_difference
+7320002_2006-10-19.json,73200_20061019.json,equipmentSummary,2.0,type,Constructed,Exempt,value_difference
+7320002_2006-10-19.json,73200_20061019.json,equipmentSummary,2.0,numberOfUnits,4.0,3.0,value_difference
+7320002_2006-10-19.json,73200_20061019.json,equipmentSummary,2.0,isEmergency,True,,value_difference
+7320002_2006-10-19.json,73200_20061019.json,equipmentSummary,2.0,electricalCapacity_kW,8000.0,0.0,value_difference
+7320002_2006-10-19.json,73200_20061019.json,equipmentSummary,2.0,mechanicalCapacity_bhp,11392.0,0.0,value_difference
+73105_2007-07-26.json,73105_20070726.json,equipmentSummary,0.0,isEmergency,False,True,value_difference
+7320003_2007-10-18.json,73200_20071018.json,equipmentSummary,0.0,numberOfUnits,2.0,1.0,value_difference
+7320003_2007-10-18.json,73200_20071018.json,equipmentSummary,1.0,numberOfUnits,5.0,1.0,value_difference
+73567_2007-11-07.json,73567_20071107.json,equipmentSummary,0.0,numberOfUnits,2.0,1.0,value_difference
+73567_2007-11-07.json,73567_20071107.json,equipmentSummary,0.0,electricalCapacity_kW,4000.0,2000.0,value_difference
+73567_2007-11-07.json,73567_20071107.json,equipmentSummary,0.0,mechanicalCapacity_bhp,4380.0,2190.0,value_difference
+7364301_2007-12-19.json,73643_20071219.json,equipmentSummary,0.0,numberOfUnits,22.0,1.0,value_difference
+7364301_2007-12-19.json,73643_20071219.json,equipmentSummary,0.0,electricalCapacity_kW,55000.0,2500.0,value_difference
+7364301_2007-12-19.json,73643_20071219.json,equipmentSummary,0.0,mechanicalCapacity_bhp,84656.0,3848.0,value_difference
+7364301_2007-12-19.json,73643_20071219.json,equipmentSummary,1.0,type,Exempt,Constructed,value_difference
+7364301_2007-12-19.json,73643_20071219.json,equipmentSummary,1.0,numberOfUnits,22.0,1.0,value_difference
+7364301_2007-12-19.json,73643_20071219.json,equipmentSummary,1.0,isEmergency,False,True,value_difference
+7364301_2007-12-19.json,73643_20071219.json,equipmentSummary,1.0,electricalCapacity_kW,0.0,2500.0,value_difference
+7364301_2007-12-19.json,73643_20071219.json,equipmentSummary,1.0,mechanicalCapacity_bhp,0.0,3848.0,value_difference
+7364301_2007-12-19.json,73643_20071219.json,equipmentSummary,2.0,type,Exempt,Constructed,value_difference
+7364301_2007-12-19.json,73643_20071219.json,equipmentSummary,2.0,numberOfUnits,6.0,1.0,value_difference
+7364301_2007-12-19.json,73643_20071219.json,equipmentSummary,2.0,isEmergency,False,True,value_difference
+7364301_2007-12-19.json,73643_20071219.json,equipmentSummary,2.0,electricalCapacity_kW,0.0,2500.0,value_difference
+7364301_2007-12-19.json,73643_20071219.json,equipmentSummary,2.0,mechanicalCapacity_bhp,0.0,3848.0,value_difference
+72368_2009-08-28.json,72368_20090828.json,equipmentSummary,0.0,numberOfUnits,4.0,1.0,value_difference
+72368_2009-08-28.json,72368_20090828.json,equipmentSummary,0.0,isEmergency,True,False,value_difference
+72368_2009-08-28.json,72368_20090828.json,equipmentSummary,0.0,electricalCapacity_kW,8000.0,2000.0,value_difference
+72368_2009-08-28.json,72368_20090828.json,equipmentSummary,0.0,mechanicalCapacity_bhp,11504.0,2876.0,value_difference
+72368_2009-08-28.json,72368_20090828.json,equipmentSummary,1.0,type,Previously Permitted,Modified,value_difference
+72368_2009-08-28.json,72368_20090828.json,equipmentSummary,1.0,numberOfUnits,6.0,1.0,value_difference
+72368_2009-08-28.json,72368_20090828.json,equipmentSummary,1.0,isEmergency,True,False,value_difference
+72368_2009-08-28.json,72368_20090828.json,equipmentSummary,1.0,electricalCapacity_kW,12000.0,2000.0,value_difference
+72368_2009-08-28.json,72368_20090828.json,equipmentSummary,1.0,mechanicalCapacity_bhp,17256.0,2876.0,value_difference
+72368_2009-08-28.json,72368_20090828.json,equipmentSummary,2.0,type,Previously Permitted,Modified,value_difference
+72368_2009-08-28.json,72368_20090828.json,equipmentSummary,2.0,numberOfUnits,3.0,1.0,value_difference
+72368_2009-08-28.json,72368_20090828.json,equipmentSummary,2.0,isEmergency,True,False,value_difference
+72368_2009-08-28.json,72368_20090828.json,equipmentSummary,2.0,electricalCapacity_kW,3999.0,2000.0,value_difference
+72368_2009-08-28.json,72368_20090828.json,equipmentSummary,2.0,mechanicalCapacity_bhp,5820.0,2876.0,value_difference
+72368_2009-08-28.json,72368_20090828.json,equipmentSummary,3.0,type,Exempt,Modified,value_difference
+72368_2009-08-28.json,72368_20090828.json,equipmentSummary,3.0,numberOfUnits,2.0,1.0,value_difference
+72368_2009-08-28.json,72368_20090828.json,equipmentSummary,3.0,fuelType,Gas,Diesel,value_difference
+72368_2009-08-28.json,72368_20090828.json,equipmentSummary,3.0,electricalCapacity_kW,0.0,2000.0,value_difference
+72368_2009-08-28.json,72368_20090828.json,equipmentSummary,3.0,mechanicalCapacity_bhp,0.0,2876.0,value_difference
+72368_2009-08-28.json,72368_20090828.json,equipmentSummary,3.0,gasUsage_MMBTUhr,3.34,0.0,value_difference
+72368_2009-08-28.json,72368_20090828.json,equipmentSummary,4.0,type,Exempt,Previously Permitted,value_difference
+72368_2009-08-28.json,72368_20090828.json,equipmentSummary,4.0,numberOfUnits,4.0,1.0,value_difference
+72368_2009-08-28.json,72368_20090828.json,equipmentSummary,4.0,electricalCapacity_kW,0.0,2000.0,value_difference
+72368_2009-08-28.json,72368_20090828.json,equipmentSummary,4.0,mechanicalCapacity_bhp,0.0,2876.0,value_difference
+73199_2009-04-28.json,73199_20090428.json,equipmentSummary,0.0,numberOfUnits,7.0,1.0,value_difference
+73199_2009-04-28.json,73199_20090428.json,equipmentSummary,0.0,isEmergency,True,False,value_difference
+73199_2009-04-28.json,73199_20090428.json,equipmentSummary,0.0,electricalCapacity_kW,14000.0,2000.0,value_difference
+73199_2009-04-28.json,73199_20090428.json,equipmentSummary,0.0,mechanicalCapacity_bhp,20132.0,2876.0,value_difference
+73199_2009-04-28.json,73199_20090428.json,equipmentSummary,1.0,type,Exempt,Constructed,value_difference
+73199_2009-04-28.json,73199_20090428.json,equipmentSummary,1.0,electricalCapacity_kW,0.0,2000.0,value_difference
+73199_2009-04-28.json,73199_20090428.json,equipmentSummary,1.0,mechanicalCapacity_bhp,0.0,2876.0,value_difference
+73199_2009-04-28.json,73199_20090428.json,equipmentSummary,2.0,type,Exempt,Constructed,value_difference
+73199_2009-04-28.json,73199_20090428.json,equipmentSummary,2.0,electricalCapacity_kW,0.0,2000.0,value_difference
+73199_2009-04-28.json,73199_20090428.json,equipmentSummary,2.0,mechanicalCapacity_bhp,0.0,2876.0,value_difference
+73230_2009-01-09.json,73230_20090109.json,equipmentSummary,0.0,type,Previously Permitted,Constructed,value_difference
+73230_2009-01-09.json,73230_20090109.json,equipmentSummary,1.0,isEmergency,False,,value_difference
+7371701_2009-01-15.json,73717_20090115.json,equipmentSummary,0.0,numberOfUnits,3.0,1.0,value_difference
+7371701_2009-01-15.json,73717_20090115.json,equipmentSummary,0.0,electricalCapacity_kW,3075.0,1025.0,value_difference
+7371701_2009-01-15.json,73717_20090115.json,equipmentSummary,0.0,mechanicalCapacity_bhp,4470.0,1490.0,value_difference
+7371701_2009-01-15.json,73717_20090115.json,equipmentSummary,1.0,electricalCapacity_kW,900.0,1025.0,value_difference
+7371701_2009-01-15.json,73717_20090115.json,equipmentSummary,1.0,mechanicalCapacity_bhp,1340.0,1490.0,value_difference
+7371701_2009-01-15.json,73717_20090115.json,equipmentSummary,2.0,electricalCapacity_kW,300.0,900.0,value_difference
+7371701_2009-01-15.json,73717_20090115.json,equipmentSummary,2.0,mechanicalCapacity_bhp,427.0,1340.0,value_difference
+7371701_2009-01-15.json,73717_20090115.json,equipmentSummary,3.0,type,Exempt,Previously Permitted,value_difference
+7371701_2009-01-15.json,73717_20090115.json,equipmentSummary,3.0,isEmergency,False,True,value_difference
+7371701_2009-01-15.json,73717_20090115.json,equipmentSummary,3.0,electricalCapacity_kW,0.0,1025.0,value_difference
+7371701_2009-01-15.json,73717_20090115.json,equipmentSummary,3.0,mechanicalCapacity_bhp,0.0,1490.0,value_difference
+7371701_2009-01-15.json,73717_20090115.json,equipmentSummary,4.0,type,Exempt,Previously Permitted,value_difference
+7371701_2009-01-15.json,73717_20090115.json,equipmentSummary,4.0,numberOfUnits,2.0,1.0,value_difference
+7371701_2009-01-15.json,73717_20090115.json,equipmentSummary,4.0,isEmergency,False,True,value_difference
+7371701_2009-01-15.json,73717_20090115.json,equipmentSummary,4.0,electricalCapacity_kW,0.0,300.0,value_difference
+7371701_2009-01-15.json,73717_20090115.json,equipmentSummary,4.0,mechanicalCapacity_bhp,0.0,427.0,value_difference
+7337016_2017-08-23.json,73370_20170823.json,equipmentSummary,0.0,numberOfUnits,18.0,1.0,value_difference
+7337016_2017-08-23.json,73370_20170823.json,equipmentSummary,0.0,electricalCapacity_kW,40500.0,2250.0,value_difference
+7337016_2017-08-23.json,73370_20170823.json,equipmentSummary,0.0,mechanicalCapacity_bhp,58914.0,3273.0,value_difference
+73293_2010-08-12.json,73293_20100812.json,equipmentSummary,0.0,numberOfUnits,2.0,1.0,value_difference
+73293_2010-08-12.json,73293_20100812.json,equipmentSummary,0.0,electricalCapacity_kW,3000.0,1500.0,value_difference
+73293_2010-08-12.json,73293_20100812.json,equipmentSummary,0.0,mechanicalCapacity_bhp,4412.0,2206.0,value_difference
+73293_2010-08-12.json,73293_20100812.json,equipmentSummary,1.0,type,Previously Permitted,Constructed,value_difference
+73293_2010-08-12.json,73293_20100812.json,equipmentSummary,1.0,numberOfUnits,2.0,1.0,value_difference
+73293_2010-08-12.json,73293_20100812.json,equipmentSummary,1.0,electricalCapacity_kW,3000.0,1500.0,value_difference
+73293_2010-08-12.json,73293_20100812.json,equipmentSummary,1.0,mechanicalCapacity_bhp,4336.0,2206.0,value_difference
+73809_2010-06-03.json,73809_20100603.json,equipmentSummary,0.0,type,Previously Permitted,Constructed,value_difference
+73809_2010-06-03.json,73809_20100603.json,equipmentSummary,1.0,type,Previously Permitted,Constructed,value_difference
+73809_2010-06-03.json,73809_20100603.json,equipmentSummary,2.0,type,Previously Permitted,Constructed,value_difference
+73160_2019-10-30.json,73160_20191030.json,equipmentSummary,7.0,fuelType,Diesel,,value_difference
+73160_2019-10-30.json,73160_20191030.json,equipmentSummary,7.0,isEmergency,False,,value_difference
+73160_2019-10-30.json,73160_20191030.json,equipmentSummary,8.0,fuelType,Diesel,,value_difference
+73160_2019-10-30.json,73160_20191030.json,equipmentSummary,8.0,isEmergency,False,,value_difference
+73160_2019-10-30.json,73160_20191030.json,equipmentSummary,9.0,fuelType,Diesel,,value_difference
+73160_2019-10-30.json,73160_20191030.json,equipmentSummary,9.0,isEmergency,False,,value_difference
+73160_2019-10-30.json,73160_20191030.json,equipmentSummary,10.0,fuelType,Diesel,,value_difference
+73160_2019-10-30.json,73160_20191030.json,equipmentSummary,10.0,isEmergency,False,,value_difference
+73160_2019-10-30.json,73160_20191030.json,equipmentSummary,11.0,fuelType,Diesel,,value_difference
+73160_2019-10-30.json,73160_20191030.json,equipmentSummary,11.0,isEmergency,False,,value_difference
+73160_2019-10-30.json,73160_20191030.json,equipmentSummary,12.0,fuelType,Diesel,,value_difference
+73160_2019-10-30.json,73160_20191030.json,equipmentSummary,12.0,isEmergency,False,,value_difference
+73160_2019-10-30.json,73160_20191030.json,equipmentSummary,13.0,fuelType,Diesel,,value_difference
+73160_2019-10-30.json,73160_20191030.json,equipmentSummary,13.0,isEmergency,False,,value_difference
+80941_2019-07-11.json,80941_20190711.json,equipmentSummary,0.0,numberOfUnits,6.0,1.0,value_difference
+80941_2019-07-11.json,80941_20190711.json,equipmentSummary,0.0,electricalCapacity_kW,14910.0,2485.0,value_difference
+80941_2019-07-11.json,80941_20190711.json,equipmentSummary,0.0,mechanicalCapacity_bhp,20688.0,3448.0,value_difference
+80941_2019-07-11.json,80941_20190711.json,equipmentSummary,1.0,type,Exempt,Constructed,value_difference
+80941_2019-07-11.json,80941_20190711.json,equipmentSummary,1.0,fuelType,Diesel,Gas,value_difference
+80941_2019-07-11.json,80941_20190711.json,equipmentSummary,1.0,isEmergency,True,False,value_difference
+80941_2019-07-11.json,80941_20190711.json,equipmentSummary,1.0,electricalCapacity_kW,1600.0,2485.0,value_difference
+80941_2019-07-11.json,80941_20190711.json,equipmentSummary,1.0,mechanicalCapacity_bhp,0.0,3448.0,value_difference
+80941_2019-07-11.json,80941_20190711.json,equipmentSummary,2.0,type,Exempt,Constructed,value_difference
+80941_2019-07-11.json,80941_20190711.json,equipmentSummary,2.0,fuelType,Dual Fuel,Gas,value_difference
+80941_2019-07-11.json,80941_20190711.json,equipmentSummary,2.0,electricalCapacity_kW,0.0,2485.0,value_difference
+80941_2019-07-11.json,80941_20190711.json,equipmentSummary,2.0,mechanicalCapacity_bhp,0.0,3448.0,value_difference
+80941_2019-07-11.json,80941_20190711.json,equipmentSummary,2.0,gasUsage_MMBTUhr,2.22,0.0,value_difference
+74127_2021-10-06.json,74127_20211006.json,equipmentSummary,2.0,fuelType,Diesel,,value_difference
+74127_2021-10-06.json,74127_20211006.json,equipmentSummary,2.0,isEmergency,False,,value_difference
+74127_2021-10-06.json,74127_20211006.json,equipmentSummary,3.0,fuelType,Diesel,,value_difference
+74127_2021-10-06.json,74127_20211006.json,equipmentSummary,3.0,isEmergency,False,,value_difference
+74127_2021-10-06.json,74127_20211006.json,equipmentSummary,4.0,fuelType,Diesel,,value_difference
+74127_2021-10-06.json,74127_20211006.json,equipmentSummary,4.0,isEmergency,False,,value_difference
+74129_2021-06-28.json,74129_20210628.json,equipmentSummary,11.0,fuelType,Diesel,,value_difference
+74129_2021-06-28.json,74129_20210628.json,equipmentSummary,11.0,isEmergency,False,,value_difference
+74129_2021-06-28.json,74129_20210628.json,equipmentSummary,12.0,fuelType,Diesel,,value_difference
+74129_2021-06-28.json,74129_20210628.json,equipmentSummary,12.0,isEmergency,False,,value_difference
+74129_2021-06-28.json,74129_20210628.json,equipmentSummary,13.0,fuelType,Diesel,,value_difference
+74129_2021-06-28.json,74129_20210628.json,equipmentSummary,13.0,isEmergency,False,,value_difference
+74129_2021-06-28.json,74129_20210628.json,equipmentSummary,14.0,fuelType,Diesel,,value_difference
+74129_2021-06-28.json,74129_20210628.json,equipmentSummary,14.0,isEmergency,False,,value_difference
+74129_2021-06-28.json,74129_20210628.json,equipmentSummary,15.0,fuelType,Diesel,,value_difference
+74129_2021-06-28.json,74129_20210628.json,equipmentSummary,15.0,isEmergency,False,,value_difference
+72367_2020-02-26.json,72367_20200226.json,equipmentSummary,0.0,numberOfUnits,7.0,3.0,value_difference
+72367_2020-02-26.json,72367_20200226.json,equipmentSummary,0.0,electricalCapacity_kW,14000.0,6000.0,value_difference
+72367_2020-02-26.json,72367_20200226.json,equipmentSummary,0.0,mechanicalCapacity_bhp,20132.0,8628.0,value_difference
+74147_2020-02-26.json,74147_20200226.json,top_level,,permitIssuanceDate,2020-02-26,2005-12-21,value_difference
+74147_2020-02-26.json,74147_20200226.json,equipmentSummary,0.0,type,Previously Permitted,Constructed,value_difference
+74190_2020-07-16.json,74190_20200716.json,equipmentSummary,0.0,type,Previously Permitted,Constructed,value_difference
+74190_2020-07-16.json,74190_20200716.json,equipmentSummary,0.0,numberOfUnits,3.0,1.0,value_difference
+74190_2020-07-16.json,74190_20200716.json,equipmentSummary,0.0,electricalCapacity_kW,6000.0,3000.0,value_difference
+74190_2020-07-16.json,74190_20200716.json,equipmentSummary,0.0,mechanicalCapacity_bhp,8811.0,4423.0,value_difference
+74190_2020-07-16.json,74190_20200716.json,equipmentSummary,1.0,type,Previously Permitted,Constructed,value_difference
+74190_2020-07-16.json,74190_20200716.json,equipmentSummary,1.0,electricalCapacity_kW,2500.0,3000.0,value_difference
+74190_2020-07-16.json,74190_20200716.json,equipmentSummary,1.0,mechanicalCapacity_bhp,3634.0,4423.0,value_difference
+74190_2020-07-16.json,74190_20200716.json,equipmentSummary,2.0,type,Previously Permitted,Constructed,value_difference
+74190_2020-07-16.json,74190_20200716.json,equipmentSummary,2.0,electricalCapacity_kW,2000.0,3000.0,value_difference
+74190_2020-07-16.json,74190_20200716.json,equipmentSummary,2.0,mechanicalCapacity_bhp,2937.0,4423.0,value_difference
+74190_2020-07-16.json,74190_20200716.json,equipmentSummary,3.0,type,Previously Permitted,Constructed,value_difference
+74190_2020-07-16.json,74190_20200716.json,equipmentSummary,3.0,numberOfUnits,5.0,1.0,value_difference
+74190_2020-07-16.json,74190_20200716.json,equipmentSummary,3.0,electricalCapacity_kW,15000.0,3000.0,value_difference
+74190_2020-07-16.json,74190_20200716.json,equipmentSummary,3.0,mechanicalCapacity_bhp,22115.0,4423.0,value_difference
+74190_2020-07-16.json,74190_20200716.json,equipmentSummary,4.0,numberOfUnits,7.0,1.0,value_difference
+74190_2020-07-16.json,74190_20200716.json,equipmentSummary,4.0,electricalCapacity_kW,21000.0,3000.0,value_difference
+74190_2020-07-16.json,74190_20200716.json,equipmentSummary,4.0,mechanicalCapacity_bhp,30961.0,4423.0,value_difference
+73790_2011-04-21.json,73790_20110421.json,equipmentSummary,1.0,isEmergency,False,,value_difference
+73798_2011-03-02.json,73798_20110302.json,equipmentSummary,0.0,numberOfUnits,2.0,1.0,value_difference
+73798_2011-03-02.json,73798_20110302.json,equipmentSummary,0.0,electricalCapacity_kW,800.0,400.0,value_difference
+73798_2011-03-02.json,73798_20110302.json,equipmentSummary,1.0,electricalCapacity_kW,2000.0,400.0,value_difference
+73798_2011-03-02.json,73798_20110302.json,equipmentSummary,2.0,electricalCapacity_kW,1750.0,2000.0,value_difference
+73868_2011-04-14.json,73868_20110414.json,equipmentSummary,1.0,isEmergency,False,,value_difference
+73158_2003-09-16.json,73158_20030916.json,equipmentSummary,0.0,type,Previously Permitted,Modified,value_difference
+73158_2003-09-16.json,73158_20030916.json,equipmentSummary,0.0,numberOfUnits,10.0,3.0,value_difference
+73158_2003-09-16.json,73158_20030916.json,equipmentSummary,0.0,electricalCapacity_kW,15000.0,6000.0,value_difference
+73158_2003-09-16.json,73158_20030916.json,equipmentSummary,1.0,type,Previously Permitted,Modified,value_difference
+73158_2003-09-16.json,73158_20030916.json,equipmentSummary,1.0,numberOfUnits,3.0,10.0,value_difference
+73158_2003-09-16.json,73158_20030916.json,equipmentSummary,1.0,electricalCapacity_kW,6000.0,15000.0,value_difference
