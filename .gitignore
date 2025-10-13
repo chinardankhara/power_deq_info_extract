@@ -2,5 +2,5 @@
 raw_pdfs/
 retries/
 *.zip
-extracted_data/
+extracted_data*/
 vix_outputs/

@@ -11,6 +11,7 @@ from datetime import datetime
 import re
 from dotenv import load_dotenv
 import time
+import argparse
 
 load_dotenv()
 # Set up logging
@@ -273,7 +274,7 @@ def process_pdf_with_gemini_year(pdf_path, client, output_dir, model="gemini-fla
     
     # If failed and we're using flash, retry with pro model
     if not extracted_data and model == "gemini-flash-latest":
-        extracted_data, json_filename = process_pdf_with_gemini(pdf_path, client, "gemini-2.5-pro")
+        extracted_data, json_filename = process_pdf_with_gemini(pdf_path, client, "gemini-2.0-flash")
     
     if extracted_data and json_filename:
         # Save to year-specific directory
@@ -292,9 +293,13 @@ def process_pdf_with_gemini_year(pdf_path, client, output_dir, model="gemini-fla
     
     return None, None
 
-def process_all_pdfs():
+def process_all_pdfs(raw_pdfs_dir='raw_pdfs', output_dir='extracted_data'):
     """
-    Process all PDFs in year-based subdirectories under raw_pdfs
+    Process all PDFs in year-based subdirectories
+    
+    Args:
+        raw_pdfs_dir: Directory containing year-based PDF folders (default: 'raw_pdfs')
+        output_dir: Directory where extracted JSON files will be saved (default: 'extracted_data')
     """
     # Initialize the Gemini client
     api_key = os.environ.get("GEMINI_API_KEY")
@@ -304,7 +309,7 @@ def process_all_pdfs():
     client = genai.Client(api_key=api_key)
     
     # Directory containing year-based PDF folders
-    raw_pdfs_base = Path('raw_pdfs')
+    raw_pdfs_base = Path(raw_pdfs_dir)
     if not raw_pdfs_base.exists():
         print(f"Error: {raw_pdfs_base} directory not found!")
         return
@@ -315,10 +320,12 @@ def process_all_pdfs():
         print(f"No year subdirectories found in {raw_pdfs_base}")
         return
     
+    print(f"Input directory: {raw_pdfs_base}")
+    print(f"Output directory: {output_dir}")
     print(f"Found {len(year_dirs)} year directories: {[d.name for d in year_dirs]}")
     
     # Create base output directory
-    json_data_base = Path('extracted_data_v2')
+    json_data_base = Path(output_dir)
     json_data_base.mkdir(exist_ok=True)
     
     # Process each year directory
@@ -367,4 +374,36 @@ def process_all_pdfs():
     print(f"\n{'='*60}\nOverall Summary:\nTotal Successful: {total_successful}\nTotal Failed: {total_failed}\n{'='*60}")
 
 if __name__ == "__main__":
-    process_all_pdfs()
+    parser = argparse.ArgumentParser(
+        description='Extract structured data from air permit PDFs using Gemini AI',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog='''
+Examples:
+  # Process PDFs from default directories
+  python extraction_sync.py
+  
+  # Specify custom input and output directories
+  python extraction_sync.py --input raw_pdfs --output extracted_data
+  
+  # Process from custom directories
+  python extraction_sync.py --input my_pdfs --output my_output
+        '''
+    )
+    
+    parser.add_argument(
+        '--input',
+        type=str,
+        default='raw_pdfs',
+        help='Directory containing year-based PDF folders (default: raw_pdfs)'
+    )
+    
+    parser.add_argument(
+        '--output',
+        type=str,
+        default='extracted_data',
+        help='Directory where extracted JSON files will be saved (default: extracted_data)'
+    )
+    
+    args = parser.parse_args()
+    
+    process_all_pdfs(raw_pdfs_dir=args.input, output_dir=args.output)
